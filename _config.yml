@@ -1,8 +1,10 @@
 ### your site title here
 
-title: 
+title: SilverHetch
 baseurl: # name of the repository
 email: larryhsiao@silverhetch.com
+github_id: LarryHsiao
+linkedin_id: larryhsiao
 
 
 
@@ -15,7 +17,7 @@ markdown: kramdown
 analytics: UA-104309814-1
 
 # Comments
-disqus-shortname: silverhetch
+disqus-shortname: SilverHetch
 
 
 #optimization
