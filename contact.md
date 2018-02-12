@@ -25,3 +25,10 @@ Find me at:
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>
 </li>
+
+
+<li>
+  <a href="https://play.google.com/store/apps/developer?id={{site.google_play_id}}">
+    <i class="fab fa-google-play"></i> Google Play
+  </a>
+</li>
