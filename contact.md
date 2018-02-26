@@ -32,3 +32,9 @@ Find me at:
     <i class="fab fa-google-play"></i> Google Play
   </a>
 </li>
+
+<li>
+  <a href="http://youtrack.silverhetch.com/agiles">
+    <i class="fas fa-tasks"></i> Board for my active projects.
+  </a>
+</li>
