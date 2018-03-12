@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Writing blog"
+title: "Writing"
 categories: Thought
 ---
 
