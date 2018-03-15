@@ -10,6 +10,6 @@ And always makes me think more angle of view about the article which I am writin
 
 I start my journery of writing.
 
-The article will focuse on Android related than others because of my main skill. I`m learning new skill recently, although not good enough to publish something, but maybe I will share some experience with blog. 
+The articles is focuse on Android related than others because of my main skill. I`m learning new skill recently, although not good enough to publish something, but maybe I will share some experience with blog. 
 
 
