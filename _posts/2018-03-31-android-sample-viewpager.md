@@ -11,7 +11,7 @@ Sample feature:
  - Pages has color background.
  - User is able to trigger moving page to second page of right.
 
-<video class="" autoplay="" width="20%">
+<video class="" autoplay="" width="30%">
 	<source src="{{ "/assets/video/sample-android-viewpager.webm" | absolute_url }}" type="video/webm">
 </video>
 
