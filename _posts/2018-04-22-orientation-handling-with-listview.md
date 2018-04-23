@@ -53,6 +53,9 @@ Conclusion
 
 By default, Orientation change triggers restarting the Activity. And if we want to retains the value in Activity, we need to implement the save/restore methods which provided by Android framework and save our dynamic values for the recreated Activity.
 
-But in this case which we want to retains the scrolling position, we don\`t have to do the save/restore implementation for the scrolling position. Views also retains it states, so we don\`t have to do that again, just focus on how to retain our data and Android framework will do the rest. But make sure setup views before system restore the states (before `super.onRestoreInstanceState()`) then no extra work to retain the scrolling position.
+But in this case which we want to retains the scrolling position, we don\`t have to do the save/restore implementation for the scrolling position. Views also retains it states, so we don\`t have to do that again, just focus on how to retain our data and Android framework will do the rest. 
+
+Just make sure setup views before system restore the states (before `super.onRestoreInstanceState()`) then no extra work to retain the scrolling position.
+
 
  
