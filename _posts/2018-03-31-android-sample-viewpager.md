@@ -23,9 +23,9 @@ ViewPager contains the color pages we have.
 Here just showing the structure of view.
 
 ```html
-<LinearLayout android:orientation="vertical" ...>
-    <Button android:id="@+id/main_jump" .../> 
-    <ViewPager android:id="@+id/main_viewPager .../>
+<LinearLayout android:orientation="vertical" >
+    <Button android:id="@+id/main_jump"/> 
+    <ViewPager android:id="@+id/main_viewPager" />
 </LinearLayout> 
 ```
 
