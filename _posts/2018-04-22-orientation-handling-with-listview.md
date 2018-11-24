@@ -22,8 +22,10 @@ XML
 			android:layout_height="match_parent"/>
 	</FrameLayout>
 ```	
+
 Activity
 ---
+
 ```kotlin
 	class MainActivity : AppCompatActivity() {
 		override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,11 +44,9 @@ Activity
 As shown that we did not do any extra work to handling orientation. 
 And here is the result:
 
-```html
 <video class="" autoplay="" width="30%">
 	<source src="{{ "/assets/video/sample-listview-orientation-handling.webm" | absolute_url }}" type="video/webm" >
 </video>
-```
 We can see that the scrolling position remains.
 
 Conclusion

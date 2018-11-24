@@ -18,15 +18,15 @@ Our build process can handle all the task but leave only one puzzle left, phones
 ### SSH tunnel
 We find a way, use SSH tunnel to do that.
 ```bash
-ssh -fNR 5037:localhost:5037 silverhetch.com
+ssh -fNR 5037:localhost:5037 ${REMOTE_SERVER}
 adb start-server # if adb not running at local
 ```
 And we good to go. Everything we can do with ADB now available on the Build Agents. Just run the build script.
 
 ### ADB script
-But the Gradle tasks which runs UI tests effects to all device connecting to ADB, we need some workaround.
+But the Gradle tasks which runs UI tests effects to all device connecting to ADB, we need some workaround. Make the UI testing only runs on our old Android.
 ```bash
-./gradlew :app:uninstallAll
+./gradlew uninstallAll
 ./gradlew installDebug
 ./gradlew installDebugAndroidTest
 adb -s {{DEVICE_SERIAL}} shell am instrument -w ${PACKAGE_NAME}/androidx.test.runner.AndroidJUnitRunner 
@@ -38,7 +38,7 @@ Note:
 ### Optional: autossh 
 we can use autossh to maintain the connection then we don`t need to run the ssh when we lost the connection.
 ```bash
-autossh -M 50001 -fNR 5037:localhost:5037 silverhetch.com
+autossh -M 50001 -fNR 5037:localhost:5037 ${REMOTE_SERVER}
 ```
 
 ### Result
