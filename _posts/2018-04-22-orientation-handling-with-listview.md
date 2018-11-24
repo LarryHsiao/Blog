@@ -11,7 +11,7 @@ Here is a sample which handling orientation with a ListView on the screen which 
 XML
 ---
 
-
+```xml
 	<FrameLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
@@ -21,10 +21,10 @@ XML
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"/>
 	</FrameLayout>
-	
+```	
 Activity
 ---
-
+```kotlin
 	class MainActivity : AppCompatActivity() {
 		override fun onCreate(savedInstanceState: Bundle?) {
 			super.onCreate(savedInstanceState)
@@ -38,14 +38,15 @@ Activity
 	  		listView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, array)
 		}
 	}
-
+```
 As shown that we did not do any extra work to handling orientation. 
 And here is the result:
 
+```html
 <video class="" autoplay="" width="30%">
 	<source src="{{ "/assets/video/sample-listview-orientation-handling.webm" | absolute_url }}" type="video/webm" >
 </video>
-
+```
 We can see that the scrolling position remains.
 
 Conclusion

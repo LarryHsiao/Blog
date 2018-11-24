@@ -17,7 +17,7 @@ Our build process can handle all the task but leave only one puzzle left, phones
 
 ### SSH tunnel
 We find a way, use SSH tunnel to do that.
-```
+```bash
 ssh -fNR 5037:localhost:5037 silverhetch.com
 adb start-server # if adb not running at local
 ```
@@ -25,7 +25,7 @@ And we good to go. Everything we can do with ADB now available on the Build Agen
 
 ### ADB script
 But the Gradle tasks which runs UI tests effects to all device connecting to ADB, we need some workaround.
-```
+```bash
 ./gradlew :app:uninstallAll
 ./gradlew installDebug
 ./gradlew installDebugAndroidTest
@@ -37,7 +37,7 @@ Note:
 
 ### Optional: autossh 
 we can use autossh to maintain the connection then we don`t need to run the ssh when we lost the connection.
-```
+```bash
 autossh -M 50001 -fNR 5037:localhost:5037 silverhetch.com
 ```
 
