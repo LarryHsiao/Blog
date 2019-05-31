@@ -1,8 +1,8 @@
 ### your site title here
 
-title: SilverHetch
-baseurl: # name of the repository
-email: larryhsiao@silverhetch.com
+title: 'Larry Hsiao'
+baseurl:  # name of the repository
+email: larryhsiao@larryhsiao.com
 github_id: LarryHsiao
 linkedin_id: larryhsiao
 google_play_id: SilverHetch
@@ -40,4 +40,4 @@ exclude:
 - README.md
 
 
-gems: [jekyll-seo-tag, jekyll-paginate]
+plugins: [jekyll-seo-tag, jekyll-paginate]
