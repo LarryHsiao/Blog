@@ -4,7 +4,7 @@ title: Custom options for intent chosoer
 tag: Android
 ---
 
-In our day to day Android app development work. There are time to time scenario we have to provide action selection dialog for various purpose. Here is a alternative to custom a dialog, use a chooser Intent to create System provided selection dialog with custom selection.
+In our day to day Android app development work. In most scenarios we have to provide action selection dialog for various Intent. Here is a alternative to custom a dialog, use a chooser Intent to create System provided selection dialog with custom selection.
 
 The result on Android P
 <p>
