@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="layout" content="post"/>
+	<title>Custom options for intent chosoer</title>
+	<meta name="tag" content="Android"/>
+</head>
+<body>
+
+<p>In our day to day Android app development work. There are time to time scenario we have to provide action selection dialog for various purpose. Here is a alternative to custom a dialog, use a chooser Intent to create System provided selection dialog with custom selection.</p>
+
+<p>The result on Android P</p>
+
+<p>
+<img src="{{ "/assets/images/chooser_intent.png" | absolute_url }}" width="270"/>
+</p>
+
+<p>We can do it by</p>
+
+<pre><code class="kotlin">startActivity(Intent.createChooser(
+	Intent(MediaStore.ACTION_IMAGE_CAPTURE), // base Intent
+	&quot;Title here&quot;
+).apply {
+	putExtra(
+		Intent.EXTRA_INITIAL_INTENTS,
+		arrayOf(
+			Intent(ACTION_GET_CONTENT).also { // extra Intent
+			it.type = &quot;images/*&quot;
+			}
+		)
+	)
+})
+</code></pre>
+
+<h3 id="alternative">Alternative</h3>
+
+<p>It`s there alternative for this? Seems the implementation a little bit complex which we may create simple wrapper in all of our project.
+Here you go, <a href="https://github.com/LarryHsiao/Aura">Aura</a>, An Android library created by myself which provide ChooserIntent class to generate the chooser Intent. And make our work slightly simpler.</p>
+
+<pre><code class="kotlin">startActivity(ChooserIntent(
+    &quot;Title here&quot;,
+    Intent(MediaStore.ACTION_IMAGE_CAPTURE),
+    Intent(ACTION_GET_CONTENT).also{
+         it.type = &quot;images / *&quot;
+    }
+).value())
+</code></pre>
+
+</body>
+</html>
+

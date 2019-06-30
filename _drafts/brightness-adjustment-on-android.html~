@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="layout" content="post"/>
+	<title>Brightness adjustment on Android</title>
+</head>
+<body>
+
+<p>Apps raise the brightness of screen where a Barcode on the screen. But do we implement it right? What is the best practice? Here is my common implementation for you.</p>
+
+</body>
+</html>
+
