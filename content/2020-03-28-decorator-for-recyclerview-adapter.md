@@ -177,6 +177,8 @@ public final class EmptyListAdapter extends RecyclerViewWrapper<ViewHolder> {
 由於`ListAdapter`不知道被裝飾後的數量變動，當實際資料數量從0增加時呼叫`notifyItemInserted()`會拋出exception。所以這個ListAdapter在實做時候必須注意是否有Append的行為，並且在實際數量從0增加時要使用`notifiyDataSetChanged()`。
 雖然看起來有點毛毛的，但是在實做簡單清單的情境底下，這個作法已經減少我們很多effort也很夠用了。
 
+(新增)最近發現還有一個缺點:沒辦法用同樣方式一次套用更多adapter因為index太難以計算了，notify相關的方法也無法複寫。故，這個作法緊限於簡單情境，增加header/footer什麼的，可能還是得自行實做了。
+
 ##### Aura
 這個東西我本身有再用並且放在我整理的一個Library上可以用用看，[Aura][1]。
 
