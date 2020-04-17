@@ -1,10 +1,10 @@
 +++
 date = 2020-04-16
-title = "在Android TextView上使用超連結"
+title = "在Android TextView上自訂超連結"
 category = "Android"
 +++
 
-超連結，像是[這串字][0]。我想在所有類型的app上很常見。不過要怎麼在Android上實做呢?
+超連結，像是[這串字][0]。我想在所有類型的app上很常見。不過要怎麼在Android上實做呢?我可以自定義點擊事件嗎？
 
 首先，Android的`TextView`本身就支援超連結文本，來看看我們怎麼玩弄`SpannableStringBuilder`吧。
 
