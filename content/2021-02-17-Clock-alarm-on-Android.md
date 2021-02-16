@@ -8,6 +8,7 @@ draft = true
 Implement a clock alarm app on Android now days seems lots of pain.
 So this blog shows how I implement it and how to guarantee the alarm on time.
 
-- Use AlarmManager
-- Trigger with BroadcastReceiver for launching activity from background
+- Use AlarmManager#setExact and related new apis for the purpose.
+- Trigger with BroadcastReceiver for launching activity from background.
+- Check if the permission `SYSTEM_ALERT_WINDOW` is granted by invoking `Settings.canDrawOverlays(context)`.
 - Grant permission `SYSTEM_ALERT_WINDOW` for launching activity when app even not at background.
