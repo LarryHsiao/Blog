@@ -1,5 +1,5 @@
 +++
-title = "The catch of using timestamp in build.gradle."
+title = "The cost of using timestamp in build.gradle and how to resolve it."
 date = 2021-04-14
 category = "Android"
 +++
