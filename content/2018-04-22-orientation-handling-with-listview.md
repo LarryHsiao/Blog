@@ -44,7 +44,7 @@ Activity
 As shown that we did not do any extra work to handling orientation. 
 And here is the result:
 
-{{ yt(id="yk7JL20INuw")}}
+ yt(id="yk7JL20INuw") // Youtube
 
 We can see that the scrolling position remains.
 
