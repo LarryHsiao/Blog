@@ -1,3 +1,3 @@
 #! /bin/sh
 
-zola serve --drafts --port 8080
+zola serve --drafts --port 3334
