@@ -3,11 +3,11 @@ date = "2022-06-15"
 title = "我的升級PostgreSQL的經驗(9.5升級到14)"
 slug = "postgresql-upgrading"
 +++
+[![資料庫](https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=630&amp;h=375&amp;dpr=1 "資料庫")](https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1 "資料庫")
 
-這幾天我開始了另一個多半不會完成的SideProject，不過當我在使用社群版的Flyway時，我遇到了PostgreSQL版本過舊沒辦法使用Flyway的問題。除非我使用企業版以外，我必須升級我們的PostgreSQL資料庫。
+這幾天的Side Project開發時遇到了升級[PostgreSQL][1]的小障礙，我最後把它排除了。覺得很有成就感，在這邊分享一下我的解決歷程吧。
 
-不過這個升級，似乎不是更新執行檔就可以了，或者自動升級失敗了，我們必須使用PostgreSQL提供的工具去做升級與轉換。以下是我的工作流程。
-
+這個升級，似乎不是更新執行檔就可以了，有時候會遇到如我現在遇到的問題一樣，我們沒辦法自動轉移到新版本上，必須使用PostgreSQL提供的工具去做升級與轉換。以下是我的工作流程。
 
 首先使用 `pg_lsclusters` 指令看看現在有哪些資料庫正在使用
 
@@ -85,3 +85,6 @@ DROP EXTENSION postgis;
 ## 結語
 
 以上是我的升級PostgreSQL資料庫的歷程，途中沒有確切的說明下完成升級，真是小有成就感呢。
+
+
+[1]: https://zh.wikipedia.org/wiki/PostgreSQL
