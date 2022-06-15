@@ -21,7 +21,8 @@ XML
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"/>
 	</FrameLayout>
-```	
+```
+
 
 Activity
 ---
@@ -44,7 +45,7 @@ Activity
 As shown that we did not do any extra work to handling orientation. 
 And here is the result:
 
- yt(id="yk7JL20INuw") // Youtube
+{{ youtube(id="yk7JL20INuw") }}
 
 We can see that the scrolling position remains.
 

@@ -1,6 +1,7 @@
 +++
 date = 2018-03-31
 title = "Android Sample: ViewPager"
+slug = "android-sample-viewpager"
 category = "Android"
 +++
 
@@ -11,7 +12,7 @@ Sample feature:
  - Pages has color background.
  - User is able to trigger moving page to second page of right.
 
-yt(id="hTH3_iUBSuI") // YouTube
+{{ youtube(id="hTH3_iUBSuI") }}
 
 #### Layout XML
 We need two elements in the main structure: Button and ViewPager.
