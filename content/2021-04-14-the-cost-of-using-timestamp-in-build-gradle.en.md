@@ -1,6 +1,7 @@
 +++
-title = "The cost of using timestamp in build.gradle and how to resolve it."
+title = "The cost of using timestamp in build.gradle and how to reduce it."
 date = 2021-04-14
+slug = "reduce-the-cost-of-using-timestamp-in-build-gradle"
 category = "Android"
 +++
 
