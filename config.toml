@@ -11,8 +11,8 @@ paginate_by = 5
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
-default_language = "zh_Hant"
+build_search_index = true
+default_language = "zh"
 
 minify_html = true
 
