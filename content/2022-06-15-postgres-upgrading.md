@@ -57,7 +57,7 @@ ver Cluster Port Status Owner    Data directory               Log file
 接著啟動原本的資料庫並且啟動`pg_ctlcluster 9.5 main start`
 
 連線到資料庫後，先來看看我們有什麼extension吧
-```postgresql
+```sql
 postgres=# select * FROM pg_extension;
   oid  |    extname    | extowner | extnamespace | extrelocatable | extversion | extconfig | extcondition
 -------+---------------+----------+--------------+----------------+------------+-----------+--------------
@@ -68,7 +68,7 @@ postgres=# select * FROM pg_extension;
 ```
 
 操作移除extension:
-```postgresql
+```sql
 DROP EXTENSION postgis; 
 ```
 
