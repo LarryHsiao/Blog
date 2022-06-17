@@ -1,5 +1,5 @@
 +++
-title = "解決在build.gradle內使用timestamp的成本"
+title = "解決在Android開發中使用時間作為版本號碼的成本"
 date = 2021-04-14
 slug = "reduce-the-cost-of-using-timestamp-in-build-gradle"
 category = "Android"
