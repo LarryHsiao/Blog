@@ -1,9 +1,21 @@
 {% extends "base.html" %}
 
-
 {% block content %}
-<h1 class="title">
-  This is my blog made with Zola.
+<h1>
+  {{ section.title }}
 </h1>
-<p>Click <a href="{{ get_url(path="@/_index.md") }}">here</a> to see my posts.</p>
+<ul>
+  {% for page in section.pages %}
+  <h2>{{ page.title }}</h2>
+  <span>{{ page.date | date(format="%F") }}-({{ page.reading_time }} min read)</span>
+  <div>
+	  {% if page.summary -%}
+		{{ page.summary | safe }}
+	  {% else %}
+	  	{{ page.content | striptags | truncate(length=280) | safe}}
+	  {%- endif %}
+  </div>
+  <a href="{{ page.permalink }}">繼續閱讀...</a>
+  {% endfor %}
+</ul>
 {% endblock content %}

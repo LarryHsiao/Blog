@@ -2,7 +2,7 @@
 base_url = "https://larryhsiao.com/"
 
 # Used in feeds
-title = ""
+title = "賴瑞Blog"
 description = ""
 
 paginate_by = 5 
@@ -22,7 +22,7 @@ feed_limit = 5
 
 [languages.en]
 build_search_index = true
-
+title = "LH Blog"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -37,5 +37,3 @@ include_description = false
 include_content=true
 
 [extra]
-# Put all your custom variables here
-
