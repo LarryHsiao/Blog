@@ -1,10 +1,10 @@
 +++
 date = "2022-06-28"
-title = "我的Android MVVM 實作建議(ViewModel篇)"
+title = "我的Android MVVM實做建議"
 slug = "my-tips-for-mvvm-on-android"
 +++
 
-近來，MVVM已然成為原生Andnroid開發的主流，Google也提供了相對應的工具達到目標。網路上與Google的官方網站上也有許多作法給大家參考。在這樣琳瑯滿目的做法中，我想分享幾個我認為實作`ViewModel`時，我認為比較順手的作法。
+近來，MVVM已然成為原生Andnroid開發的主流，Google也提供了相對應的工具達到目標。網路上與Google的官方網站上也有許多作法與改版給大家參考。在這樣琳瑯滿目的做法中，我想分享幾個我認為實作`ViewModel`時，我認為比較順手的作法。
 
 ## 方法名稱說明用戶意圖
 我認為一個ViewModel應當可以展現一個用戶在這個畫面上能夠有的操作。如:`refresh()`、`favorite(id)`。
@@ -76,5 +76,5 @@ lifecycleScope.launch{
 ## 結語
 照以上做法，我就不需要另外宣告一個liveData去傳遞單一事件，當我需要修改這個事件時，我不需要到處尋找散落在ViewModel的程式碼了。也不用為了追蹤一個使用流程的Bug在ViewModel/View的檔案內上下翻找。
 
-而LiveData相關的物件，就只會做一件事情: 輸出當前畫面上所有的資料。這樣，生活是否有稍微輕鬆點?
+未來，我們只要談到LiveData，就只會知道一件事情: 畫面上顯示的資料是什麼，不會有資料存在LiveData但是只使用一次的情況。
 
