@@ -1,10 +1,10 @@
 +++
 date = "2022-06-28"
-title = "我的Android MVVM實做建議"
+title = "我的Android ViewModel實作建議"
 slug = "my-tips-for-mvvm-on-android"
 +++
 
-近來，MVVM已然成為原生Andnroid開發的主流，Google也提供了相對應的工具達到目標。網路上與Google的官方網站上也有許多作法與改版給大家參考。在這樣琳瑯滿目的做法中，我想分享幾個我認為實作`ViewModel`時，我認為比較順手的作法。
+近來，MVVM已然成為原生Andnroid開發的主流，Google也提供了相對應的工具達到目標。網路上與Google的官方網站上也有許多作法與改版(如：MVI)給大家參考。在這樣琳瑯滿目的做法中，我想分享幾個我認為實作`ViewModel`時，我認為比較順手的作法。
 
 ## 方法名稱說明用戶意圖
 我認為一個ViewModel應當可以展現一個用戶在這個畫面上能夠有的操作。如:`refresh()`、`favorite(id)`。
