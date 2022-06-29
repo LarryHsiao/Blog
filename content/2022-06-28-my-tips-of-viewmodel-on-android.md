@@ -35,7 +35,7 @@ fun doIt(): Job = viewModelScope.launch{
 ```kotlin
 // Activity/Fragment內
 viewModel.doIt().invokeOnCompletion{
-    // 在這邊處理Exception或者完成後的事情
+    // 在這邊處理CancellationException或者完成後的事情
 }
 ```
 
@@ -48,8 +48,8 @@ fun doIt(): Job = viewModelScope.launch{
 }
 ```
 
-等等，在View這一層調用`invokeOnCompletion`時，如果我需要回傳資料呢? 如:剛新增資料的Id
-就直接回傳怎麼樣?
+等等，在View這一層調用`invokeOnCompletion`時，如果我需要回傳資料呢? 如:剛新增資料的Id 或者錯誤處理
+直接回傳怎麼樣?
 ```kotlin
 // ViewModel內
 suspend fun doIt(): Result<Long>{
