@@ -5,7 +5,7 @@ base_url = "https://larryhsiao.com/"
 title = "賴瑞Blog"
 description = ""
 
-paginate_by = 5 
+paginate_by = 5
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -19,6 +19,10 @@ minify_html = true
 gnerate_feed = true
 feed_filename = "feed.xml"
 feed_limit = 5
+
+taxonomies = [
+    {name = "tags", rss = true},
+]
 
 [languages.en]
 build_search_index = true
@@ -34,6 +38,10 @@ render_emoji = true
 [search]
 include_title = true
 include_description = false
-include_content=true
+include_content = true
 
 [extra]
+menus = [
+    { url = "$BASE_URL/about/", name = "About" },
+    { url = "$BASE_URL/tags/", name = "Tags" },
+]
