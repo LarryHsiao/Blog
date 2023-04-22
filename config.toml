@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://larryhsiao.com/"
+base_url = "https://larryhsiao.com"
 
 # Used in feeds
 title = "賴瑞Blog"
