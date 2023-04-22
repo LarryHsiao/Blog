@@ -13,12 +13,17 @@
 </div>
 <nav>
   {% block nav %}
-  {% for menu in config.extra.menus %}
-  {% set link_url = menu.url | replace(from="$BASE_URL", to=config.base_url)
-  %}
-  <a {% if current_url and current_url== link_url %} {% endif %}
-     href="{{ link_url }}">{{menu.name}}</a>
-  {% endfor %}
+
+  <ul>
+    {% for menu in config.extra.menus %}
+    {% set link_url = menu.url | replace(from="$BASE_URL", to=config.base_url)
+    %}
+    <li>
+      <a {% if current_url and current_url== link_url %} {% endif %}
+         href="{{ link_url }}">{{menu.name}}</a>
+    </li>
+    {% endfor %}
+  </ul>
   {% endblock nav %}
 </nav>
 {% block content %}

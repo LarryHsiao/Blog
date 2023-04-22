@@ -1,0 +1,18 @@
+{% macro page_item(page) %}
+<h2>{{ page.title }}</h2>
+<span>{{ page.date | date(format="%F") }}-({{ page.reading_time }} min read)</span>
+<div>
+  {% if page.summary -%}
+  {{ page.summary | safe }}
+  {% else %}
+  {{ page.content | striptags | truncate(length=140) | safe}}
+  {%- endif %}
+</div>
+{% if page.taxonomies.tags %}
+<p>
+  {% for tag in page.taxonomies.tags %}
+  <a href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}">#{{ tag }} </a>
+  {% endfor %}
+</p>
+{% endif %}  <a href="{{ page.permalink }}">繼續閱讀...</a>
+{% endmacro page_item %}

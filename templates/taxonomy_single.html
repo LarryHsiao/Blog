@@ -1,19 +1,12 @@
+{% import "macros/page.html" as macros %}
 {% extends "base.html" %}
 
 {% block title %}{{ term.name }}{% endblock title%}
 
 {% block content %}
-{% for page in term.pages %}
-    <ul>
-        <h5>
-            <a href="{{ page.permalink }}">{{ page.title }}</a>
-        </h5>
-    </ul>
-    {% if page.summary %}
-    <div>
-        {{ page.summary | markdown | safe }}
-    </div>
-    {% endif %}
-{% endfor %}
-
+<ul>
+  {% for page in term.pages %}
+  {{ macros::page_item(page=page) }}
+  {% endfor %}
+</ul>
 {% endblock content %}

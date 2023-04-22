@@ -1,7 +1,7 @@
 +++
 title = "About"
 path = "about"
-template = "base.html"
+template = "about.html"
 +++
 
 A mobile app developer, 
