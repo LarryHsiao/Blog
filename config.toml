@@ -5,8 +5,6 @@ base_url = "https://larryhsiao.com"
 title = "賴瑞Blog"
 description = ""
 
-paginate_by = 5
-
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -46,3 +44,4 @@ menus = [
     { url = "$BASE_URL/tags/", name = "Tags" },
     { url = "$BASE_URL/en/", name = "English" },
 ]
+
