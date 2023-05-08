@@ -1,10 +1,10 @@
 +++
 title = "關於我"
-path = "about"
+path = "about/en"
 template = "about.html"
 +++
 
-我相信透過軟體開發，讓世界稍微好一點、生活好過些。
+I believe we can make the world a little bit better with software developing.
 
 
 - email: [larryhsiao@larryhsiao.com](mailto:larryhsiao@larryhsiao.com)

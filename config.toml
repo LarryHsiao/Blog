@@ -9,7 +9,8 @@ description = ""
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+# To enable this, build zola with chinese index enable.
+build_search_index = false 
 default_language = "zh"
 
 minify_html = true
@@ -40,8 +41,14 @@ include_content = true
 
 [extra]
 menus = [
-    { url = "$BASE_URL/about/", name = "About" },
-    { url = "$BASE_URL/tags/", name = "Tags" },
+    { url = "$BASE_URL/about/", name = "關於我" },
+    { url = "$BASE_URL/tags/", name = "標籤" },
     { url = "$BASE_URL/en/", name = "English" },
+]
+
+menus_en = [
+    { url = "$BASE_URL/about/en", name = "About" },
+    { url = "$BASE_URL/tags/", name = "Tags" },
+    { url = "$BASE_URL/", name = "中文" },
 ]
 
