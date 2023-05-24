@@ -6,10 +6,14 @@ slug = "is-decroator-pattern-solid"
 tags=["OOP", "Decorator"]
 +++
 
+#### 前言
+
 在物件導向的世界裡，我們常常掛在嘴邊的五大原則每天聽每天看。網路上也有很多人分享SOLID怎麼寫、怎麼設計。
 這篇將會先以程式碼展示，可能符合SOLID的設計與開發流程，我們一起來看看吧。
 
 我將以幾段程式碼呈現我認為有符合SOLID原則的設計(以 `Dart` 語言為例)
+
+#### 定義介面
 
 假設我們要從資料庫取得用戶資訊我們可以定義一個介面
 ```dart
@@ -18,7 +22,7 @@ abstract class Users {
 }
 ```
 
-
+#### 實作
 假設資料庫在遠端我們可以依據 `Users` 實作
 ```dart
 class ApiUsers extends Users {
@@ -36,7 +40,7 @@ class LocalUsers extends Users {
   @override
   List<User> values() {
     // The gathering local data here.
-  } 
+  }
 }
 ```
 
@@ -49,6 +53,8 @@ class LocalUsers extends Users {
 
 
 ----
+#### 新需求！
+
 接著，隨著時間推移，需求也跟著增加/修改了
 假如根據需求，我需要將這個拿出來的 `User` 物件作過濾，我們可以新增 `FilteredUsers` 類別
 
@@ -83,8 +89,7 @@ class FilteredUsers extends Users {
 - 介面隔離 => 因為每個類別都是實作 `User` 介面，有規範公開的接口為 `values` 方法
 - 依賴反向 => 引用端依賴 `User`介面，而非依賴實作類別。 （除了建構式以外）
 
-#### 延伸
+
 接下來呢？以下需求留給讀者們想想能不能用此方式實作
 - 整合Api與本地的 `User` 來源
 - 快取
-
