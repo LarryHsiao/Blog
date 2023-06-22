@@ -3,13 +3,15 @@
 {% block title %}Tags{% endblock title%}
 
 {% block content %}
-<ul>
-  {% for term in terms %}
-  <li>
-    <a href="{{ term.permalink }}">
-      #{{ term.name }}
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+<section>
+    <ul>
+        {% for term in terms %}
+        <li>
+            <a href="{{ term.permalink }}">
+                #{{ term.name }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
 {% endblock content %}

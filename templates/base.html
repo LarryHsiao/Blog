@@ -2,8 +2,11 @@
 <html lang="{% if lang %}{{ lang }}{% else %}en{% endif %}">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bahunya.min.css">
   <title>{% block title %} {{config.title}} {% endblock title %}</title>
 </head>
 
@@ -34,14 +37,15 @@
 {% block content %}
 {% endblock content %}
 <footer>
-  <p>
+  <section>
     © {{ config.title }} {{ now() | date(format="%Y") }}<br>
-    Powered by <a target="_blank" href="https://getzola.org/">Zola</a>.
-  </p>
-  <p>
+    Powered by <a target="_blank" href="https://getzola.org/">Zola</a>.<br>
+    css with <a target="_blank" href="https://hakanalpay.com/bahunya/index.html">Bahunya</a>
+  </section>
+  <section>
     {% block footer %}
     {% endblock footer %}
-  </p>
+  </section>
 </footer>
 </body>
 </html>

@@ -1,4 +1,5 @@
 {% macro page_item(page) %}
+<section>
 <h2>{{ page.title }}</h2>
 <span>{{ page.date | date(format="%F") }}-({{ page.reading_time }} min read)</span>
 <div>
@@ -15,4 +16,5 @@
   {% endfor %}
 </p>
 {% endif %}  <a href="{{ page.permalink }}">繼續閱讀...</a>
+</section>
 {% endmacro page_item %}
