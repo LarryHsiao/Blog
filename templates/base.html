@@ -11,9 +11,6 @@
 </head>
 
 <body>
-<div style="text-align: center">
-  <a href="{{ config.base_url }}">{{ config.title }}</a>
-</div>
 <nav>
   {% block nav %}
 
@@ -23,6 +20,9 @@
     {% else %}
       {% set menus = config.extra.menus %}
     {% endif %}
+    <li>
+      <a href="{{ config.base_url }}">{{ config.title }}</a>
+    </li>
     {% for menu in menus %}
     {% set link_url = menu.url | replace(from="$BASE_URL", to=config.base_url)
     %}

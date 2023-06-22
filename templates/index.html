@@ -2,11 +2,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<ul>
-  {% for page in paginator.pages %}
-  {{ macros::page_item(page=page) }}
-  {% endfor %}
-</ul>
+{% for page in paginator.pages %}
+{{ macros::page_item(page=page) }}
+{% endfor %}
 <nav class="pagination">
     {% if paginator.previous %}
     <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
