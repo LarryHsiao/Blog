@@ -8,7 +8,7 @@ title = "一次查驗沒辦法連線WebSocket的經驗"
 
 首先在連線時就失敗了，我收到了以下的信息。
 
-```shell
+```bash
 javax.net.ssl.SSLHandshakeException: Received fatal alert: protocol_version
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
@@ -19,14 +19,14 @@ Google了一下說的似乎就是加密協定版本的問題。
 於是乎呢，我將Client端的加密協定限制使用`TLSv1.2`、`TLSv1.3`，結果還是如上圖。
 繼續奮鬥了一個下午，已經幾乎放棄了。最後至少看一下伺服器使用的是哪一個版本的協定吧...(至少自己怎麼死的要看清楚)
 
-```shell
+```bash
 openssl s_client -connect host_name -tls1_3 
 #-tls1 -tls1_1 -tls1_2個別試試
 ```
 
 使用了`TLSv1.2`檢查發現，沒有憑證
 
-```shell
+```bash
 $ openssl s_client -connect host_name_in_the_house -tls1_2
 CONNECTED(000001AC)
 ---
@@ -60,7 +60,7 @@ write:errno=10054
 ```
 
 反倒是`TLSv1`有憑證呢
-```shell
+```bash
 $ openssl s_client -connect host_name_in_the_house -tls1
 CONNECTED(00000154)
 ---
