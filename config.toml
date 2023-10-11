@@ -44,11 +44,13 @@ menus = [
     { url = "$BASE_URL/about/", name = "關於我" },
     { url = "$BASE_URL/tags/", name = "標籤" },
     { url = "$BASE_URL/en/", name = "English" },
+    { url = "$BASE_URL/metis/", name = "Metis"}
 ]
 
 menus_en = [
     { url = "$BASE_URL/about/en", name = "About" },
     { url = "$BASE_URL/tags/", name = "Tags" },
     { url = "$BASE_URL/", name = "中文" },
+    { url = "$BASE_URL/metis/", name = "Metis"}
 ]
 
