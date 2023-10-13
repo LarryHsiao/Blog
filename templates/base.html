@@ -9,7 +9,15 @@
   <link rel="stylesheet" href="/bahunya.min.css">
   <title>{% block title %} {{config.title}} {% endblock title %}</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4K365JL529"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-4K365JL529');
+</script>
 <body>
 <nav>
   {% block nav %}
