@@ -14,4 +14,4 @@ template = "about.html"
 
 [Terms Of Service](https://larryhsiao.com/metis/terms_of_service)
 
-[Privacy Policy](https://larryhsiao.com:13000/privacy_policy_metis.html)
+[Privacy Policy](https://larryhsiao.com/metis/privacy_policy)
