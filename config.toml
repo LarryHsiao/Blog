@@ -51,6 +51,6 @@ menus_en = [
     { url = "$BASE_URL/about/en", name = "About" },
     { url = "$BASE_URL/tags/", name = "Tags" },
     { url = "$BASE_URL/", name = "中文" },
-    { url = "$BASE_URL/metis/", name = "Metis"}
+    { url = "$BASE_URL/metis/en", name = "Metis"}
 ]
 
