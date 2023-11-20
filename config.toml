@@ -27,6 +27,10 @@ taxonomies = [
 build_search_index = true
 title = "LH Blog"
 
+[languages.jp]
+build_search_index = true
+title = "LH Blog"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -43,14 +47,18 @@ include_content = true
 menus = [
     { url = "$BASE_URL/about/", name = "關於我" },
     { url = "$BASE_URL/tags/", name = "標籤" },
-    { url = "$BASE_URL/en/", name = "English" },
     { url = "$BASE_URL/metis/", name = "Metis"}
 ]
 
 menus_en = [
     { url = "$BASE_URL/about/en", name = "About" },
     { url = "$BASE_URL/tags/", name = "Tags" },
-    { url = "$BASE_URL/", name = "中文" },
     { url = "$BASE_URL/metis/en", name = "Metis"}
+]
+
+menus_jp = [
+    { url = "$BASE_URL/about/jp", name = "About" },
+    { url = "$BASE_URL/tags/", name = "Tags" },
+    { url = "$BASE_URL/metis/jp", name = "Metis"}
 ]
 

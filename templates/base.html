@@ -25,6 +25,8 @@
   <ul>
     {% if lang == "en" %} 
       {% set menus = config.extra.menus_en %}
+    {% elif lang == "jp" %}
+      {% set menus = config.extra.menus_jp %}
     {% else %}
       {% set menus = config.extra.menus %}
     {% endif %}
