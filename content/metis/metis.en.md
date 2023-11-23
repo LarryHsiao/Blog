@@ -16,6 +16,17 @@ Metis is here to help you organize your adventure journey.
 
 It is a diary, where you can record your current state of mind with words; it is a photo album, capturing your current mood through photos; it is also a map, with every moment of your life leaving traces on this map.
 
+Main Features:
+
+- Cloud Storage: All data in Metis is stored in the cloud, ensuring your records are safe and easily accessible. This feature allows seamless access to your records on any device, be it a smartphone, tablet, or computer.
+
+- Cross-Platform Compatibility: Metis supports multi-platform use, perfectly fitting any operating system you use. This means you can use Metis anytime, anywhere, enjoying ultimate convenience.
+
+- Feature Highlights:
+    - Diary Entries: Metis offers a simple and intuitive diary recording function, allowing you to easily record every moment of life, including moods, events, and thoughts.
+    - Map Tracking: This unique feature lets you associate diary entries with geographic locations, creating a visual journey map that makes your records more vivid and storied.
+    - Photo Integration: Metis allows you to upload photos directly to your diary entries, enriching your records with not just words, but also precious images, for a more comprehensive and rich experience.
+
 
 [Contact me by email to delete your account](mailto:larryhsiao@larryhsiao.com)
 
