@@ -9,6 +9,7 @@ template = "about.html"
 </figure>
 
 <a href='https://play.google.com/store/apps/details?id=com.larryhsiao.metis_app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Playで入手' width="150" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a href="https://apps.apple.com/jp/app/metis-journal/id6449760097?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=125x41&amp;releaseDate=1708905600" alt="Download on the App Store" style="width: 130px; height: 41.5px;"></a>
 
 時間が経つにつれて、生活の中の小さな冒険が整理しにくいアルバムになってしまうことはありませんか？日記はただのテキストで共感しにくいと感じますか？
 

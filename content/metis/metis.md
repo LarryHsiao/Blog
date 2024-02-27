@@ -9,6 +9,7 @@ template = "about.html"
 </figure>
 
 <a href='https://play.google.com/store/apps/details?id=com.larryhsiao.metis_app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="150" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a href="https://apps.apple.com/tw/app/metis-journal/id6449760097?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=125x41&amp;releaseDate=1708905600" alt="Download on the App Store" style="width: 130px; height: 41.5px;"></a>
 
 希望每一段生活中的小冒險不會因為時間久了就是一本難以整理的相簿嗎? 日記只是一段文字難以有共鳴嗎?  
 
