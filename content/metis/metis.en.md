@@ -19,7 +19,7 @@ It is a diary, where you can record your current state of mind with words; it is
 
 Main Features:
 
-- Cloud Storage: All data in Metis is stored in the cloud, ensuring your records are safe and easily accessible. This feature allows seamless access to your records on any device, be it a smartphone, tablet, or computer.
+- Cloud Storage: All data in Metis is stored in the cloud, ensuring your records are safe and easily accessible. This feature allows you to keep your diary cross phone.
 
 - Cross-Platform Compatibility: Metis supports multi-platform use, perfectly fitting any operating system you use. This means you can use Metis anytime, anywhere, enjoying ultimate convenience.
 
