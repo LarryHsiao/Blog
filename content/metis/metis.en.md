@@ -28,6 +28,7 @@ Main Features:
     - Map Tracking: This unique feature lets you associate diary entries with geographic locations, creating a visual journey map that makes your records more vivid and storied.
     - Photo Integration: Metis allows you to upload photos directly to your diary entries, enriching your records with not just words, but also precious images, for a more comprehensive and rich experience.
 
+[System status](https://stats.uptimerobot.com/z2CGrWwD0U)
 
 [Contact me by email to delete your account](mailto:larryhsiao@larryhsiao.com)
 

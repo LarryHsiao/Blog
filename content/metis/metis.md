@@ -29,6 +29,7 @@ Metis來幫助你整理你的冒險旅途吧。
 
 - 照片整合：Metis 讓您可以將照片直接上傳到日記條目中，使得您的記錄不僅限於文字，還包括了珍貴的圖像，從而更加豐富和全面。
 
+[系統狀態](https://stats.uptimerobot.com/z2CGrWwD0U)
 
 [透過email聯繫我刪除你的帳號](mailto:larryhsiao@larryhsiao.com)
 
