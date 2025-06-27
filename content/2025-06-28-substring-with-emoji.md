@@ -9,7 +9,6 @@ tags=["Flutter", "Emoji"]
 假設你有一串字串
 
 ```dart
-
 String text = "Hello 👋🌍";
 ```
 
