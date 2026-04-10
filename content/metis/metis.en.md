@@ -2,40 +2,55 @@
 title = "Metis"
 path = "metis/en"
 template = "about.html"
+description = "Put memories back on the map: journal, photos, and places woven together."
 +++
+
+<div class="metis-page">
 
 <figure>
 <img src="/metis.png" width="128" alt="Metis app icon"/>
 </figure>
 
-<a href='https://play.google.com/store/apps/details?id=com.larryhsiao.metis_app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="150" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
-<a href="https://apps.apple.com/us/app/metis-journal/id6449760097?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=125x41&amp;releaseDate=1708905600" alt="Download on the App Store" style="width: 130px; height: 41.5px;"></a>
+# Metis
 
-Do you wish that each small adventure in life doesn't become a hard-to-organize album as time goes by? Is a diary just a piece of text that's hard to empathize with?
+**Put your memories back on the map.**
 
-Metis is here to help you organize your adventure journey.
+Every small adventure deserves to be found again. Metis weaves journal entries, photos, and places together — walk somewhere, and the story comes back.
 
-It is a diary, where you can record your current state of mind with words; it is a photo album, capturing your current mood through photos; it is also a map, with every moment of your life leaving traces on this map.
+<div class="store-badges">
+<a href='https://play.google.com/store/apps/details?id=com.larryhsiao.metis_app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a href="https://apps.apple.com/us/app/metis-journal/id6449760097?itsct=apps_box_badge&amp;itscg=30200"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=125x41&amp;releaseDate=1708905600" alt="Download on the App Store"></a>
+</div>
 
-Main Features:
+---
 
-- Cloud Storage: All data in Metis is stored in the cloud, ensuring your records are safe and easily accessible. This feature allows you to keep your diary cross phone.
+## ✨ Features
 
-- Cross-Platform Compatibility: Metis supports multi-platform use, perfectly fitting any operating system you use. This means you can use Metis anytime, anywhere, enjoying ultimate convenience.
+- 📝 **Journal** — Capture moments in words and photos
+- 🗺️ **Map** — Every entry leaves a trace on the map
+- 📷 **Photos** — Images live inside each story
+- ☁️ **Cloud Sync** — Switch phones without losing memories
+- 📱 **Cross-Platform** — iOS & Android
 
-- Feature Highlights:
-    - Diary Entries: Metis offers a simple and intuitive diary recording function, allowing you to easily record every moment of life, including moods, events, and thoughts.
-    - Map Tracking: This unique feature lets you associate diary entries with geographic locations, creating a visual journey map that makes your records more vivid and storied.
-    - Photo Integration: Metis allows you to upload photos directly to your diary entries, enriching your records with not just words, but also precious images, for a more comprehensive and rich experience.
+---
 
-[System status](https://stats.uptimerobot.com/z2CGrWwD0U)
+## 🔗 Links
 
-[Contact me by email to delete your account](mailto:larryhsiao@larryhsiao.com)
+- [System Status](https://stats.uptimerobot.com/z2CGrWwD0U)
+- [Terms of Service](/metis/terms_of_service)
+- [Privacy Policy](/metis/privacy_policy)
+- [Delete Account](mailto:larryhsiao@larryhsiao.com) (via email)
 
-[Track current development projects](https://larryhsiao.com:9081/issues/METIS?q=%23Unresolved)
+</div>
 
-[Terms of Service](https://larryhsiao.com/metis/terms_of_service)
-
-[Privacy Policy](https://larryhsiao.com/metis/privacy_policy)
-
-
+<style>
+.metis-page { text-align: center; max-width: 36rem; margin: 0 auto; }
+.metis-page figure { margin: 0 0 1rem; }
+.metis-page figure img { border-radius: 24px; }
+.metis-page h1 { margin-top: 0.5rem; }
+.metis-page h2 { text-align: left; }
+.metis-page ul { text-align: left; list-style: none; padding-left: 0; }
+.metis-page ul li { margin: 0.5rem 0; }
+.store-badges { display: flex; justify-content: center; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin: 1.5rem 0; }
+.store-badges a { display: inline-flex; align-items: center; height: 44px; } .store-badges a img { height: 44px; width: auto; } .store-badges a:first-child { margin: -10px 0; overflow: hidden; height: 44px; } .store-badges a:first-child img { height: 64px; margin: -10px 0; }
+</style>
