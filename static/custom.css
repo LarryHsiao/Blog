@@ -1,0 +1,252 @@
+/* ── Custom overrides for 賴瑞Blog ── */
+
+/* ── Nav polish ── */
+body nav:first-of-type {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background: rgba(13, 17, 23, 0.85);
+  border-bottom: 1px solid var(--border);
+}
+
+body nav:first-of-type a {
+  transition: color 0.2s ease;
+}
+
+body nav:first-of-type a:hover {
+  color: var(--text-bright);
+  text-decoration: none;
+}
+
+/* ── Body spacing for fixed nav ── */
+body {
+  padding-top: 3.5rem;
+}
+
+/* ── Article cards on index / taxonomy (skip footer sections) ── */
+body > section {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+  margin: 1.25rem 0;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+body > section:hover {
+  border-color: var(--border-bright);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+body > section h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.5rem;
+}
+
+body > section h2 a {
+  color: var(--text-bright);
+}
+
+body > section > span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+body > section > div {
+  color: var(--text-main);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+/* "Continue reading" link */
+body > section > a:last-child {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--links);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+body > section > a:last-child:hover {
+  color: var(--text-bright);
+  text-decoration: none;
+}
+
+/* ── Tag pills ── */
+body > section p a[href*="/tags/"],
+.tags a {
+  display: inline-block;
+  background: rgba(227, 188, 94, 0.12);
+  color: var(--links);
+  border: 1px solid rgba(227, 188, 94, 0.25);
+  border-radius: 1rem;
+  padding: 0.15rem 0.65rem;
+  margin: 0.15rem 0.2rem;
+  font-size: 0.8rem;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+  text-decoration: none;
+}
+
+body > section p a[href*="/tags/"]:hover,
+.tags a:hover {
+  background: rgba(227, 188, 94, 0.22);
+  border-color: var(--links);
+  text-decoration: none;
+}
+
+/* ── Pagination ── */
+nav.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 0;
+  position: static;
+  background: none;
+  width: auto;
+  border: none;
+}
+
+nav.pagination::before {
+  display: none;
+}
+
+nav.pagination a {
+  display: inline-block;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  color: var(--links);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+nav.pagination a:hover {
+  border-color: var(--links);
+  background: rgba(227, 188, 94, 0.08);
+  text-decoration: none;
+}
+
+/* ── Blog post page ── */
+.blog-post h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.25;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+
+.blog-post .post-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.blog-post img {
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.blog-post blockquote {
+  background: rgba(56, 139, 253, 0.06);
+  border-radius: 0 6px 6px 0;
+  padding: 0.75rem 1.25rem;
+}
+
+.blog-post pre {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+/* ── Footer — reset section card styles ── */
+footer section {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+footer section:hover {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+body > footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1.5rem 0;
+  color: var(--text-muted);
+}
+
+body > footer a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+body > footer a:hover {
+  color: var(--links);
+}
+
+/* ── Taxonomy list page ── */
+body > section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+body > section ul li {
+  margin: 0.4rem 0;
+}
+
+body > section ul li a {
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+/* ── Smooth scroll ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: rgba(227, 188, 94, 0.3);
+  color: var(--text-bright);
+}
+
+/* ── Responsive tweaks ── */
+@media (max-width: 640px) {
+  body {
+    padding-top: 3rem;
+    margin-top: 0;
+  }
+
+  body > section {
+    padding: 1.1rem 1.25rem;
+    margin: 0.75rem 0;
+  }
+
+  body > section h2 {
+    font-size: 1.3rem;
+  }
+
+  .blog-post h1 {
+    font-size: 1.75rem;
+  }
+
+  nav.pagination {
+    gap: 0.75rem;
+  }
+}
