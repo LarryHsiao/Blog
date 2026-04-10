@@ -5,14 +5,19 @@ template = "about.html"
 +++
 
 <figure>
-<img src="https://www.gravatar.com/avatar/866967586e7dcc81d667689948de277c?s=150" alt="Tiger" />
+<img src="https://www.gravatar.com/avatar/866967586e7dcc81d667689948de277c?s=150" alt="Larry Hsiao" />
 </figure>
 
-My name is 蕭富云. A software developer in mobile apps.
+📱 Mobile App Developer | Android & Flutter | Health Tech
 
-I believe we can make the world a little bit better with software developing.
+I believe the best technology stands quietly behind the scenes, holding people's lives together.
 
+I specialize in Android and cross-platform Flutter development, working deep in health tech — telemedicine and Bluetooth medical device integration. Projects span North America, Japan, and Taiwan, with a focus on stability, localization, and whether people can actually use what we build.
+
+Code isn't output. It's a mission I chose.
+
+Off the clock, I chase focus on the track 🏎️ (amateur rally driver), hand my emotions to melody 🎸 (guitarist), and leave freedom in the snow 🏂 (snowboarding).
 
 - [larryhsiao@larryhsiao.com](mailto:larryhsiao@larryhsiao.com)
-- [LinkedIn](https://www.linkedin.com/in/larryhsiao/) 
+- [LinkedIn](https://www.linkedin.com/in/larryhsiao/)
 - [GitHub](https://github.com/larryhsiao)
