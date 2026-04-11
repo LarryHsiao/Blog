@@ -11,9 +11,9 @@ description = "Put memories back on the map: journal, photos, and places woven t
 <img src="/metis.png" width="128" alt="Metis app icon"/>
 </figure>
 
-**Put your memories back on the map.**
+**Every journey deserves to be remembered.**
 
-Every small adventure deserves to be found again. Metis weaves journal entries, photos, and places together — walk somewhere, and the story comes back.
+Some places fade after a single visit, but some moments wait quietly for you to return. Metis lets you journal and capture photos in the moment — walk back to the same place, and the story comes back naturally.
 
 <div class="store-badges">
 <a href='https://play.google.com/store/apps/details?id=com.larryhsiao.metis_app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
