@@ -11,8 +11,6 @@ description = "Put memories back on the map: journal, photos, and places woven t
 <img src="/metis.png" width="128" alt="Metis app icon"/>
 </figure>
 
-# Metis
-
 **Put your memories back on the map.**
 
 Every small adventure deserves to be found again. Metis weaves journal entries, photos, and places together — walk somewhere, and the story comes back.
