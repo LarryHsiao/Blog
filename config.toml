@@ -15,8 +15,7 @@ default_language = "zh"
 
 minify_html = true
 
-gnerate_feed = true
-feed_filename = "feed.xml"
+generate_feeds = false
 feed_limit = 5
 
 taxonomies = [
