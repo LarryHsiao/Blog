@@ -25,10 +25,12 @@ taxonomies = [
 [languages.en]
 build_search_index = true
 title = "LH Blog"
+taxonomies = [{name = "tags", rss = true}]
 
 [languages.jp]
 build_search_index = true
 title = "LH Blog"
+taxonomies = [{name = "tags", rss = true}]
 
 [markdown]
 # Whether to do syntax highlighting
