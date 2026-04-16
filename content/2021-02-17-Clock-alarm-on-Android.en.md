@@ -71,37 +71,67 @@ Register the receiver in the manifest. From Android 12 onward `android:exported`
     android:exported="true" />
 ```
 
-### Launching an activity from the background
+### Showing the alarm screen over the lock screen
 
-Starting from Android 10, apps cannot start activities freely from the background. A clock alarm needs the screen to appear even when the phone is locked, so we need the `SYSTEM_ALERT_WINDOW` permission.
+Starting from Android 10, apps cannot start activities freely from the background. Simply calling `startActivity()` from `AlarmReceiver` will be silently ignored on a locked device. The correct approach is to post a high-priority notification with a full-screen intent, and let the system decide whether to show it as a heads-up notification or launch the activity directly (e.g. when the screen is off).
 
-Check whether it is granted before trying to start the activity:
-
-```kotlin
-fun hasOverlayPermission(context: Context): Boolean {
-    return Settings.canDrawOverlays(context)
-}
-```
-
-If not granted, redirect the user to the system settings page to allow it:
-
-```kotlin
-fun requestOverlayPermission(activity: Activity) {
-    val intent = Intent(
-        Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-        Uri.parse("package:${activity.packageName}")
-    )
-    activity.startActivity(intent)
-}
-```
-
-Declare the permission in the manifest:
+First, declare the permission in the manifest:
 
 ```xml
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
 ```
 
-With this permission granted, `AlarmReceiver.onReceive()` can call `startActivity()` and the alarm screen will appear even over the lock screen.
+Then in `AlarmReceiver`, post the notification instead of calling `startActivity()` directly:
+
+```kotlin
+class AlarmReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        val fullScreenIntent = Intent(context, AlarmActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+        }
+        val fullScreenPendingIntent = PendingIntent.getActivity(
+            context,
+            0,
+            fullScreenIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+        val notification = NotificationCompat.Builder(context, ALARM_CHANNEL_ID)
+            .setSmallIcon(R.drawable.ic_alarm)
+            .setContentTitle("Alarm")
+            .setContentText("Time to wake up!")
+            .setPriority(NotificationCompat.PRIORITY_MAX)
+            .setCategory(NotificationCompat.CATEGORY_ALARM)
+            .setFullScreenIntent(fullScreenPendingIntent, true)
+            .setAutoCancel(true)
+            .build()
+
+        NotificationManagerCompat.from(context).notify(ALARM_NOTIFICATION_ID, notification)
+    }
+}
+```
+
+On the `AlarmActivity` side, add these window flags so it appears over the lock screen even when the screen was off:
+
+```kotlin
+class AlarmActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+            setShowWhenLocked(true)
+            setTurnScreenOn(true)
+        } else {
+            @Suppress("DEPRECATION")
+            window.addFlags(
+                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED or
+                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
+            )
+        }
+        setContentView(R.layout.activity_alarm)
+    }
+}
+```
+
+`SYSTEM_ALERT_WINDOW` is sometimes suggested for this use case but it is intended for drawing overlays (like chat bubbles), not launching activities. Google Play also restricts it to specific app categories, so `setFullScreenIntent` is the right tool here.
 
 ### Canceling an alarm without tracking request codes
 
@@ -130,6 +160,6 @@ Using `FLAG_NO_CREATE` ensures we get `null` back (and bail early) if the alarm 
 
 - Use `setExactAndAllowWhileIdle()` so the alarm fires even in Doze mode.
 - On Android 12+, check `canScheduleExactAlarms()` and request `SCHEDULE_EXACT_ALARM` if needed.
-- Receive the alarm in a `BroadcastReceiver` and start the activity with `FLAG_ACTIVITY_NEW_TASK`.
-- Grant `SYSTEM_ALERT_WINDOW` so the activity can launch from the background / lock screen.
+- Receive the alarm in a `BroadcastReceiver` and post a high-priority notification with `setFullScreenIntent()`.
+- Set `FLAG_SHOW_WHEN_LOCKED` and `FLAG_TURN_SCREEN_ON` on the activity to appear over the lock screen.
 - Store the alarm id as the `Intent` action to make cancellation straightforward without extra bookkeeping.
