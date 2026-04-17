@@ -15,7 +15,7 @@ body nav:first-of-type::before {
 
 /* ── About header (index only) ── */
 .about-header {
-  margin: 1.5rem 0 0.5rem;
+  margin: -2rem 0 0.5rem;
 }
 
 .about-header-link {
@@ -24,7 +24,7 @@ body nav:first-of-type::before {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  padding: 1.5rem 1.25rem 1rem;
+  padding: 0 1.25rem 1rem;
 }
 
 .about-header-link:hover {
