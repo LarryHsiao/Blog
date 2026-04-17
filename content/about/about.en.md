@@ -4,10 +4,6 @@ path = "about/en"
 template = "about.html"
 +++
 
-<figure>
-<img src="https://www.gravatar.com/avatar/866967586e7dcc81d667689948de277c?s=150" alt="Larry Hsiao" />
-</figure>
-
 📱 Mobile App Developer | Android & Flutter | Health Tech
 
 I believe the best technology stands quietly behind the scenes, holding people's lives together.

@@ -1,40 +1,6 @@
 {% import "macros/page.html" as macros %} {% extends "base.html" %} {% block
-content %} {% if lang == "en" %} {% set about_url = config.extra.about_url_en |
-replace(from="$BASE_URL", to=config.base_url) %} {% set author =
-config.extra.author_en %} {% set tagline = config.extra.tagline_en %} {% set
-menus = config.extra.menus_en %} {% elif lang == "jp" %} {% set about_url =
-config.extra.about_url_jp | replace(from="$BASE_URL", to=config.base_url) %} {%
-set author = config.extra.author %} {% set tagline = config.extra.tagline_jp %}
-{% set menus = config.extra.menus_jp %} {% else %} {% set about_url =
-config.extra.about_url | replace(from="$BASE_URL", to=config.base_url) %} {% set
-author = config.extra.author %} {% set tagline = config.extra.tagline %} {% set
-menus = config.extra.menus %} {% endif %}
-
-<div class="about-header">
-  <a href="{{ about_url }}" class="about-header-link">
-    <img
-      src="{{ config.extra.avatar_url }}"
-      alt="avatar"
-      class="about-header-avatar"
-    />
-    <div class="about-header-text">
-      <span class="about-header-author">{{ author }}</span>
-      <span class="about-header-tagline">{{ tagline }}</span>
-    </div>
-  </a>
-</div>
-
-<nav class="about-header-nav">
-  <a href="{{ config.base_url }}">{{ config.title }}</a>
-  {% for menu in menus %} {% set link_url = menu.url | replace(from="$BASE_URL",
-  to=config.base_url) %}
-  <a href="{{ link_url }}">{{ menu.name }}</a>
-  {% endfor %}
-</nav>
-
-{% for page in paginator.pages %} {{ macros::page_item(page=page) }} {% endfor
-%}
-
+content %} {% for page in paginator.pages %} {{ macros::page_item(page=page) }}
+{% endfor %}
 <nav class="pagination">
   {% if paginator.previous %}
   <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>

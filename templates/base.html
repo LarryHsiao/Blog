@@ -24,7 +24,40 @@
     gtag("config", "G-4K365JL529");
   </script>
   <body>
-    {% block content %}{% endblock content %}
+    {% block profile_header %}
+    <div class="about-header">
+      {% if lang == "en" %} {% set about_url = config.extra.about_url_en |
+      replace(from="$BASE_URL", to=config.base_url) %} {% set author =
+      config.extra.author_en %} {% set tagline = config.extra.tagline_en %} {%
+      elif lang == "jp" %} {% set about_url = config.extra.about_url_jp |
+      replace(from="$BASE_URL", to=config.base_url) %} {% set author =
+      config.extra.author %} {% set tagline = config.extra.tagline_jp %} {% else
+      %} {% set about_url = config.extra.about_url | replace(from="$BASE_URL",
+      to=config.base_url) %} {% set author = config.extra.author %} {% set
+      tagline = config.extra.tagline %} {% endif %}
+      <a href="{{ about_url }}" class="about-header-link">
+        <img
+          src="{{ config.extra.avatar_url }}"
+          alt="avatar"
+          class="about-header-avatar"
+        />
+        <div class="about-header-text">
+          <span class="about-header-author">{{ author }}</span>
+          <span class="about-header-tagline">{{ tagline }}</span>
+        </div>
+      </a>
+    </div>
+    {% if lang == "en" %} {% set menus = config.extra.menus_en %} {% elif lang
+    == "jp" %} {% set menus = config.extra.menus_jp %} {% else %} {% set menus =
+    config.extra.menus %} {% endif %}
+    <nav class="about-header-nav">
+      <a href="{{ config.base_url }}">{{ config.title }}</a>
+      {% for menu in menus %} {% set link_url = menu.url |
+      replace(from="$BASE_URL", to=config.base_url) %}
+      <a href="{{ link_url }}">{{ menu.name }}</a>
+      {% endfor %}
+    </nav>
+    {% endblock profile_header %} {% block content %}{% endblock content %}
     <footer>
       <section>
         {% if lang == "en" %} {% set author = config.extra.author_en %} {% else

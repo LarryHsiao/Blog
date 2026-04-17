@@ -4,10 +4,6 @@ path = "about"
 template = "about.html"
 +++
 
-<figure>
-<img src="https://www.gravatar.com/avatar/866967586e7dcc81d667689948de277c?s=150" alt="蕭富云" />
-</figure>
-
 📱 行動應用開發者｜Android & Flutter｜健康照護科技
 
 我相信，真正好的科技，是安靜地站在背後，撐住人的生活。

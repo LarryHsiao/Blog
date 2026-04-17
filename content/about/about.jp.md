@@ -4,10 +4,6 @@ path = "about/jp"
 template = "about.html"
 +++
 
-<figure>
-<img src="https://www.gravatar.com/avatar/866967586e7dcc81d667689948de277c?s=150" alt="蕭富云" />
-</figure>
-
 📱 モバイルアプリ開発者｜Android & Flutter｜ヘルスケアテック
 
 本当に良いテクノロジーは、静かに人の暮らしを支えるものだと信じています。

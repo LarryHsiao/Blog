@@ -1,3 +1,18 @@
+/* ── Neutralize Bahunya fixed nav on first nav element ── */
+body nav:first-of-type {
+  position: static;
+  background: none;
+  padding: 0;
+  width: auto;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+}
+
+body nav:first-of-type::before {
+  display: none;
+}
+
 /* ── About header (index only) ── */
 .about-header {
   margin: 1.5rem 0 0.5rem;
@@ -51,7 +66,7 @@
 
 /* ── Nav under header ── */
 .about-header-nav {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   gap: 0.5rem;
   flex-wrap: wrap;
