@@ -91,6 +91,26 @@ body nav:first-of-type::before {
   text-decoration: none;
 }
 
+.about-header-nav a[href*="metis"] {
+  padding-left: 0.55rem;
+}
+
+.about-header-nav a.active {
+  border-color: rgba(227, 188, 94, 0.45);
+  color: var(--links);
+}
+
+.about-header-nav a[href*="metis"]::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  background: url("/metis.png") center / contain no-repeat;
+  border-radius: 3px;
+  vertical-align: -3px;
+  margin-right: 0.3rem;
+}
+
 /* ── Article cards ── */
 body > section {
   background: var(--background);

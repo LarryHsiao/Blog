@@ -51,10 +51,19 @@
     == "jp" %} {% set menus = config.extra.menus_jp %} {% else %} {% set menus =
     config.extra.menus %} {% endif %}
     <nav class="about-header-nav">
-      <a href="{{ config.base_url }}">{{ config.title }}</a>
+      {% set base_slash = config.base_url ~ "/" %} {% set home_active =
+      current_url == base_slash %}
+      <a
+        href="{{ config.base_url }}"
+        class="{% if home_active %}active{% endif %}"
+        >Blog</a
+      >
       {% for menu in menus %} {% set link_url = menu.url |
-      replace(from="$BASE_URL", to=config.base_url) %}
-      <a href="{{ link_url }}">{{ menu.name }}</a>
+      replace(from="$BASE_URL", to=config.base_url) %} {% set is_active =
+      current_url and current_url == link_url %}
+      <a href="{{ link_url }}" class="{% if is_active %}active{% endif %}"
+        >{{ menu.name }}</a
+      >
       {% endfor %}
     </nav>
     {% endblock profile_header %} {% block content %}{% endblock content %}
