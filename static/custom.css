@@ -1,28 +1,82 @@
-/* ── Custom overrides for 賴瑞Blog ── */
-
-/* ── Nav polish ── */
-body nav:first-of-type {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background: rgba(13, 17, 23, 0.85);
-  border-bottom: 1px solid var(--border);
+/* ── About header (index only) ── */
+.about-header {
+  margin: 1.5rem 0 0.5rem;
 }
 
-body nav:first-of-type a {
-  transition: color 0.2s ease;
+.about-header-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  padding: 1.5rem 1.25rem 1rem;
 }
 
-body nav:first-of-type a:hover {
-  color: var(--text-bright);
+.about-header-link:hover {
   text-decoration: none;
 }
 
-/* ── Body spacing for fixed nav ── */
-body {
-  padding-top: 3.5rem;
+.about-header-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--border-bright);
+  object-fit: cover;
+  transition: border-color 0.3s ease;
 }
 
-/* ── Article cards on index / taxonomy (skip footer sections) ── */
+.about-header-link:hover .about-header-avatar {
+  border-color: var(--links);
+}
+
+.about-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.about-header-author {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  text-align: center;
+}
+
+.about-header-tagline {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ── Nav under header ── */
+.about-header-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.about-header-nav a {
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.about-header-nav a:hover {
+  border-color: var(--links);
+  color: var(--links);
+  text-decoration: none;
+}
+
+/* ── Article cards ── */
 body > section {
   background: var(--background);
   border: 1px solid var(--border);
@@ -62,7 +116,6 @@ body > section > div {
   margin-bottom: 0.75rem;
 }
 
-/* "Continue reading" link */
 body > section > a:last-child {
   display: inline-block;
   font-size: 0.9rem;
@@ -168,7 +221,7 @@ nav.pagination a:hover {
   border: 1px solid var(--border);
 }
 
-/* ── Footer — reset section card styles ── */
+/* ── Footer ── */
 footer section {
   background: none;
   border: none;
@@ -198,21 +251,6 @@ body > footer a {
 
 body > footer a:hover {
   color: var(--links);
-}
-
-/* ── Taxonomy list page ── */
-body > section ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-body > section ul li {
-  margin: 0.4rem 0;
-}
-
-body > section ul li a {
-  font-size: 1.05rem;
-  transition: color 0.2s ease;
 }
 
 /* ── About page ── */
@@ -283,6 +321,21 @@ body > section ul li a {
   text-decoration: none;
 }
 
+/* ── Taxonomy list page ── */
+body > section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+body > section ul li {
+  margin: 0.4rem 0;
+}
+
+body > section ul li a {
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
 /* ── Smooth scroll ── */
 html {
   scroll-behavior: smooth;
@@ -298,7 +351,6 @@ html {
 @media (max-width: 640px) {
   body {
     padding-top: 3rem;
-    margin-top: 0;
   }
 
   body > section {
@@ -325,5 +377,10 @@ html {
   .about-page ul {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-header-avatar {
+    width: 44px;
+    height: 44px;
   }
 }

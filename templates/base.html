@@ -1,64 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{% if lang %}{{ lang }}{% else %}en{% endif %}">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/bahunya.min.css">
-  <link rel="stylesheet" href="/custom.css">
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <title>{% block title %} {{config.title}} {% endblock title %}</title>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4K365JL529"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4K365JL529');
-</script>
-<body>
-<nav>
-  {% block nav %}
-
-  <ul>
-    {% if lang == "en" %} 
-      {% set menus = config.extra.menus_en %}
-    {% elif lang == "jp" %}
-      {% set menus = config.extra.menus_jp %}
-    {% else %}
-      {% set menus = config.extra.menus %}
-    {% endif %}
-    <li>
-      <a href="{{ config.base_url }}">{{ config.title }}</a>
-    </li>
-    {% for menu in menus %}
-    {% set link_url = menu.url | replace(from="$BASE_URL", to=config.base_url)
-    %}
-    <li>
-      <a {% if current_url and current_url== link_url %} {% endif %}
-         href="{{ link_url }}">{{menu.name}}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endblock nav %}
-</nav>
-{% block content %}
-{% endblock content %}
-<footer>
-  <section>
-    © {{ config.title }} {{ now() | date(format="%Y") }}<br>
-    Powered by <a target="_blank" href="https://getzola.org/">Zola</a>.<br>
-    css with <a target="_blank" href="https://hakanalpay.com/bahunya/index.html">Bahunya</a>
-  </section>
-  <section>
-    {% block footer %}
-    {% endblock footer %}
-  </section>
-</footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bahunya.min.css" />
+    <link rel="stylesheet" href="/custom.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <title>{% block title %} {{config.title}} {% endblock title %}</title>
+  </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-4K365JL529"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-4K365JL529");
+  </script>
+  <body>
+    {% block content %}{% endblock content %}
+    <footer>
+      <section>
+        {% if lang == "en" %} {% set author = config.extra.author_en %} {% else
+        %} {% set author = config.extra.author %} {% endif %} © {{ author }} {{
+        now() | date(format="%Y") }}<br />
+        Powered by <a target="_blank" href="https://getzola.org/">Zola</a> ·
+        <a target="_blank" href="https://hakanalpay.com/bahunya/index.html"
+          >Bahunya</a
+        >
+      </section>
+      <section>{% block footer %}{% endblock footer %}</section>
+    </footer>
+  </body>
 </html>
