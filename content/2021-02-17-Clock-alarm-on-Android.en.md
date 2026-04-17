@@ -1,9 +1,11 @@
 +++
 date = 2021-02-17
 title = "Clock Alarm application on Android"
+slug = "clock-alarm-application-on-android"
 category = "Android"
-draft = true
 +++
+
+> **Note:** This article was completed by AI (Claude Opus 4.7) from my initial notes and thoughts.
 
 Implementing a clock alarm app on Android these days involves quite a few pain points. Battery optimizations, background restrictions, and permission requirements have all grown stricter over the years. This post walks through how I built one and the tricks needed to make the alarm fire reliably and show up on screen.
 
