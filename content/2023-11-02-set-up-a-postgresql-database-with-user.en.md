@@ -6,7 +6,7 @@ slug = "setup-postgresql-quick-note"
 tags=["postgresql"]
 +++
 
-> **Note:** This article was completed by AI (Claude Opus 4.7) from my initial notes and thoughts.
+> **Note:** This article was completed by AI (Claude Sonnet 4.6) from my initial notes and thoughts.
 
 Quick notes on getting PostgreSQL running on a fresh machine — install, create a database, a user, and open up remote connections.
 

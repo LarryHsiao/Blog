@@ -6,7 +6,7 @@ slug = "first-publish-of-metis-failure"
 tags=["Metis","Google Play"]
 +++
 
-> **Note:** This article was completed by AI (Claude Opus 4.7) from my initial notes and thoughts.
+> **Note:** This article was completed by AI (Claude Sonnet 4.6) from my initial notes and thoughts.
 
 Metis got rejected on the very first Play Store submission.
 

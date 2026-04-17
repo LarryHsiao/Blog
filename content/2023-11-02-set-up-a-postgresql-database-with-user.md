@@ -6,7 +6,7 @@ slug = "setup-postgresql-quick-note"
 tags=["postgresql"]
 +++
 
-> **說明：** 本文由 AI（Claude Opus 4.7）根據我的初始筆記與想法完成。
+> **說明：** 本文由 AI（Claude Sonnet 4.6）根據我的初始筆記與想法完成。
 
 一些快速筆記，記錄怎麼在新機器上把 PostgreSQL 設定起來，建立資料庫、使用者，並開放連線。
 
