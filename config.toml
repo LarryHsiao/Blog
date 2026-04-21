@@ -57,16 +57,19 @@ about_url_jp = "$BASE_URL/jp/about/"
 
 menus = [
     { url = "$BASE_URL/tags/", name = "標籤" },
-    { url = "$BASE_URL/metis/", name = "Metis"}
+    { url = "$BASE_URL/metis/", name = "Metis"},
+    { url = "$BASE_URL/iris/", name = "Iris"}
 ]
 
 menus_en = [
     { url = "$BASE_URL/en/tags/", name = "Tags" },
-    { url = "$BASE_URL/en/metis/", name = "Metis"}
+    { url = "$BASE_URL/en/metis/", name = "Metis"},
+    { url = "$BASE_URL/en/iris/", name = "Iris"}
 ]
 
 menus_jp = [
     { url = "$BASE_URL/jp/tags/", name = "Tags" },
-    { url = "$BASE_URL/jp/metis/", name = "Metis"}
+    { url = "$BASE_URL/jp/metis/", name = "Metis"},
+    { url = "$BASE_URL/jp/iris/", name = "Iris"}
 ]
 
