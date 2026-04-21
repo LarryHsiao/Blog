@@ -52,8 +52,8 @@ tagline = "行動應用開發者 · Android & Flutter"
 tagline_en = "Mobile App Developer · Android & Flutter"
 tagline_jp = "モバイルアプリ開発者 · Android & Flutter"
 about_url = "$BASE_URL/about/"
-about_url_en = "$BASE_URL/about/en"
-about_url_jp = "$BASE_URL/about/jp"
+about_url_en = "$BASE_URL/en/about/"
+about_url_jp = "$BASE_URL/jp/about/"
 
 menus = [
     { url = "$BASE_URL/tags/", name = "標籤" },
