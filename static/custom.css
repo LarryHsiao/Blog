@@ -371,6 +371,91 @@ body > section ul li a {
   transition: color 0.2s ease;
 }
 
+/* ── Language switcher ── */
+.lang-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-switcher > summary {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.lang-switcher > summary::-webkit-details-marker {
+  display: none;
+}
+
+.lang-switcher > summary:hover {
+  border-color: var(--links);
+  color: var(--links);
+  text-decoration: none;
+}
+
+.lang-arrow {
+  font-size: 0.7rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.lang-switcher[open] > summary .lang-arrow {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  z-index: 200;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 7.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.about-header-nav .lang-menu a {
+  display: block;
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-align: left;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.about-header-nav .lang-menu a:hover {
+  background: rgba(227, 188, 94, 0.08);
+  color: var(--links);
+  text-decoration: none;
+  border-color: transparent;
+}
+
+.about-header-nav .lang-menu a.active {
+  color: var(--links);
+  background: rgba(227, 188, 94, 0.12);
+  border-color: transparent;
+}
+
 /* ── Smooth scroll ── */
 html {
   scroll-behavior: smooth;
