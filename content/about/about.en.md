@@ -1,5 +1,6 @@
 +++
 title = "Larry Hsiao"
+path = "en/about"
 template = "about.html"
 +++
 

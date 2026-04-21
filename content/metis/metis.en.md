@@ -1,5 +1,6 @@
 +++
 title = "Metis"
+path = "en/metis"
 template = "about.html"
 description = "Put memories back on the map: journal, photos, and places woven together."
 +++
