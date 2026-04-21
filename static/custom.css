@@ -91,7 +91,8 @@ body nav:first-of-type::before {
   text-decoration: none;
 }
 
-.about-header-nav a[href*="metis"] {
+.about-header-nav a[href*="metis"],
+.about-header-nav a[href*="iris"] {
   padding-left: 0.55rem;
 }
 
@@ -100,7 +101,8 @@ body nav:first-of-type::before {
   color: var(--links);
 }
 
-.about-header-nav a[href*="metis"]::before {
+.about-header-nav a[href*="metis"]::before,
+.about-header-nav a[href*="iris"]::before {
   content: "";
   display: inline-flex;
   width: 16px;
@@ -109,6 +111,10 @@ body nav:first-of-type::before {
   border-radius: 3px;
   vertical-align: -3px;
   margin-right: 0.3rem;
+}
+
+.about-header-nav a[href*="iris"]::before {
+  background-image: url("/iris-icon.svg");
 }
 
 /* ── Article cards ── */
