@@ -1,6 +1,5 @@
 +++
 title = "Larry Hsiao"
-path = "about/en"
 template = "about.html"
 +++
 

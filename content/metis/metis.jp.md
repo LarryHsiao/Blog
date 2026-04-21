@@ -1,6 +1,5 @@
 +++
 title = "Metis"
-path = "metis/jp"
 template = "about.html"
 description = "思い出を地図に戻す：日記・写真・場所をひとつに。"
 +++

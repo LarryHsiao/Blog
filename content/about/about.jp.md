@@ -1,6 +1,5 @@
 +++
 title = "蕭富云"
-path = "about/jp"
 template = "about.html"
 +++
 
