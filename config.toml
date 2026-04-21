@@ -61,12 +61,12 @@ menus = [
 ]
 
 menus_en = [
-    { url = "$BASE_URL/tags/", name = "Tags" },
-    { url = "$BASE_URL/metis/en", name = "Metis"}
+    { url = "$BASE_URL/en/tags/", name = "Tags" },
+    { url = "$BASE_URL/en/metis/", name = "Metis"}
 ]
 
 menus_jp = [
-    { url = "$BASE_URL/tags/", name = "Tags" },
-    { url = "$BASE_URL/metis/jp", name = "Metis"}
+    { url = "$BASE_URL/jp/tags/", name = "Tags" },
+    { url = "$BASE_URL/jp/metis/", name = "Metis"}
 ]
 

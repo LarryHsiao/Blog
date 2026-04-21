@@ -85,10 +85,10 @@
     == "jp" %} {% set menus = config.extra.menus_jp %} {% else %} {% set menus =
     config.extra.menus %} {% endif %}
     <nav class="about-header-nav">
-      {% set base_slash = config.base_url ~ "/" %} {% set home_active =
-      current_url == base_slash %}
+      {% if lang == "en" %}{% set home_url = config.base_url ~ "/en/" %}{% elif lang == "jp" %}{% set home_url = config.base_url ~ "/jp/" %}{% else %}{% set home_url = config.base_url ~ "/" %}{% endif %}
+      {% set home_active = current_url == home_url %}
       <a
-        href="{{ config.base_url }}"
+        href="{{ home_url }}"
         class="{% if home_active %}active{% endif %}"
         >Blog</a
       >
