@@ -1,5 +1,6 @@
 +++
 title = "Iris"
+path = "en/iris"
 template = "about.html"
 description = "A lightweight always-on-top HUD for macOS — synced lyrics, album art, and system vitals in one glance."
 +++

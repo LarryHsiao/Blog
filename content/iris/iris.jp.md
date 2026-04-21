@@ -1,5 +1,6 @@
 +++
 title = "Iris"
+path = "jp/iris"
 template = "about.html"
 description = "macOS 用の軽量 HUD：同期歌詞・アルバムアート・システム状態を一画面で。"
 +++
