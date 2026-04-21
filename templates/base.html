@@ -10,6 +10,30 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     <title>{% block title %} {{config.title}} {% endblock title %}</title>
+    <script>
+      (function () {
+        var p = window.location.pathname;
+        if (p !== "/" && p !== "/en/" && p !== "/jp/") return;
+        if (sessionStorage.getItem("lang-redirected")) return;
+        sessionStorage.setItem("lang-redirected", "1");
+        var saved = localStorage.getItem("preferred-lang");
+        var currentLang = document.documentElement.lang || "zh";
+        var target = saved;
+        if (!target) {
+          var bl = (navigator.language || "zh").toLowerCase();
+          target = bl.startsWith("en")
+            ? "en"
+            : bl.startsWith("ja") || bl.startsWith("jp")
+            ? "jp"
+            : "zh";
+          localStorage.setItem("preferred-lang", target);
+        }
+        if (target === currentLang) return;
+        window.location.replace(
+          target === "en" ? "/en/" : target === "jp" ? "/jp/" : "/"
+        );
+      })();
+    </script>
   </head>
   <script
     async
@@ -25,6 +49,16 @@
   </script>
   <body>
     {% block profile_header %}
+    {% if current_url %}
+      {% set _base = config.base_url %}
+      {% set _zh_url = current_url | replace(from=_base ~ "/en", to=_base) | replace(from=_base ~ "/jp", to=_base) %}
+      {% set _en_url = _zh_url | replace(from=_base ~ "/", to=_base ~ "/en/") %}
+      {% set _jp_url = _zh_url | replace(from=_base ~ "/", to=_base ~ "/jp/") %}
+    {% else %}
+      {% set _zh_url = config.base_url ~ "/" %}
+      {% set _en_url = config.base_url ~ "/en/" %}
+      {% set _jp_url = config.base_url ~ "/jp/" %}
+    {% endif %}
     <div class="about-header">
       {% if lang == "en" %} {% set about_url = config.extra.about_url_en |
       replace(from="$BASE_URL", to=config.base_url) %} {% set author =
@@ -65,6 +99,14 @@
         >{{ menu.name }}</a
       >
       {% endfor %}
+      <details class="lang-switcher">
+        <summary class="lang-current">{% if lang == "en" %}EN{% elif lang == "jp" %}JP{% else %}中{% endif %}<span class="lang-arrow">▾</span></summary>
+        <div class="lang-menu">
+          <a href="{{ _zh_url }}" class="{% if lang != 'en' and lang != 'jp' %}active{% endif %}" onclick="localStorage.setItem('preferred-lang','zh')">中文</a>
+          <a href="{{ _en_url }}" class="{% if lang == 'en' %}active{% endif %}" onclick="localStorage.setItem('preferred-lang','en')">English</a>
+          <a href="{{ _jp_url }}" class="{% if lang == 'jp' %}active{% endif %}" onclick="localStorage.setItem('preferred-lang','jp')">日本語</a>
+        </div>
+      </details>
     </nav>
     {% endblock profile_header %} {% block content %}{% endblock content %}
     <footer>
@@ -79,5 +121,11 @@
       </section>
       <section>{% block footer %}{% endblock footer %}</section>
     </footer>
+    <script>
+      document.addEventListener("click", function (e) {
+        var s = document.querySelector(".lang-switcher");
+        if (s && !s.contains(e.target)) s.removeAttribute("open");
+      });
+    </script>
   </body>
 </html>
