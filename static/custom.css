@@ -491,18 +491,6 @@ html.tool-page-mode .tool-top-bar {
   border-bottom: 1px solid var(--border);
   margin: 0 0 1rem;
 }
-.tool-top-blog {
-  flex: 0 0 auto;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-bright);
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-}
-.tool-top-blog:hover {
-  color: var(--links);
-  text-decoration: none;
-}
 .tool-top-pills {
   display: flex;
   align-items: center;
@@ -779,7 +767,167 @@ html.tool-page-mode .drawer-backdrop.open {
   color: #e25555;
 }
 
+/* ── Regex tester ── */
+.regex-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+}
+.regex-left,
+.regex-right {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.regex-text-field {
+  flex: 1;
+}
+.regex-text-field textarea {
+  flex: 1;
+  min-height: 12rem;
+}
+.regex-pattern-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+#regex-pattern {
+  flex: 1;
+  min-width: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.65rem;
+}
+.regex-pattern-row .tool-clear-btn {
+  flex: 0 0 auto;
+  font: inherit;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--text-main);
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+.regex-pattern-row .tool-clear-btn:hover {
+  border-color: var(--links);
+  color: var(--links);
+}
+.regex-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+.regex-flags label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+  cursor: pointer;
+}
+.regex-flags-info {
+  display: inline;
+  margin-left: 0.5rem;
+}
+.regex-flags-info > summary {
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 1rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  transition: color 0.2s ease;
+}
+.regex-flags-info > summary::-webkit-details-marker {
+  display: none;
+}
+.regex-flags-info > summary:hover {
+  color: var(--links);
+}
+.regex-flags-info[open] {
+  display: block;
+  margin: 0.5rem 0 0;
+}
+.regex-flags-info[open] > summary {
+  margin-bottom: 0.4rem;
+}
+.regex-flags-info dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text-main);
+  background: var(--background);
+  border: 1px solid var(--border-muted);
+  border-radius: 6px;
+  padding: 0.6rem 0.85rem;
+}
+.regex-flags-info dt {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--links);
+  font-weight: 600;
+}
+.regex-flags-info dd {
+  margin: 0;
+  color: var(--text-main);
+}
+.regex-flags-info code {
+  color: var(--links);
+}
+.regex-highlighted {
+  background: var(--background);
+  border: 1px solid var(--border-muted);
+  border-radius: 6px;
+  padding: 0.75rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-height: 4rem;
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+.regex-highlighted mark {
+  background: rgba(227, 188, 94, 0.32);
+  color: var(--text-bright);
+  border-radius: 2px;
+  padding: 0 1px;
+}
+.regex-matches {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--text-main);
+}
+.regex-matches > li {
+  margin: 0.35rem 0;
+}
+.regex-matches code {
+  color: var(--links);
+}
+.regex-matches ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.15rem 0 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.regex-meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 @media (max-width: 640px) {
+  .regex-layout {
+    grid-template-columns: 1fr;
+  }
   .tool-grid {
     grid-template-columns: 1fr;
   }

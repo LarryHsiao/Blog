@@ -60,7 +60,6 @@
     lang == "jp" %}{% set _home_url = config.base_url ~ "/jp/" %}{% else %}{%
     set _home_url = config.base_url ~ "/" %}{% endif %}
     <div class="tool-top-bar">
-      <a class="tool-top-blog" href="{{ _home_url }}">Blog</a>
       <div class="tool-top-pills">
         {% block top_bar_pills %}{% endblock top_bar_pills %}
       </div>
