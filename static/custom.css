@@ -462,9 +462,29 @@ body > section ul li a {
   border-color: transparent;
 }
 
+/* ── Tools section: widen the page canvas (overrides bahunya body cap) ── */
+body:has(.tool-page, .tools-index) {
+  max-width: 72rem;
+}
+
+/* ── Per-tool page: strip the global chrome for a focused canvas ── */
+/* !important needed: .about-header-nav above carries `display: flex !important` */
+body:has(.tool-page) .about-header,
+body:has(.tool-page) .about-header-nav {
+  display: none !important;
+}
+body:has(.tool-page) {
+  margin-top: 1.5rem;
+}
+
+/* ── Tools index: hide the blog nav items too ── */
+body:has(.tools-index) .about-header-nav {
+  display: none !important;
+}
+
 /* ── Tools index ── */
 .tools-index {
-  max-width: 48rem;
+  max-width: 72rem;
   margin: 1.5rem auto;
 }
 .tools-index h1 {
@@ -481,14 +501,21 @@ body > section ul li a {
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   gap: 0.75rem;
 }
+.tools-list-item {
+  display: flex;
+}
 .tools-list-item a {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 1rem 1.1rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--background);
   text-decoration: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .tools-list-item a:hover {
   border-color: var(--links);
@@ -510,8 +537,50 @@ body > section ul li a {
 
 /* ── Tool page ── */
 .tool-page {
-  max-width: 56rem;
+  max-width: 72rem;
   margin: 1.5rem auto;
+}
+.tool-back {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.tool-back:hover {
+  color: var(--links);
+  text-decoration: none;
+}
+.tool-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+.tool-nav-item {
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  background: var(--background);
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+.tool-nav-item:hover {
+  color: var(--links);
+  border-color: var(--links);
+  text-decoration: none;
+}
+.tool-nav-item.active {
+  color: var(--links);
+  border-color: var(--links);
+  background: rgba(227, 188, 94, 0.12);
 }
 .tool-page h1 {
   margin-bottom: 0.25rem;
@@ -553,7 +622,10 @@ body > section ul li a {
   background: var(--background);
   color: var(--text-main);
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
 }
 .tool-controls button:hover,
 .tool-controls select:hover {
@@ -616,13 +688,23 @@ body > section ul li a {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
-.tool-status[data-kind="ok"] { color: #6cc04a; }
-.tool-status[data-kind="warn"] { color: #e3bc5e; }
-.tool-status[data-kind="err"] { color: #e25555; }
+.tool-status[data-kind="ok"] {
+  color: #6cc04a;
+}
+.tool-status[data-kind="warn"] {
+  color: #e3bc5e;
+}
+.tool-status[data-kind="err"] {
+  color: #e25555;
+}
 
 @media (max-width: 640px) {
-  .tool-grid { grid-template-columns: 1fr; }
-  .tool-field textarea { min-height: 9rem; }
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+  .tool-field textarea {
+    min-height: 9rem;
+  }
 }
 
 /* ── Smooth scroll ── */

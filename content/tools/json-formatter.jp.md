@@ -62,8 +62,10 @@ weight = 10
   document.querySelector('.tool-controls').addEventListener('click', async function (e) {
     const action = e.target.dataset && e.target.dataset.action;
     if (!action) return;
-    if (action === 'format') format(false);
-    if (action === 'minify') format(true);
+    if (action === 'format' || action === 'minify') {
+      if (!input.value.trim() && input.placeholder) input.value = input.placeholder;
+      format(action === 'minify');
+    }
     if (action === 'clear') { input.value = ''; output.value = ''; setStatus(''); }
     if (action === 'copy') {
       if (!output.value) return;

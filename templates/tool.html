@@ -1,9 +1,21 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {% set parent =
+get_section(path=page.ancestors | last) %} {% if page.lang == "en" %} {% set
+blog_url = config.base_url ~ "/en/" %} {% set blog_label = "← Back to blog" %}
+{% elif page.lang == "jp" %} {% set blog_url = config.base_url ~ "/jp/" %} {%
+set blog_label = "← ブログへ戻る" %} {% else %} {% set blog_url =
+config.base_url ~ "/" %} {% set blog_label = "← 返回部落格" %} {% endif %}
 <article class="tool-page">
-  <header class="tool-header">
-    <h1>{{ page.title }}</h1>
-    {% if page.description %}<p class="tool-desc">{{ page.description }}</p>{% endif %}
-  </header>
+  <a class="tool-back" href="{{ blog_url }}">{{ blog_label }}</a>
+  <nav class="tool-nav" aria-label="{{ parent.title }}">
+    {% for sibling in parent.pages %}
+    <a
+      href="{{ sibling.permalink | safe }}"
+      class="tool-nav-item{% if sibling.permalink == page.permalink %} active{% endif %}"
+      >{{ sibling.title }}</a
+    >
+    {% endfor %}
+  </nav>
   <div class="tool-body">{{ page.content | safe }}</div>
 </article>
 {% endblock content %}
+
