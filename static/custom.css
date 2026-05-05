@@ -469,17 +469,102 @@ body:has(.tool-page, .tools-index) {
 
 /* ── Per-tool page: strip the global chrome for a focused canvas ── */
 /* !important needed: .about-header-nav above carries `display: flex !important` */
-body:has(.tool-page) .about-header,
-body:has(.tool-page) .about-header-nav {
+body:has(.tool-page) .about-header {
   display: none !important;
 }
 body:has(.tool-page) {
   margin-top: 1.5rem;
 }
 
-/* ── Tools index: hide the blog nav items too ── */
-body:has(.tools-index) .about-header-nav {
-  display: none !important;
+/* ── Top bar (hidden by default, shown on tool pages) ── */
+.tool-top-bar {
+  display: none;
+}
+.drawer-backdrop {
+  display: none;
+}
+html.tool-page-mode .tool-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  margin: 0 0 1rem;
+}
+.tool-top-blog {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+.tool-top-blog:hover {
+  color: var(--links);
+  text-decoration: none;
+}
+.drawer-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-main);
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+.drawer-toggle:hover {
+  border-color: var(--links);
+  color: var(--links);
+}
+
+/* ── On tool pages, turn .about-header-nav into a slide-in drawer ── */
+/* !important on positional props because `body nav:first-of-type` upstream
+   sets position:static and width:auto with equal-or-higher specificity. */
+html.tool-page-mode .about-header-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  height: 100vh !important;
+  width: 280px !important;
+  max-width: 80vw !important;
+  background: var(--background) !important;
+  border-left: 1px solid var(--border) !important;
+  padding: 3.5rem 1.25rem 1.25rem !important;
+  margin: 0 !important;
+  gap: 0.5rem !important;
+  transform: translateX(100%) !important;
+  transition: transform 0.25s ease !important;
+  z-index: 1000 !important;
+  overflow-y: auto !important;
+  flex-wrap: nowrap !important;
+}
+html.tool-page-mode .about-header-nav.open {
+  transform: translateX(0) !important;
+}
+/* Hide the duplicate "Blog" link (first <a>) inside the drawer */
+html.tool-page-mode .about-header-nav > a:first-of-type {
+  display: none;
+}
+html.tool-page-mode .drawer-backdrop {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 999;
+}
+html.tool-page-mode .drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* ── Tools index ── */
@@ -540,46 +625,35 @@ body:has(.tools-index) .about-header-nav {
   max-width: 72rem;
   margin: 1.5rem auto;
 }
-.tool-back {
-  display: inline-block;
-  margin: 0 0 0.75rem;
-  font-size: 0.85rem;
+/* ── Drawer: section divider + tool list items ── */
+.drawer-divider {
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: var(--text-muted);
-  text-decoration: none;
 }
-.tool-back:hover {
-  color: var(--links);
-  text-decoration: none;
-}
-.tool-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 0 0 1.25rem;
-  padding-bottom: 0.85rem;
-  border-bottom: 1px solid var(--border);
-}
-.tool-nav-item {
-  padding: 0.35rem 0.85rem;
+.drawer-tool-item {
+  padding: 0.3rem 0.85rem;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  font-size: 0.9rem;
+  border-radius: 2rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   text-decoration: none;
-  background: var(--background);
   transition:
     border-color 0.2s ease,
-    color 0.2s ease,
-    background 0.2s ease;
+    color 0.2s ease;
 }
-.tool-nav-item:hover {
+.drawer-tool-item:hover {
   color: var(--links);
   border-color: var(--links);
   text-decoration: none;
 }
-.tool-nav-item.active {
+.drawer-tool-item.active {
   color: var(--links);
-  border-color: var(--links);
+  border-color: rgba(227, 188, 94, 0.45);
   background: rgba(227, 188, 94, 0.12);
 }
 .tool-page h1 {
