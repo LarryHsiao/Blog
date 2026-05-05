@@ -493,12 +493,11 @@ html.tool-page-mode .tool-top-bar {
 }
 .tool-top-pills {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.4rem;
   flex: 1 1 auto;
   min-width: 0;
-  overflow-x: auto;
-  scrollbar-width: thin;
 }
 .tool-top-pill {
   flex: 0 0 auto;
