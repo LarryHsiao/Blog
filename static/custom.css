@@ -721,6 +721,9 @@ html.tool-page-mode .drawer-backdrop.open {
   gap: 0.3rem;
   margin-bottom: 0.75rem;
 }
+.tool-field[hidden] {
+  display: none;
+}
 .tool-field > span {
   font-size: 0.85rem;
   color: var(--text-muted);

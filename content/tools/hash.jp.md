@@ -1,13 +1,24 @@
 +++
 title = "ハッシュ"
-description = "テキストの SHA-1、SHA-256、SHA-384、SHA-512 ハッシュ値（hex）を計算します。"
+description = "テキストの SHA-1、SHA-256、SHA-384、SHA-512 ハッシュ値を計算。HMAC モード（鍵あり）にも対応。"
 template = "tool.html"
 weight = 50
 +++
 
 <div class="tool-controls">
+  <label>モード
+    <select id="hash-mode">
+      <option value="hash" selected>Hash</option>
+      <option value="hmac">HMAC</option>
+    </select>
+  </label>
   <button type="button" data-action="clear">クリア</button>
 </div>
+
+<label class="tool-field" id="hash-key-field" hidden>
+  <span>鍵（HMAC）</span>
+  <textarea id="hash-key" spellcheck="false" placeholder="HMAC 鍵を入力"></textarea>
+</label>
 
 <label class="tool-field">
   <span>入力</span>
@@ -38,6 +49,9 @@ weight = 50
 <script>
 (function () {
   const input = document.getElementById('hash-input');
+  const key = document.getElementById('hash-key');
+  const keyField = document.getElementById('hash-key-field');
+  const mode = document.getElementById('hash-mode');
   const out = {
     'SHA-1': document.getElementById('hash-sha1'),
     'SHA-256': document.getElementById('hash-sha256'),
@@ -45,22 +59,34 @@ weight = 50
     'SHA-512': document.getElementById('hash-sha512'),
   };
   const status = document.getElementById('hash-status');
-  const labels = { ok: '完了', err: 'ハッシュ計算に失敗しました' };
+  const labels = { ok: '完了', err: '計算に失敗しました' };
 
   function setStatus(msg, kind) { status.textContent = msg || ''; status.dataset.kind = kind || ''; }
   function clearOut() { Object.values(out).forEach(el => el.value = ''); }
   function hex(buf) { return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join(''); }
+  async function digest(algo, bytes) { return await crypto.subtle.digest(algo, bytes); }
+  async function hmac(algo, keyBytes, msgBytes) {
+    const k = await crypto.subtle.importKey('raw', keyBytes, { name: 'HMAC', hash: { name: algo } }, false, ['sign']);
+    return await crypto.subtle.sign('HMAC', k, msgBytes);
+  }
   let token = 0;
   async function render() {
     const src = input.value;
+    const isHmac = mode.value === 'hmac';
     if (!src) { clearOut(); setStatus(''); return; }
     const my = ++token;
     try {
-      const bytes = new TextEncoder().encode(src);
+      const msgBytes = new TextEncoder().encode(src);
       const algos = Object.keys(out);
-      const digests = await Promise.all(algos.map(a => crypto.subtle.digest(a, bytes)));
+      let results;
+      if (isHmac) {
+        const keyBytes = new TextEncoder().encode(key.value);
+        results = await Promise.all(algos.map(a => hmac(a, keyBytes, msgBytes)));
+      } else {
+        results = await Promise.all(algos.map(a => digest(a, msgBytes)));
+      }
       if (my !== token) return;
-      algos.forEach((a, i) => out[a].value = hex(digests[i]));
+      algos.forEach((a, i) => out[a].value = hex(results[i]));
       setStatus(labels.ok, 'ok');
     } catch (e) {
       if (my !== token) return;
@@ -68,11 +94,17 @@ weight = 50
       setStatus(labels.err, 'err');
     }
   }
+  function applyMode() {
+    keyField.hidden = mode.value !== 'hmac';
+    render();
+  }
   document.querySelector('.tool-controls').addEventListener('click', function (e) {
     if (e.target.dataset && e.target.dataset.action === 'clear') {
-      input.value = ''; clearOut(); setStatus('');
+      input.value = ''; key.value = ''; clearOut(); setStatus('');
     }
   });
+  mode.addEventListener('change', applyMode);
   input.addEventListener('input', render);
+  key.addEventListener('input', render);
 })();
 </script>
