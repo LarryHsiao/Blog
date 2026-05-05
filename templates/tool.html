@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block drawer_extra %} {% set parent =
+get_section(path=page.ancestors | last) %}
+<div class="drawer-divider" role="separator">{{ parent.title }}</div>
+{% for sibling in parent.pages %}
+<a
+  href="{{ sibling.permalink | safe }}"
+  class="drawer-tool-item{% if sibling.permalink == page.permalink %} active{% endif %}"
+  >{{ sibling.title }}</a
+>
+{% endfor %} {% endblock drawer_extra %} {% block content %}
+<article class="tool-page">
+  <div class="tool-body">{{ page.content | safe }}</div>
+</article>
+{% endblock content %}

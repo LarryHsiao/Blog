@@ -462,6 +462,325 @@ body > section ul li a {
   border-color: transparent;
 }
 
+/* ── Tools section: widen the page canvas (overrides bahunya body cap) ── */
+body:has(.tool-page, .tools-index) {
+  max-width: 72rem;
+}
+
+/* ── Per-tool page: strip the global chrome for a focused canvas ── */
+/* !important needed: .about-header-nav above carries `display: flex !important` */
+body:has(.tool-page) .about-header {
+  display: none !important;
+}
+body:has(.tool-page) {
+  margin-top: 1.5rem;
+}
+
+/* ── Top bar (hidden by default, shown on tool pages) ── */
+.tool-top-bar {
+  display: none;
+}
+.drawer-backdrop {
+  display: none;
+}
+html.tool-page-mode .tool-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  margin: 0 0 1rem;
+}
+.tool-top-blog {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+.tool-top-blog:hover {
+  color: var(--links);
+  text-decoration: none;
+}
+.drawer-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-main);
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+.drawer-toggle:hover {
+  border-color: var(--links);
+  color: var(--links);
+}
+
+/* ── On tool pages, turn .about-header-nav into a slide-in drawer ── */
+/* !important on positional props because `body nav:first-of-type` upstream
+   sets position:static and width:auto with equal-or-higher specificity. */
+html.tool-page-mode .about-header-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  height: 100vh !important;
+  width: 280px !important;
+  max-width: 80vw !important;
+  background: var(--background) !important;
+  border-left: 1px solid var(--border) !important;
+  padding: 3.5rem 1.25rem 1.25rem !important;
+  margin: 0 !important;
+  gap: 0.5rem !important;
+  transform: translateX(100%) !important;
+  transition: transform 0.25s ease !important;
+  z-index: 1000 !important;
+  overflow-y: auto !important;
+  flex-wrap: nowrap !important;
+}
+html.tool-page-mode .about-header-nav.open {
+  transform: translateX(0) !important;
+}
+/* Hide the duplicate "Blog" link (first <a>) inside the drawer */
+html.tool-page-mode .about-header-nav > a:first-of-type {
+  display: none;
+}
+html.tool-page-mode .drawer-backdrop {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 999;
+}
+html.tool-page-mode .drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Tools index ── */
+.tools-index {
+  max-width: 72rem;
+  margin: 1.5rem auto;
+}
+.tools-index h1 {
+  margin-bottom: 0.5rem;
+}
+.tools-intro {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+.tools-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.75rem;
+}
+.tools-list-item {
+  display: flex;
+}
+.tools-list-item a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--background);
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.tools-list-item a:hover {
+  border-color: var(--links);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+.tools-list-title {
+  display: block;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 0.25rem;
+}
+.tools-list-desc {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+/* ── Tool page ── */
+.tool-page {
+  max-width: 72rem;
+  margin: 1.5rem auto;
+}
+/* ── Drawer: section divider + tool list items ── */
+.drawer-divider {
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.drawer-tool-item {
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+.drawer-tool-item:hover {
+  color: var(--links);
+  border-color: var(--links);
+  text-decoration: none;
+}
+.drawer-tool-item.active {
+  color: var(--links);
+  border-color: rgba(227, 188, 94, 0.45);
+  background: rgba(227, 188, 94, 0.12);
+}
+.tool-page h1 {
+  margin-bottom: 0.25rem;
+}
+.tool-desc {
+  color: var(--text-muted);
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+.tool-note {
+  background: rgba(227, 188, 94, 0.08);
+  border: 1px solid rgba(227, 188, 94, 0.25);
+  border-radius: 6px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  margin: 0 0 1rem;
+}
+.tool-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.tool-controls label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.tool-controls select,
+.tool-controls button {
+  font: inherit;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--text-main);
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+.tool-controls button:hover,
+.tool-controls select:hover {
+  border-color: var(--links);
+  color: var(--links);
+}
+.tool-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.tool-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+.tool-field > span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.tool-field textarea {
+  width: 100%;
+  min-height: 12rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--text-main);
+  resize: vertical;
+}
+.tool-field textarea:focus {
+  outline: none;
+  border-color: var(--links);
+}
+.tool-field textarea[readonly] {
+  background: rgba(255, 255, 255, 0.02);
+}
+.tool-claims {
+  list-style: none;
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+.tool-claims li {
+  padding: 0.15rem 0;
+  color: var(--text-main);
+}
+.tool-claims code {
+  color: var(--links);
+}
+.tool-status {
+  margin-top: 0.5rem;
+  min-height: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.tool-status[data-kind="ok"] {
+  color: #6cc04a;
+}
+.tool-status[data-kind="warn"] {
+  color: #e3bc5e;
+}
+.tool-status[data-kind="err"] {
+  color: #e25555;
+}
+
+@media (max-width: 640px) {
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+  .tool-field textarea {
+    min-height: 9rem;
+  }
+}
+
 /* ── Smooth scroll ── */
 html {
   scroll-behavior: smooth;

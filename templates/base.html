@@ -12,6 +12,14 @@
     <title>{% block title %} {{config.title}} {% endblock title %}</title>
     <script>
       (function () {
+        var p = window.location.pathname.replace(/\/$/, "");
+        if (/\/tools\/[^/]+$/.test(p)) {
+          document.documentElement.classList.add("tool-page-mode");
+        }
+      })();
+    </script>
+    <script>
+      (function () {
         var p = window.location.pathname;
         if (p !== "/" && p !== "/en/" && p !== "/jp/") return;
         if (sessionStorage.getItem("lang-redirected")) return;
@@ -24,13 +32,13 @@
           target = bl.startsWith("en")
             ? "en"
             : bl.startsWith("ja") || bl.startsWith("jp")
-            ? "jp"
-            : "zh";
+              ? "jp"
+              : "zh";
           localStorage.setItem("preferred-lang", target);
         }
         if (target === currentLang) return;
         window.location.replace(
-          target === "en" ? "/en/" : target === "jp" ? "/jp/" : "/"
+          target === "en" ? "/en/" : target === "jp" ? "/jp/" : "/",
         );
       })();
     </script>
@@ -48,17 +56,23 @@
     gtag("config", "G-4K365JL529");
   </script>
   <body>
-    {% block profile_header %}
-    {% if current_url %}
-      {% set _base = config.base_url %}
-      {% set _zh_url = current_url | replace(from=_base ~ "/en", to=_base) | replace(from=_base ~ "/jp", to=_base) %}
-      {% set _en_url = _zh_url | replace(from=_base ~ "/", to=_base ~ "/en/") %}
-      {% set _jp_url = _zh_url | replace(from=_base ~ "/", to=_base ~ "/jp/") %}
-    {% else %}
-      {% set _zh_url = config.base_url ~ "/" %}
-      {% set _en_url = config.base_url ~ "/en/" %}
-      {% set _jp_url = config.base_url ~ "/jp/" %}
-    {% endif %}
+    {% if lang == "en" %}{% set _home_url = config.base_url ~ "/en/" %}{% elif
+    lang == "jp" %}{% set _home_url = config.base_url ~ "/jp/" %}{% else %}{%
+    set _home_url = config.base_url ~ "/" %}{% endif %}
+    <div class="tool-top-bar">
+      <a class="tool-top-blog" href="{{ _home_url }}">Blog</a>
+      <button type="button" class="drawer-toggle" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
+    <div class="drawer-backdrop"></div>
+    {% block profile_header %} {% if current_url %} {% set _base =
+    config.base_url %} {% set _zh_url = current_url | replace(from=_base ~
+    "/en", to=_base) | replace(from=_base ~ "/jp", to=_base) %} {% set _en_url =
+    _zh_url | replace(from=_base ~ "/", to=_base ~ "/en/") %} {% set _jp_url =
+    _zh_url | replace(from=_base ~ "/", to=_base ~ "/jp/") %} {% else %} {% set
+    _zh_url = config.base_url ~ "/" %} {% set _en_url = config.base_url ~ "/en/"
+    %} {% set _jp_url = config.base_url ~ "/jp/" %} {% endif %}
     <div class="about-header">
       {% if lang == "en" %} {% set about_url = config.extra.about_url_en |
       replace(from="$BASE_URL", to=config.base_url) %} {% set author =
@@ -85,11 +99,11 @@
     == "jp" %} {% set menus = config.extra.menus_jp %} {% else %} {% set menus =
     config.extra.menus %} {% endif %}
     <nav class="about-header-nav">
-      {% if lang == "en" %}{% set home_url = config.base_url ~ "/en/" %}{% elif lang == "jp" %}{% set home_url = config.base_url ~ "/jp/" %}{% else %}{% set home_url = config.base_url ~ "/" %}{% endif %}
-      {% set home_active = current_url == home_url %}
-      <a
-        href="{{ home_url }}"
-        class="{% if home_active %}active{% endif %}"
+      {% if lang == "en" %}{% set home_url = config.base_url ~ "/en/" %}{% elif
+      lang == "jp" %}{% set home_url = config.base_url ~ "/jp/" %}{% else %}{%
+      set home_url = config.base_url ~ "/" %}{% endif %} {% set home_active =
+      current_url == home_url %}
+      <a href="{{ home_url }}" class="{% if home_active %}active{% endif %}"
         >Blog</a
       >
       {% for menu in menus %} {% set link_url = menu.url |
@@ -98,13 +112,31 @@
       <a href="{{ link_url }}" class="{% if is_active %}active{% endif %}"
         >{{ menu.name }}</a
       >
-      {% endfor %}
+      {% endfor %} {% block drawer_extra %}{% endblock drawer_extra %}
       <details class="lang-switcher">
-        <summary class="lang-current">{% if lang == "en" %}EN{% elif lang == "jp" %}JP{% else %}中{% endif %}<span class="lang-arrow">▾</span></summary>
+        <summary class="lang-current">
+          {% if lang == "en" %}EN{% elif lang == "jp" %}JP{% else %}中{% endif
+          %}<span class="lang-arrow">▾</span>
+        </summary>
         <div class="lang-menu">
-          <a href="{{ _zh_url }}" class="{% if lang != 'en' and lang != 'jp' %}active{% endif %}" onclick="localStorage.setItem('preferred-lang','zh')">中文</a>
-          <a href="{{ _en_url }}" class="{% if lang == 'en' %}active{% endif %}" onclick="localStorage.setItem('preferred-lang','en')">English</a>
-          <a href="{{ _jp_url }}" class="{% if lang == 'jp' %}active{% endif %}" onclick="localStorage.setItem('preferred-lang','jp')">日本語</a>
+          <a
+            href="{{ _zh_url }}"
+            class="{% if lang != 'en' and lang != 'jp' %}active{% endif %}"
+            onclick="localStorage.setItem('preferred-lang', 'zh')"
+            >中文</a
+          >
+          <a
+            href="{{ _en_url }}"
+            class="{% if lang == 'en' %}active{% endif %}"
+            onclick="localStorage.setItem('preferred-lang', 'en')"
+            >English</a
+          >
+          <a
+            href="{{ _jp_url }}"
+            class="{% if lang == 'jp' %}active{% endif %}"
+            onclick="localStorage.setItem('preferred-lang', 'jp')"
+            >日本語</a
+          >
         </div>
       </details>
     </nav>
@@ -126,6 +158,28 @@
         var s = document.querySelector(".lang-switcher");
         if (s && !s.contains(e.target)) s.removeAttribute("open");
       });
+      (function () {
+        var toggle = document.querySelector(".drawer-toggle");
+        var drawer = document.querySelector(".about-header-nav");
+        var backdrop = document.querySelector(".drawer-backdrop");
+        if (!toggle || !drawer || !backdrop) return;
+        function open() {
+          drawer.classList.add("open");
+          backdrop.classList.add("open");
+        }
+        function close() {
+          drawer.classList.remove("open");
+          backdrop.classList.remove("open");
+        }
+        toggle.addEventListener("click", function (e) {
+          e.stopPropagation();
+          open();
+        });
+        backdrop.addEventListener("click", close);
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") close();
+        });
+      })();
     </script>
   </body>
 </html>
