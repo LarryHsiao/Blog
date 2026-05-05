@@ -3,7 +3,11 @@ get_section(path=page.ancestors | last) %} {% for sibling in parent.pages %}
 <a
   href="{{ sibling.permalink | safe }}"
   class="tool-top-pill{% if sibling.permalink == page.permalink %} active{% endif %}"
-  >{{ sibling.title }}</a
+  >{% if sibling.extra.icon %}<img
+    class="tool-top-pill-icon"
+    src="{{ sibling.extra.icon }}"
+    alt=""
+  />{% endif %}{{ sibling.title }}</a
 >
 {% endfor %} {% endblock top_bar_pills %} {% block content %}
 <article class="tool-page">

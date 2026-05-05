@@ -7,6 +7,9 @@
     {% for page in section.pages %}
     <li class="tools-list-item">
       <a href="{{ page.permalink | safe }}">
+        {% if page.extra.icon %}
+        <img class="tools-list-icon" src="{{ page.extra.icon }}" alt="" />
+        {% endif %}
         <span class="tools-list-title">{{ page.title }}</span>
         {% if page.description %}
         <span class="tools-list-desc">{{ page.description }}</span>

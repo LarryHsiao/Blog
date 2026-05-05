@@ -1,8 +1,12 @@
 +++
 title = "Iris"
 path = "jp/iris"
-template = "about.html"
+template = "tool.html"
+weight = 20
 description = "macOS 用の軽量 HUD：同期歌詞・アルバムアート・システム状態を一画面で。"
+
+[extra]
+icon = "/iris-icon.svg"
 +++
 
 <div class="iris-page">

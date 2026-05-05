@@ -1,8 +1,12 @@
 +++
 title = "Metis"
 path = "jp/metis"
-template = "about.html"
+template = "tool.html"
+weight = 10
 description = "思い出を地図に戻す：日記・写真・場所をひとつに。"
+
+[extra]
+icon = "/metis.png"
 +++
 
 <div class="metis-page">

@@ -1,8 +1,12 @@
 +++
 title = "Metis"
 path = "en/metis"
-template = "about.html"
+template = "tool.html"
+weight = 10
 description = "Put memories back on the map: journal, photos, and places woven together."
+
+[extra]
+icon = "/metis.png"
 +++
 
 <div class="metis-page">

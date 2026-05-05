@@ -1,8 +1,12 @@
 +++
 title = "Iris"
 path = "en/iris"
-template = "about.html"
+template = "tool.html"
+weight = 20
 description = "A lightweight always-on-top HUD for macOS — synced lyrics, album art, and system vitals in one glance."
+
+[extra]
+icon = "/iris-icon.svg"
 +++
 
 <div class="iris-page">

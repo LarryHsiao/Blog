@@ -1,8 +1,12 @@
 +++
 title = "Iris"
 path = "iris"
-template = "about.html"
+template = "tool.html"
+weight = 20
 description = "macOS 螢幕上的輕量 HUD：同步歌詞、專輯封面、系統狀態一目了然。"
+
+[extra]
+icon = "/iris-icon.svg"
 +++
 
 <div class="iris-page">

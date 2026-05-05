@@ -13,7 +13,7 @@
     <script>
       (function () {
         var p = window.location.pathname.replace(/\/$/, "");
-        if (/\/tools\/[^/]+$/.test(p)) {
+        if (/\/(tools|apps)\/[^/]+$/.test(p) || /\/(metis|iris)$/.test(p)) {
           document.documentElement.classList.add("tool-page-mode");
         }
       })();

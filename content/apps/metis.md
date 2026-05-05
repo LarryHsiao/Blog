@@ -1,8 +1,12 @@
 +++
 title = "Metis"
 path = "metis"
-template = "about.html"
+template = "tool.html"
+weight = 10
 description = "把回憶放回地圖上：用地圖串起日記與照片，走到某個地方就能重溫當時的故事。"
+
+[extra]
+icon = "/metis.png"
 +++
 
 <div class="metis-page">
