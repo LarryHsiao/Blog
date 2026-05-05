@@ -1,5 +1,5 @@
 +++
-title = "工具"
+title = "開發工具"
 description = "瀏覽器內運作的開發者小工具集。"
 template = "tools.html"
 sort_by = "weight"

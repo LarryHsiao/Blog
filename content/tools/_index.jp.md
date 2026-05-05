@@ -1,5 +1,5 @@
 +++
-title = "ツール"
+title = "開発ツール"
 description = "ブラウザだけで動く開発者向けの小さなユーティリティ。"
 template = "tools.html"
 sort_by = "weight"
