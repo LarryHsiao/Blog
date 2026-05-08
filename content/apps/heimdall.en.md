@@ -3,7 +3,7 @@ title = "Heimdall"
 path = "en/heimdall"
 template = "tool.html"
 weight = 30
-description = "A small desktop window for Jira tickets — list, sort, resize, and usher tickets along their workflow with a click on the status."
+description = "A small desktop window for Jira tickets — built for quicker reaction and a sharper focus on the next move, not the data itself."
 
 [extra]
 icon = "/heimdall.png"

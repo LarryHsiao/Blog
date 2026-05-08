@@ -3,7 +3,7 @@ title = "Heimdall"
 path = "heimdall"
 template = "tool.html"
 weight = 30
-description = "Jira 票券的桌面小窗：用你選的 filter 顯示，可排序、調欄寬，按一下狀態就能流轉。"
+description = "Jira 票券的桌面小窗 — 為了更快的反應時間、把心思放在下一步要做什麼，而非陷在資料本身。"
 
 [extra]
 icon = "/heimdall.png"

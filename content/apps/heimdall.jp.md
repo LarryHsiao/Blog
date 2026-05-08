@@ -3,7 +3,7 @@ title = "Heimdall"
 path = "jp/heimdall"
 template = "tool.html"
 weight = 30
-description = "Jira チケットの小窓：好みのフィルタで表示し、並び替え、列幅調整、ステータスをクリックして遷移まで。"
+description = "Jira チケットの小窓 — 反応をすばやく、データそのものではなく「次にすべきこと」に集中するためのアプリ。"
 
 [extra]
 icon = "/heimdall.png"
