@@ -34,7 +34,7 @@ Daeron はこの面倒を裏返します。スマートフォンが音を PC へ
 <a href="https://github.com/LarryHsiao/Daeron">GitHub</a>
 </div>
 
-> ステータス：**開発中**、初の側ロード対応ビルド（`v0.1.0.16`）。
+> 現行ビルド：`v0.1.1.0`。開発は継続中。
 
 ---
 
@@ -50,16 +50,20 @@ Daeron はこの面倒を裏返します。スマートフォンが音を PC へ
 
 ## 📦 インストール（リリースから）
 
-GitHub リリースページから `Daeron-<version>-x64.zip` をダウンロードし、展開します。フォルダには `.msix`、署名に使われた `.cer`、`Microsoft.WindowsAppRuntime.1.6` フレームワーク依存パッケージ、そして `Add-AppDevPackage.ps1` ヘルパーが含まれます。
+GitHub リリースページから `daeron-setup-<version>.exe` をダウンロードして実行します。UAC が一度表示されます — `LocalMachine\TrustedPeople` の自己署名証明書を信頼するには管理者権限が必要です。続いてインストーラーが証明書を信頼し、同梱の Windows App Runtime 1.6 フレームワークを登録し、Daeron MSIX を登録します。完了すると、Daeron はスタートメニューに現れ、トレイに常駐します。
 
-二つの手順：
+アンインストールは **アプリと機能** → **Daeron** → **アンインストール** から、他の Windows アプリと同じ手順で。
+
+動作要件：Windows 10 build 19041 以降、x64。
+
+### 手動インストール（フォールバック）
+
+インストーラーを使いたくない場合、同じリリースには `Daeron-<version>-x64.zip` も同梱されています — インストーラーが包む素の MSIX バンドルです。二つの手順：
 
 1. **証明書を信頼する。** `Daeron_<version>_x64.cer` を右クリック → **証明書のインストール** → **ローカルコンピューター** を選択 → **証明書をすべて次のストアに配置する** → **信頼されたユーザー**。UAC が表示され、管理者権限が必要です（マシンごとに一度のみ）。
 2. **パッケージを登録する。** `Add-AppDevPackage.ps1` を右クリック → **PowerShell で実行**。ヘルパーが `Dependencies\x64\` から WindowsAppRuntime 依存を入れ、続けて `.msix` を登録します。
 
 > **Windows PowerShell 5.1**（`powershell.exe`）を使ってください。PowerShell 7（`pwsh.exe`）ではありません。後者は `Appx` モジュールを自動読み込みせず、ヘルパーは `Add-AppxPackage` を未知のコマンドとして失敗します。
-
-動作要件：Windows 10 build 19041 以降、x64。
 
 ---
 
