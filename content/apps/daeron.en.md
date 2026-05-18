@@ -50,20 +50,16 @@ Daeron turns the chore inside out. The phone sinks its audio to the PC; the head
 
 ## 📦 Install (from a release)
 
-Download `daeron-setup-<version>.exe` from the GitHub release page and run it. UAC prompts once — admin is required to trust the self-signed cert in `LocalMachine\TrustedPeople` — then the installer trusts the certificate, registers the bundled Windows App Runtime 1.6 framework, and registers the Daeron MSIX. Daeron appears in the Start Menu and lives in the tray.
+Download `Daeron-<version>-x64.zip` from the GitHub release page and unzip it. The folder contains the `.msix`, the `.cer` it was signed with, the `Microsoft.WindowsAppRuntime.1.6` framework dependency, and the `Add-AppDevPackage.ps1` helper.
 
-Uninstall through **Apps & features** → **Daeron** → **Uninstall**, the same as any other Windows app.
-
-Requires Windows 10 build 19041 or later, x64.
-
-### Manual install (fallback)
-
-If you'd rather not run an installer, the same release ships `Daeron-<version>-x64.zip` — the raw MSIX bundle the installer wraps. Two steps:
+Two steps:
 
 1. **Trust the certificate.** Right-click `Daeron_<version>_x64.cer` → **Install Certificate** → choose **Local Machine** → **Place all certificates in the following store** → **Trusted People**. UAC will prompt; admin is required, once per machine.
 2. **Register the package.** Right-click `Add-AppDevPackage.ps1` → **Run with PowerShell**. The helper installs the WindowsAppRuntime dependency from `Dependencies\x64\` and then registers the `.msix`.
 
 > Use **Windows PowerShell 5.1** (`powershell.exe`), not PowerShell 7 (`pwsh.exe`). The latter does not auto-load the `Appx` module, and the helper will fail with `Add-AppxPackage` reported as an unknown command.
+
+Requires Windows 10 build 19041 or later, x64.
 
 ---
 
