@@ -28,11 +28,27 @@ icon = "/metis.png"
 
 ## ✨ 功能
 
-- 📝 **日記** — 用文字與照片留下當下的心境
-- 🗺️ **地圖** — 每個瞬間都在地圖上留下痕跡
-- 📷 **照片** — 照片直接放進每篇故事裡
-- ☁️ **雲端同步** — 換手機不會遺失回憶
+- 🗺️ **回憶地圖** — 每篇日記都釘在它發生的地方；走回同一處，「你曾經來過這裡」便帶著故事一起浮現
+- 📝 **每日日記** — 用文字與照片留下當下，空白時也有輕巧的提示陪你開頭
+- 🏷️ **標籤** — 書寫時打上 `#關鍵字`，把相關的日記串在一起
+- 📅 **那一天** — 用日曆回顧，或看看一年前的今天發生了什麼
+- 🔒 **預設私密** — 以 Face ID、指紋或 PIN 上鎖，並把內容模糊起來，不讓人窺看
+- ☁️ **雲端同步** — 換手機也不會遺失回憶
 - 📱 **跨平台** — iOS / Android 都能使用
+
+---
+
+## ⭐ Metis Pro
+
+以上功能皆免費。Pro 放寬限制，並解鎖兩項額外功能：
+
+| | 免費 | Pro |
+|---|:---:|:---:|
+| 📷 每日上傳照片 | 有限 | 充足 |
+| 🖼️ 照片解析度 | 標準 | 高畫質 |
+| ✍️ 日記字數 | 標準 | 加長 |
+| 🔮 未來日記 | — | ✓ |
+| 📄 匯出 PDF | — | ✓ |
 
 ---
 
@@ -53,6 +69,9 @@ icon = "/metis.png"
 .metis-page h2 { text-align: left; }
 .metis-page ul { text-align: left; list-style: none; padding-left: 0; }
 .metis-page ul li { margin: 0.5rem 0; }
+.metis-page table { margin: 1.25rem auto; border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+.metis-page th, .metis-page td { padding: 0.45rem 0.6rem; border-bottom: 1px solid rgba(128,128,128,0.25); }
+.metis-page thead th { border-bottom-width: 2px; }
 .store-badges { display: flex; justify-content: center; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin: 1.5rem 0; }
 .store-badges a { display: inline-flex; align-items: center; height: 44px; } .store-badges a img { height: 44px; width: auto; } .store-badges a:first-child { margin: -10px 0; overflow: hidden; height: 44px; } .store-badges a:first-child img { height: 64px; margin: -10px 0; }
 </style>

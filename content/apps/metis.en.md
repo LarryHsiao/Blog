@@ -28,11 +28,27 @@ Some places fade after a single visit, but some moments wait quietly for you to 
 
 ## ✨ Features
 
-- 📝 **Journal** — Capture moments in words and photos
-- 🗺️ **Map** — Every entry leaves a trace on the map
-- 📷 **Photos** — Images live inside each story
-- ☁️ **Cloud Sync** — Switch phones without losing memories
-- 📱 **Cross-Platform** — iOS & Android
+- 🗺️ **Map of memories** — every entry is pinned where it happened; walk back, and *"you've been here before"* brings the story with it
+- 📝 **Daily journal** — capture moments in words and photos, with a gentle prompt when the page is blank
+- 🏷️ **Tags** — type `#word` while writing to thread related entries together
+- 📅 **On this day** — revisit by calendar, or see what happened a year ago
+- 🔒 **Private by default** — lock with Face ID, fingerprint, or PIN, and blur entries from prying eyes
+- ☁️ **Cloud sync** — switch phones without losing a memory
+- 📱 **Cross-platform** — iOS & Android
+
+---
+
+## ⭐ Metis Pro
+
+Everything above is free. Pro lifts the limits and unlocks two extras:
+
+| | Free | Pro |
+|---|:---:|:---:|
+| 📷 Photos uploaded per day | Limited | Generous |
+| 🖼️ Photo resolution | Standard | High |
+| ✍️ Journal length | Standard | Extended |
+| 🔮 Future entries | — | ✓ |
+| 📄 PDF export | — | ✓ |
 
 ---
 
@@ -53,6 +69,9 @@ Some places fade after a single visit, but some moments wait quietly for you to 
 .metis-page h2 { text-align: left; }
 .metis-page ul { text-align: left; list-style: none; padding-left: 0; }
 .metis-page ul li { margin: 0.5rem 0; }
+.metis-page table { margin: 1.25rem auto; border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+.metis-page th, .metis-page td { padding: 0.45rem 0.6rem; border-bottom: 1px solid rgba(128,128,128,0.25); }
+.metis-page thead th { border-bottom-width: 2px; }
 .store-badges { display: flex; justify-content: center; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin: 1.5rem 0; }
 .store-badges a { display: inline-flex; align-items: center; height: 44px; } .store-badges a img { height: 44px; width: auto; } .store-badges a:first-child { margin: -10px 0; overflow: hidden; height: 44px; } .store-badges a:first-child img { height: 64px; margin: -10px 0; }
 </style>
