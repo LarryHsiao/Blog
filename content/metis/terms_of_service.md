@@ -4,7 +4,7 @@ path = "metis/terms_of_service"
 template = "about.html"
 +++
 
-Last Updated: 2023/10/23
+Last Updated: 2026/08/26
 
 These terms of service ("Terms") apply to your access and use of Metis (the "Service"). Please read them carefully.
 
@@ -22,7 +22,7 @@ If you continue to use the Service after the revised Terms go into effect, then 
 
 ## Privacy Policy
 
-For information about how we collect and use information about users of the Service, please check out our privacy policy available at [here](https://larryhsiao.com:13000/privacy_policy_metis.html).
+For information about how we collect and use information about users of the Service, please check out our [privacy policy](https://larryhsiao.com/metis/privacy_policy).
 
 ## Third-Party Services
 
