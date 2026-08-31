@@ -8,31 +8,31 @@ tags = ["Claude Code", "Agent", "Workflow"]
 
 > **Note:** This article was completed by AI (Claude) from my initial notes and thoughts.
 
-The previous post, [The Only Gate That Waits](/en/the-only-gate-that-waits/), ended on an admission: I can't prove the model holds all eight stages, so the next step isn't more rules — it's **measuring** how much of this actually gets kept.
+The previous post, [The Only Gate That Waits](/en/the-only-gate-that-waits/), ended on an admission. I can't prove the model holds all eight stages. So the next step isn't more rules. It's measuring how much of this actually gets kept.
 
-This post is what I learned from measuring. The conclusion up front: **scoring is easy; deciding the denominator is hard.** I changed the denominator three times, the score climbed from 11% to 24%, and the model's behaviour did not change once.
+This is what I learned from measuring. Conclusion up front: scoring is easy. Deciding the denominator is hard. I changed the denominator three times. The score climbed from 11% to 24%. And the model's behaviour didn't change. Not once.
 
 ### The method itself is plain
 
-Every rule leaves a trace that can be found in a session transcript: whether the gate block was written, whether the review's verdict line appeared, whether the test run came back with an error flag. So the method is just this — pull every session's transcript, cut it into segments, and ask of each segment: *should this rule have fired here? Did it?*
+Every rule leaves a trace you can find in a session transcript. Whether the gate block was written. Whether the review's verdict line showed up. Whether the test run came back with an error flag. So the method's simple — pull every session's transcript, cut it into segments, ask of each one: should this rule have fired here? Did it?
 
-The numerator is the count of segments where it fired. The denominator is the count where it should have. The numerator almost never goes wrong, because a trace is a trace. **Every pitfall lives in the denominator.**
+Numerator: segments where it fired. Denominator: segments where it should have. The numerator almost never goes wrong — a trace is a trace. Every pitfall lives in the denominator. Every single one.
 
 ### First correction: drop the segments with nothing to review
 
-The earliest version counted every segment that touched the tree as "owed a review". Looking closer, 163 segments had run nothing but `git commit`, `mkdir`, `install.sh`, `tee` and the like — thirty percent of the denominator, with a compliance rate of 1%.
+The earliest version counted every segment that touched the tree as "owed a review". Looking closer — 163 segments had run nothing but `git commit`, `mkdir`, `install.sh`, `tee`, that kind of thing. Thirty percent of the denominator. Compliance rate: 1%.
 
-Of course it was 1%. There was nothing in those segments to review; the rule was never meant to fire there. Dropping them moved the rate from **11% to 15%**.
+Of course it was 1%. Nothing in those segments to review. The rule was never meant to fire there in the first place. Dropped them. Rate moved from 11% to 15%.
 
 ### Second correction: the segments were cut wrong
 
-With the noise gone, something was still off. Of 390 segments owed a review, 58 had the verdict line **inside the segment — just not after the last edit.**
+Noise gone. Something still off, though. Of 390 segments owed a review, 58 had the verdict line inside the segment — just not after the last edit.
 
-Tracing it down, the segment boundaries were wrong. Two adjacent tasks were being folded into one: the first finished, was reviewed, got its verdict; then the second started editing and ended without a review. Read as one segment, there was no verdict after the final edit, so it scored as a miss.
+Traced it down. The segment boundaries were wrong. Two adjacent tasks were folded into one. First one finished, got reviewed, got its verdict. Then the second one started editing and ended without a review. Read as one segment, there's no verdict after the final edit. Scores as a miss.
 
-But that reading is **exactly backwards**: the reviewed first task was penalised, and the unreviewed second task hid inside the same segment and was never counted at all.
+But that reading's exactly backwards. The reviewed task gets penalised. The unreviewed one hides in the same segment and never gets counted at all. Absurd, honestly.
 
-The fix: the moment a verdict is written, the segment closes. That moved the rate from **15% to 24%**.
+The fix: the moment a verdict's written, the segment closes. Rate moved from 15% to 24%.
 
 ### Three rises in the score, zero changes in behaviour
 
@@ -44,66 +44,69 @@ Put the three numbers side by side:
 | command-only segments removed | 15% | unchanged |
 | segment closes when the verdict lands | 24% | still unchanged |
 
-Each time the denominator became truer; discipline did not improve. This is the spine of the whole post: **when you see an "agent compliance rate", ask what counts as the denominator, and when it last changed.** A score with no denominator history cannot be compared with last month's.
+Every time, the denominator got truer. Discipline didn't get better. That's the spine of this whole post — see an "agent compliance rate" number, don't trust it yet. Ask what counts as the denominator. Ask when it last changed. A score with no denominator history can't be compared to last month's. Full stop.
 
 ### Don't let the summariser grade itself
 
-The second class of pitfall isn't about the denominator. It's about who is grading whom.
+Second class of pitfall's got nothing to do with the denominator. It's about who's grading whom.
 
-The rule reads like this: if the review finds something, fix it first; only then write the done report, and close it with a literal `Compliance Review: PASS`. The rule itself is fine. But if the measurement reads **that line**, it can only ever be 100% — because the line is written by the very main thread being reviewed, and the main thread always waits until it believes it has passed.
+The rule goes like this: if the review finds something, fix it first. Only then write the done report, close it with a literal `Compliance Review: PASS`. The rule itself's fine. But if the measurement reads that line — it can only ever be 100%. Because the line's written by the very main thread being reviewed. And the main thread always waits until it believes it's passed. That's not measurement. That's asking yourself and answering yourself.
 
-So the verdict has to be read from **the reviewer's own transcript**: what the agent that was dispatched — read-only, sharing no memory with the main thread — actually said. The main thread's line is a claim. The reviewer's record is the evidence.
+So the verdict has to come from the reviewer's own transcript. What the dispatched agent — read-only, no shared memory with the main thread — actually said. The main thread's line is a claim. The reviewer's record is the evidence.
 
-The same trap shows up in a different guise on the gate's acceptance rate. When the gate stops and waits, the user answers by picking one of a few offered options. If "picked one" is always counted as "accepted the plan", then a tenth of the denominator is structurally pinned at 100%, however bad the plan.
+Same trap, different coat, on the gate's acceptance rate. Gate stops and waits, user answers by picking one of a few offered options. Count "picked one" as "accepted the plan" every time, and a tenth of the denominator's structurally pinned at 100% — however bad the plan actually is.
 
 ### Structural is not the same as deterministic
 
-I split the judgments into two tiers. A **structural** judgment reads only the `tool_result` error flag and never parses the output string — so a format change cannot break it. That sounds dependable.
+Split the judgments into two tiers. Structural reads only the `tool_result` error flag, never parses the output string. Can't be broken by a format change. Sounds dependable.
 
-Then the trap from the previous post came back, this time carrying a number:
+Then the trap from the previous post came back. This time with a number attached.
 
 ```sh
 flutter analyze 2>&1 | tail -6
 ```
 
-Without `set -o pipefail`, the shell reports `tail`'s exit status. Across the transcripts, **99% of piped lint runs reported clean**, regardless of what the linter caught. These cannot count as passes. I gave them their own bucket — *unmeasurable* — printed beneath the row and excluded from both sides.
+No `set -o pipefail`, and the shell reports `tail`'s exit status. Across the transcripts — 99% of piped lint runs reported clean. Didn't matter what the linter actually caught. Can't count these as passes. Gave them their own bucket. Unmeasurable. Printed beneath the row, excluded from both sides.
 
-The same row turned up several smaller ones:
+Same row turned up a few smaller ones too:
 
-- 27 `command -v` probes had slipped into the denominator, each one "failing" only because the tool wasn't installed on that machine.
-- If the check matches `tsc` as a bare word, `grep -n tsc file` counts as a type check too — and borrows grep's exit status to fabricate a pass.
-- Coverage is skewed: the output most often trimmed belongs to the largest test suite, so the measured population leans towards small, fast checks.
-- **Only the first run in a segment counts.** A re-run describes the repair, not the quality of the work.
+- 27 `command -v` probes slipped into the denominator. Each one "failing" only because the tool wasn't installed on that machine.
+- Match `tsc` as a bare word, and `grep -n tsc file` counts as a type check too. Borrows grep's exit status to fabricate a pass.
+- Coverage's skewed. The output most often trimmed belongs to the largest test suite. So the measured population leans toward small, fast checks.
+- Only the first run in a segment counts. A re-run describes the repair. Not the quality of the work.
 
-Structural means *doesn't rely on the model's reading*. It does not mean *cannot be wrong*.
+Structural means it doesn't rely on the model's reading. Doesn't mean it can't be wrong.
 
 ### When you don't know, don't guess
 
-The third class: what the measurement does when it is unsure. My answer is to count it on neither side, and record it separately.
+Third class: what does the measurement do when it's unsure. My answer — count it on neither side, record it separately.
 
-- The gate was written, the user never replied, and the session ended — that is neither acceptance nor rejection. It's recorded as `abandoned`. **Silence is not a verdict on the plan.**
-- The user reports a bug, but which "done" it belongs to is uncertain — drop it, rather than assuming it points at the most recent one. That row then honestly admits it **overestimates** as a result, and prints the count of unattributed reports beneath it.
+Gate got written, user never replied, session ended. Not acceptance. Not rejection either. Recorded as `abandoned`. Silence isn't a verdict on the plan.
 
-Throwing data away hurts. But one wrongly assumed attribution tilts the whole row in the wrong direction, and you can't see it happening.
+User reports a bug, but which "done" it belongs to is unclear — drop it. Don't assume it points at the most recent one. That row honestly admits it overestimates as a result, and prints the unattributed count underneath.
+
+Throwing away data hurts. But one wrongly assumed attribution tilts the whole row in the wrong direction. And you can't even see it happening. That's the part that worries me.
 
 ### Two tiers of confidence — don't average them
 
-As mentioned, judgments come in two tiers: **structural** reads exit status; **heuristic** hands a stretch of transcript to a model to judge intent (cached per session and turn, so it isn't asked twice).
+Two tiers, as I said. Structural reads exit status. Heuristic hands a stretch of transcript to a model, asks it to judge intent (cached per session and turn, so it's not asked twice).
 
-The two are not equally trustworthy, so the headline reports two numbers instead of one average pretending to be certain. There's also a split by model — Opus, Sonnet, Fable each in their own column — because "models forget rules" was always a claim about models, and blending them hides the difference.
+Not equally trustworthy, the two. So the headline reports two numbers, not one average pretending to be certain. There's a split by model too — Opus, Sonnet, Fable, each in their own column. "Models forget rules" was always a claim about models. Blend them together and you lose the difference.
 
 <img src="/adherence-pulse.png" alt="The compliance dashboard: headline number, per-model trend lines, and beneath each row the abandoned and unattributed counts kept out of the denominator"/>
 
-*The dashboard as of 2026-08-31. The small print under each row is what was kept out of the denominator; the compliance-review row had reached 37% by the time this was written.*
+*The dashboard as of 2026-08-31. The small print under each row — that's what got kept out of the denominator. The compliance-review row had reached 37% by the time I wrote this.*
 
 ### Honest caveats
 
-Three things first:
+Three things, first.
 
-- The heuristic half is a model judging a model. Better than nothing, but its denominator is also mine to define.
-- The lint row's denominator is currently the thinnest. Don't read short-term movement there as a trend.
-- **These ratios are still not proof of discipline.** What they prove is whether a trace was left. A rule can be kept without leaving a trace, and a trace can be left without the rule being truly kept.
+The heuristic half — that's a model judging a model. Better than nothing. But its denominator's mine to define too.
+
+The lint row's denominator is thinnest right now. Don't read short-term movement there as a trend.
+
+And these ratios still aren't proof of discipline. What they prove is whether a trace got left. A rule can be kept without leaving a trace. A trace can be left without the rule actually being kept. I keep having to remind myself of that.
 
 ### One line to close
 
-To know whether an agent keeps the rules, don't look at the score first. Ask three things: what the denominator is, who is grading whom, and what it does when it doesn't know. Only when all three have answers does the number begin to mean anything.
+Want to know if an agent keeps the rules? Don't look at the score first. Ask three things — what's the denominator, who's grading whom, what does it do when it doesn't know. Only once all three have answers does the number start meaning anything at all.
