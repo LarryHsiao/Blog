@@ -1,22 +1,55 @@
 {% extends "base.html" %} {% block content %}
+{% set repo_pages = [] %}
+{% for page in section.pages %}
+  {% if page.extra.group is defined and page.extra.group == "repo" %}{% set_global repo_pages = repo_pages | concat(with=page) %}{% endif %}
+{% endfor %}
 <div class="tools-index">
   {% if section.content %}
   <div class="tools-intro">{{ section.content | safe }}</div>
   {% endif %}
-  <ul class="tools-list">
-    {% for page in section.pages %}
-    <li class="tools-list-item">
-      <a href="{{ page.permalink | safe }}">
-        {% if page.extra.icon %}
-        <img class="tools-list-icon" src="{{ page.extra.icon }}" alt="" />
-        {% endif %}
-        <span class="tools-list-title">{{ page.title }}</span>
-        {% if page.description %}
-        <span class="tools-list-desc">{{ page.description }}</span>
-        {% endif %}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="tools-group">
+    {% if repo_pages %}
+    <h2 class="tools-group-title">{% if lang == "en" %}Browser Tools{% elif lang == "jp" %}ブラウザツール{% else %}瀏覽器工具{% endif %}</h2>
+    {% endif %}
+    <ul class="tools-list">
+      {% for page in section.pages %}
+      {% set is_repo = page.extra.group is defined and page.extra.group == "repo" %}
+      {% if not is_repo %}
+      <li class="tools-list-item">
+        <a href="{{ page.permalink | safe }}">
+          {% if page.extra.icon %}
+          <img class="tools-list-icon" src="{{ page.extra.icon }}" alt="" />
+          {% endif %}
+          <span class="tools-list-title">{{ page.title }}</span>
+          {% if page.description %}
+          <span class="tools-list-desc">{{ page.description }}</span>
+          {% endif %}
+        </a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% if repo_pages %}
+  <div class="tools-group">
+    <h2 class="tools-group-title">{% if lang == "en" %}GitHub Projects{% elif lang == "jp" %}GitHub プロジェクト{% else %}GitHub 專案{% endif %}</h2>
+    <ul class="tools-list">
+      {% for page in repo_pages %}
+      <li class="tools-list-item is-repo">
+        <a href="{{ page.extra.external_url | default(value=page.permalink) | safe }}" target="_blank" rel="noopener">
+          <span class="tools-list-badge">GitHub</span>
+          {% if page.extra.icon %}
+          <img class="tools-list-icon" src="{{ page.extra.icon }}" alt="" />
+          {% endif %}
+          <span class="tools-list-title">{{ page.title }}</span>
+          {% if page.description %}
+          <span class="tools-list-desc">{{ page.description }}</span>
+          {% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
 </div>
 {% endblock content %}

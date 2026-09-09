@@ -655,6 +655,33 @@ html.tool-page-mode .drawer-backdrop.open {
   font-size: 0.9rem;
   line-height: 1.45;
 }
+.tools-group-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+.tools-group + .tools-group {
+  margin-top: 2rem;
+}
+.tools-list-item.is-repo a {
+  border-style: dashed;
+}
+.tools-list-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  margin-bottom: 0.5rem;
+}
 
 /* ── Tool page ── */
 .tool-page {

@@ -1,7 +1,8 @@
 {% extends "base.html" %} {% block top_bar_pills %} {% set parent =
 get_section(path=page.ancestors | last) %} {% for sibling in parent.pages %}
 <a
-  href="{{ sibling.permalink | safe }}"
+  href="{{ sibling.extra.external_url | default(value=sibling.permalink) | safe }}"
+  {% if sibling.extra.external_url %}target="_blank" rel="noopener"{% endif %}
   class="tool-top-pill{% if sibling.permalink == page.permalink %} active{% endif %}"
   >{% if sibling.extra.icon %}<img
     class="tool-top-pill-icon"
