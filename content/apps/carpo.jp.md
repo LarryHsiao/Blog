@@ -60,7 +60,7 @@ Carpo はデスクトップ用のメディアタグマネージャー。あな�
 .carpo-page figure { margin: 0 0 1rem; }
 .carpo-page figure.carpo-icon img { border-radius: 24px; }
 .carpo-page .carpo-screenshot { margin: 1.5rem 0; }
-.carpo-page .carpo-screenshot img { width: auto; height: auto; max-width: 100%; border-radius: 8px; border: none; object-fit: initial; }
+.carpo-page .carpo-screenshot img { width: auto; height: auto; max-width: 100%; border-radius: 8px; border: 1px solid var(--border); object-fit: initial; }
 .carpo-page h1 { margin-top: 0.5rem; }
 .carpo-page h2 { text-align: left; }
 .carpo-page ul { text-align: left; list-style: none; padding-left: 0; }

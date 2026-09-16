@@ -1,3 +1,28 @@
+/* ── Solarized Light palette override (see docs/plans: elegant-mixing-cherny) ──
+   Bahunya's own declarations are fallback pairs (literal, then var()), so a
+   later :root here wins on every browser that supports custom properties. */
+:root {
+  --background-body: #fdf6e3; /* base3 */
+  --background: #eee8d5; /* base2 — cards, pre>code, inputs; keeps code blocks
+                             distinct from the solarized-light syntax theme,
+                             which itself sits on base3 */
+  --background-bright: rgba(7, 54, 66, 0.1); /* was a translucent white — invisible on cream */
+  --background-alt: #e4ddc8;
+  --selection: #c9d8e0; /* light wash; ::selection pairs it with --text-bright, now dark */
+  --text-main: #4a6068; /* passes AA on base3 (6.15:1) and on base2 cards (5.42:1) */
+  --text-bright: #073642; /* base02, 12.05:1 */
+  --text-muted: #556267; /* passes AA on base3 (5.85:1) and on base2 cards (5.15:1) */
+  --links: #755c00; /* darkened Solarized yellow; passes AA on base3 (5.92:1) and base2 (5.21:1) */
+  --accent-wash: 181 137 0; /* Solarized yellow #b58900 as an R G B triple, for rgba(var(--accent-wash) / a) washes */
+  --focus: #268bd2;
+  --focus-background: rgba(38, 139, 210, 0.25);
+  --border: #d6cfba;
+  --border-muted: #e0d9c4;
+  --border-bright: #93a1a1; /* base1 */
+  --button-hover: #ddd6c1;
+  --form-placeholder: #93a1a1;
+}
+
 /* ── Neutralize Bahunya fixed nav on first nav element ── */
 body nav:first-of-type {
   position: static;
@@ -97,7 +122,7 @@ body nav:first-of-type::before {
 }
 
 .about-header-nav a.active {
-  border-color: rgba(227, 188, 94, 0.45);
+  border-color: rgba(var(--accent-wash) / 0.45);
   color: var(--links);
 }
 
@@ -131,7 +156,7 @@ body > section {
 
 body > section:hover {
   border-color: var(--border-bright);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 12px var(--background-bright);
 }
 
 body > section h2 {
@@ -174,9 +199,9 @@ body > section > a:last-child:hover {
 body > section p a[href*="/tags/"],
 .tags a {
   display: inline-block;
-  background: rgba(227, 188, 94, 0.12);
+  background: rgba(var(--accent-wash) / 0.12);
   color: var(--links);
-  border: 1px solid rgba(227, 188, 94, 0.25);
+  border: 1px solid rgba(var(--accent-wash) / 0.25);
   border-radius: 1rem;
   padding: 0.15rem 0.65rem;
   margin: 0.15rem 0.2rem;
@@ -189,7 +214,7 @@ body > section p a[href*="/tags/"],
 
 body > section p a[href*="/tags/"]:hover,
 .tags a:hover {
-  background: rgba(227, 188, 94, 0.22);
+  background: rgba(var(--accent-wash) / 0.22);
   border-color: var(--links);
   text-decoration: none;
 }
@@ -227,7 +252,7 @@ nav.pagination a {
 
 nav.pagination a:hover {
   border-color: var(--links);
-  background: rgba(227, 188, 94, 0.08);
+  background: rgba(var(--accent-wash) / 0.08);
   text-decoration: none;
 }
 
@@ -240,6 +265,17 @@ nav.pagination a:hover {
   padding-bottom: 0.75rem;
 }
 
+/* Prose links carry an underline, not just a color, per the Solarized Light
+   palette decision — color alone is not a sufficient signal. Pill/card/nav
+   links elsewhere already carry a non-color signal (border, shape). */
+.blog-post p a,
+.blog-post li a,
+.blog-post blockquote a,
+.about-page p a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .blog-post .post-meta {
   color: var(--text-muted);
   font-size: 0.9rem;
@@ -249,15 +285,18 @@ nav.pagination a:hover {
 .blog-post img {
   border-radius: 6px;
   margin: 1rem 0;
+  border: 1px solid var(--border);
 }
 
 .blog-post blockquote {
-  background: rgba(56, 139, 253, 0.06);
+  background: rgba(38, 139, 210, 0.1);
   border-radius: 0 6px 6px 0;
   padding: 0.75rem 1.25rem;
 }
 
-.blog-post pre {
+.blog-post pre,
+.tool-page pre,
+.tools-index pre {
   border-radius: 8px;
   border: 1px solid var(--border);
 }
@@ -358,7 +397,7 @@ body > footer a:hover {
 
 .about-page ul li a:hover {
   border-color: var(--links);
-  background: rgba(227, 188, 94, 0.08);
+  background: rgba(var(--accent-wash) / 0.08);
   text-decoration: none;
 }
 
@@ -433,7 +472,7 @@ body > section ul li a {
   flex-direction: column;
   gap: 0.1rem;
   min-width: 7.5rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 16px var(--background-bright);
 }
 
 .about-header-nav .lang-menu a {
@@ -450,7 +489,7 @@ body > section ul li a {
 }
 
 .about-header-nav .lang-menu a:hover {
-  background: rgba(227, 188, 94, 0.08);
+  background: rgba(var(--accent-wash) / 0.08);
   color: var(--links);
   text-decoration: none;
   border-color: transparent;
@@ -458,7 +497,7 @@ body > section ul li a {
 
 .about-header-nav .lang-menu a.active {
   color: var(--links);
-  background: rgba(227, 188, 94, 0.12);
+  background: rgba(var(--accent-wash) / 0.12);
   border-color: transparent;
 }
 
@@ -523,6 +562,7 @@ html.tool-page-mode .tool-top-bar {
   border-radius: 4px;
   object-fit: cover;
   flex: 0 0 auto;
+  border: 1px solid var(--border);
 }
 .tool-top-pill:hover {
   color: var(--links);
@@ -532,7 +572,7 @@ html.tool-page-mode .tool-top-bar {
 .tool-top-pill.active {
   color: var(--links);
   border-color: var(--links);
-  background: rgba(227, 188, 94, 0.12);
+  background: rgba(var(--accent-wash) / 0.12);
 }
 .drawer-toggle {
   background: none;
@@ -584,7 +624,7 @@ html.tool-page-mode .drawer-backdrop {
   display: block;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.35);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
@@ -632,7 +672,7 @@ html.tool-page-mode .drawer-backdrop.open {
 }
 .tools-list-item a:hover {
   border-color: var(--links);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 12px var(--background-bright);
   text-decoration: none;
 }
 .tools-list-icon {
@@ -642,6 +682,7 @@ html.tool-page-mode .drawer-backdrop.open {
   border-radius: 12px;
   margin: 0 0 0.75rem;
   object-fit: cover;
+  border: 1px solid var(--border);
 }
 .tools-list-title {
   display: block;
@@ -697,8 +738,8 @@ html.tool-page-mode .drawer-backdrop.open {
   margin-bottom: 1.25rem;
 }
 .tool-note {
-  background: rgba(227, 188, 94, 0.08);
-  border: 1px solid rgba(227, 188, 94, 0.25);
+  background: rgba(var(--accent-wash) / 0.08);
+  border: 1px solid rgba(var(--accent-wash) / 0.25);
   border-radius: 6px;
   padding: 0.6rem 0.85rem;
   font-size: 0.9rem;
@@ -774,7 +815,7 @@ html.tool-page-mode .drawer-backdrop.open {
   border-color: var(--links);
 }
 .tool-field textarea[readonly] {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(7, 54, 66, 0.04);
 }
 .tool-claims {
   list-style: none;
@@ -798,13 +839,13 @@ html.tool-page-mode .drawer-backdrop.open {
   color: var(--text-muted);
 }
 .tool-status[data-kind="ok"] {
-  color: #6cc04a;
+  color: #556f00; /* darkened Solarized green, 5.32:1 on base3 / 4.68:1 on base2 */
 }
 .tool-status[data-kind="warn"] {
-  color: #e3bc5e;
+  color: var(--links);
 }
 .tool-status[data-kind="err"] {
-  color: #e25555;
+  color: #a8110f; /* darkened Solarized red, 7.07:1 on base3 */
 }
 
 /* ── Regex tester ── */
@@ -936,7 +977,7 @@ html.tool-page-mode .drawer-backdrop.open {
   color: var(--text-main);
 }
 .regex-highlighted mark {
-  background: rgba(227, 188, 94, 0.32);
+  background: rgba(var(--accent-wash) / 0.32);
   color: var(--text-bright);
   border-radius: 2px;
   padding: 0 1px;
@@ -981,9 +1022,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Reserves a non-overlay scrollbar's width so a 100vw-based full-bleed
+   element (the prophecy timeline) doesn't overflow the visible viewport by
+   the scrollbar's width on desktop browsers. Scoped to pages that actually
+   embed one — prophecy-timeline.js adds this class — so pages without the
+   timeline don't carry a permanently reserved scrollbar gutter for no reason. */
+html.has-prophecy-timeline {
+  scrollbar-gutter: stable;
+}
+
 /* ── Selection ── */
 ::selection {
-  background-color: rgba(227, 188, 94, 0.3);
+  background-color: rgba(var(--accent-wash) / 0.3);
   color: var(--text-bright);
 }
 
@@ -1022,5 +1072,338 @@ html {
   .about-header-avatar {
     width: 44px;
     height: 44px;
+  }
+}
+
+/* ── Bahunya patches (dark-theme idioms hardcoded past :root's reach) ── */
+button:hover {
+  filter: brightness(96%);
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border-color: var(--border);
+}
+button:focus,
+button:hover {
+  border-color: var(--border-bright);
+}
+button:disabled {
+  border-color: var(--border-muted);
+}
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-ms-thumb {
+  box-shadow: none;
+}
+input[type="range"]::-ms-thumb {
+  border-color: var(--border);
+}
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+/* ── Prophecy timeline (blog post embed) ── */
+.prophecy-timeline {
+  --p-true: #556f00;
+  --p-false: #a8110f;
+  --p-pending: var(--focus);
+  --p-partial: var(--links);
+  /* Break out of the article's ~50rem reading column — the rail needs more
+     room than prose does. Centers on the viewport regardless of width, capped
+     at the site's existing widened-canvas width (same 72rem the tool/app
+     pages use) so it doesn't run edge-to-edge on very wide screens. */
+  width: 100vw;
+  max-width: 72rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--background);
+  overflow: hidden;
+}
+.prophecy-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.prophecy-pill {
+  font: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--background-body);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+.prophecy-pill:hover {
+  border-color: var(--links);
+  color: var(--links);
+}
+.prophecy-pill.active {
+  border-color: var(--links);
+  color: var(--links);
+  background: rgba(var(--accent-wash) / 0.12);
+}
+.prophecy-pill-count {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+.prophecy-rail-wrap {
+  position: relative;
+}
+.prophecy-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--background-body);
+  color: var(--text-main);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 3;
+  font-size: 0.9rem;
+}
+.prophecy-arrow:hover {
+  border-color: var(--links);
+  color: var(--links);
+}
+.prophecy-arrow.left {
+  left: 0.4rem;
+}
+.prophecy-arrow.right {
+  right: 0.4rem;
+}
+.prophecy-rail {
+  display: flex;
+  align-items: stretch;
+  overflow-x: auto;
+  gap: 0;
+  padding: 0.75rem 2.5rem 1.25rem;
+  scroll-behavior: smooth;
+}
+.prophecy-node {
+  flex: 0 0 230px;
+  display: flex;
+  flex-direction: column;
+}
+.prophecy-slot {
+  flex: 0 0 auto;
+  display: flex;
+  padding: 0 0.4rem;
+  min-height: 0.5rem;
+}
+.prophecy-node .prophecy-slot.top {
+  align-items: flex-end;
+}
+.prophecy-node .prophecy-slot.bot {
+  align-items: flex-start;
+}
+.prophecy-axis {
+  position: relative;
+  height: 40px;
+  border-top: 2px solid var(--border);
+  margin-top: 18px;
+  flex: 0 0 auto;
+}
+.prophecy-dot {
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  border-radius: 50%;
+  background: var(--background-body);
+  border: 2px solid var(--links);
+}
+.prophecy-year {
+  position: absolute;
+  left: -3rem;
+  right: -3rem;
+  top: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+.prophecy-stem {
+  width: 0;
+  border-left: 1px dashed var(--border);
+  height: 16px;
+  margin: 0 auto;
+  flex: 0 0 auto;
+}
+.prophecy-card {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--border);
+  border-radius: 5px;
+  background: var(--background-body);
+  padding: 0.5rem 0.6rem;
+  width: 100%;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.prophecy-card.status-true {
+  border-left-color: var(--p-true);
+}
+.prophecy-card.status-false {
+  border-left-color: var(--p-false);
+}
+.prophecy-card.status-pending {
+  border-left-color: var(--p-pending);
+}
+.prophecy-card.status-partial {
+  border-left-color: var(--p-partial);
+}
+.prophecy-status {
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.prophecy-card.status-true .prophecy-status {
+  color: var(--p-true);
+}
+.prophecy-card.status-false .prophecy-status {
+  color: var(--p-false);
+}
+.prophecy-card.status-pending .prophecy-status {
+  color: var(--p-pending);
+}
+.prophecy-card.status-partial .prophecy-status {
+  color: var(--p-partial);
+}
+.prophecy-contested-badge {
+  font-size: 0.7rem;
+  cursor: help;
+}
+.prophecy-claim {
+  margin: 0.25rem 0 0.35rem;
+  color: var(--text-main);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.prophecy-card.is-open .prophecy-claim {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+.prophecy-who {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.prophecy-source {
+  font-size: 0.68rem;
+  margin-top: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.prophecy-source a {
+  color: var(--links);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prophecy-detail {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--border);
+}
+.prophecy-detail-block {
+  margin-bottom: 0.5rem;
+}
+.prophecy-detail-block:last-child {
+  margin-bottom: 0;
+}
+.prophecy-detail-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.15rem;
+}
+.prophecy-detail p {
+  margin: 0;
+  color: var(--text-main);
+}
+.prophecy-quote {
+  margin: 0;
+  padding: 0.4rem 0.6rem;
+  border-left: 3px solid var(--links);
+  background: rgba(var(--accent-wash) / 0.1);
+  font-style: italic;
+  color: var(--text-main);
+}
+.prophecy-detail-meta {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+.prophecy-void {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+  width: 100%;
+}
+.prophecy-now-marker {
+  position: relative;
+  flex: 0 0 3px;
+  align-self: stretch;
+  background: var(--focus);
+  margin: 0 1.5rem;
+}
+.prophecy-now-marker::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--focus);
+  color: var(--background-body);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .prophecy-node {
+    flex: 0 0 200px;
+  }
+  /* Single-sided mobile layout: every card sits below its axis. `down`
+     nodes already read that way top-to-bottom; `up` nodes get the same
+     shape for free by reversing their visual order — their (empty) bottom
+     slot collapses to nothing, and the card that was "above" the axis in
+     the DOM ends up rendered last, i.e. visually below it. No DOM move. */
+  .prophecy-node.up {
+    flex-direction: column-reverse;
   }
 }

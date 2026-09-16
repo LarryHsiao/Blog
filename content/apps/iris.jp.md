@@ -64,7 +64,7 @@ Iris は macOS 用の軽量・常時最前面 HUD。同期歌詞とシステム�
 .iris-page figure { margin: 0 0 1rem; }
 .iris-page figure.iris-icon img { border-radius: 24px; }
 .iris-page .iris-screenshot { margin: 1.5rem 0; }
-.iris-page .iris-screenshot img { width: auto; height: auto; max-width: 100%; border-radius: 8px; border: none; object-fit: initial; }
+.iris-page .iris-screenshot img { width: auto; height: auto; max-width: 100%; border-radius: 8px; border: 1px solid var(--border); object-fit: initial; }
 .iris-page h1 { margin-top: 0.5rem; }
 .iris-page h2 { text-align: left; }
 .iris-page ul { text-align: left; list-style: none; padding-left: 0; }

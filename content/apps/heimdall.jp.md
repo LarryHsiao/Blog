@@ -66,7 +66,7 @@ Heimdall は小さなデスクトップ窓で、混雑した Jira の Web UI か
 .heimdall-page figure { margin: 0 0 1rem; }
 .heimdall-page figure.heimdall-icon img { border-radius: 24px; }
 .heimdall-page .heimdall-screenshot { margin: 1.5rem 0; }
-.heimdall-page .heimdall-screenshot img { width: auto; height: auto; max-width: 100%; border-radius: 8px; border: none; object-fit: initial; }
+.heimdall-page .heimdall-screenshot img { width: auto; height: auto; max-width: 100%; border-radius: 8px; border: 1px solid var(--border); object-fit: initial; }
 .heimdall-page h1 { margin-top: 0.5rem; }
 .heimdall-page h2 { text-align: left; }
 .heimdall-page ul { text-align: left; list-style: none; padding-left: 0; }

@@ -5,9 +5,6 @@ base_url = "https://larryhsiao.com"
 title = "賴瑞Blog"
 description = ""
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
-
 # Whether to build a search index to be used later on by a JavaScript library
 # To enable this, build zola with chinese index enable.
 build_search_index = false 
@@ -36,7 +33,7 @@ taxonomies = [{name = "tags", rss = true}]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-highlight_theme = "1337"
+highlight_theme = "solarized-light"
 render_emoji = true
 
 [search]
@@ -58,18 +55,21 @@ about_url_jp = "$BASE_URL/jp/about/"
 menus = [
     { url = "$BASE_URL/tags/", name = "標籤" },
     { url = "$BASE_URL/tools/", name = "開發工具"},
-    { url = "$BASE_URL/apps/", name = "應用程式"}
+    { url = "$BASE_URL/apps/", name = "應用程式"},
+    { url = "$BASE_URL/the-prophecy-ledger/", name = "好玩東西"}
 ]
 
 menus_en = [
     { url = "$BASE_URL/en/tags/", name = "Tags" },
     { url = "$BASE_URL/en/tools/", name = "Dev Tools"},
-    { url = "$BASE_URL/en/apps/", name = "Apps"}
+    { url = "$BASE_URL/en/apps/", name = "Apps"},
+    { url = "$BASE_URL/en/the-prophecy-ledger/", name = "Fun Things"}
 ]
 
 menus_jp = [
     { url = "$BASE_URL/jp/tags/", name = "Tags" },
     { url = "$BASE_URL/jp/tools/", name = "開発ツール"},
-    { url = "$BASE_URL/jp/apps/", name = "アプリ"}
+    { url = "$BASE_URL/jp/apps/", name = "アプリ"},
+    { url = "$BASE_URL/jp/the-prophecy-ledger/", name = "お楽しみ"}
 ]
 

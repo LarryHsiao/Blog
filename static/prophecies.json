@@ -1,0 +1,877 @@
+[
+  {
+    "id": "nostradamus-1999-seventh-month",
+    "said_year": 1568,
+    "target_year": 1999,
+    "target_label": {
+      "zh": "1999",
+      "en": "1999",
+      "jp": "1999"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "《百詩集》第十紀第72首寫道，一九九九年七月，天上將降下一位「恐怖大王」，使「安哥魯莫亞大王」復活。後世解讀者把這首四行詩讀成世界末日的預告。",
+      "en": "Century X, Quatrain 72 states that in the year 1999, seventh month, a 'great King of Terror' will come from the sky and revive 'the great King of Angolmois'. Later interpreters read the quatrain as foretelling the end of the world.",
+      "jp": "『諸世紀』第10巻72番には、1999年7月に空から「恐怖の大王」が降りてきて「アンゴルモアの大王」を蘇らせると書かれている。後世の解釈者たちはこの四行詩を世界の終わりの予言として読んだ。"
+    },
+    "speaker": {
+      "zh": "諾斯特拉達姆斯（Michel de Nostredame）· 法國醫師暨占星預言家",
+      "en": "Michel de Nostredame (Nostradamus) · French physician and astrologer",
+      "jp": "ノストラダムス（ミシェル・ド・ノートルダム）· フランスの医師・占星術師"
+    },
+    "outcome": {
+      "zh": "一九九九年七月平安度過，天上什麼也沒落下。",
+      "en": "July 1999 passed without incident; nothing came from the sky.",
+      "jp": "1999年7月は何事もなく過ぎ、空から何も降ってこなかった。"
+    },
+    "source_title": "Les Prophéties de M. Nostradamus — Centurie X (Le Pelletier 1867 edition, Wikisource)",
+    "source_url": "https://fr.wikisource.org/wiki/Les_Proph%C3%A9ties_de_M._Nostradamus/Centurie_X",
+    "quote": "L'an mil neuf cens nonante neuf sept mois, / Du ciel viendra vn grand Roy d'effrayeur : / Resusciter le grand Roy d'Angolmois, / Auant apres Mars regner par bon-heur.",
+    "caveat": {
+      "zh": "四行詩本身完全沒有提到「世界末日」——沒有審判、沒有毀滅，只有一位「恐怖大王」降臨；末日讀法是二十世紀通俗詮釋，非原文所載。「Angolmois」的解法至今有爭議。第十紀最早見於一五六八年里昂 Benoist Rigaud 版，為諾氏死後出版，故 said_year 取 1568；引文出自一八六七年 Le Pelletier 校訂本的 Wikisource 轉錄，非十六世紀原刻掃描件。",
+      "en": "The quatrain never mentions 'the end of the world' — no judgment, no destruction, only a 'King of Terror' arriving; the doomsday reading is a 20th-century popular gloss, not the original text. 'Angolmois' remains disputed. Century X first appeared in the 1568 Lyon (Benoist Rigaud) edition, published after Nostradamus's death, hence said_year=1568; the quoted text is from the 1867 Le Pelletier edition transcribed on Wikisource, not a 16th-century scan.",
+      "jp": "この詩自体には「世界の終わり」という言葉は一切ない——審判も破壊もなく、ただ「恐怖の大王」が降臨するとあるだけ。終末論的な読み方は20世紀の通俗的解釈にすぎず、原文にはない。「アンゴルモア」の解釈も今なお議論が続く。第10巻は1568年リヨン版（ノストラダムス没後の出版）で初出のため、said_yearは1568年とした。"
+    }
+  },
+  {
+    "id": "maya-2012-baktun-end",
+    "said_year": 669,
+    "target_year": 2012,
+    "target_label": {
+      "zh": "2012",
+      "en": "2012",
+      "jp": "2012"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "流行說法稱馬雅長紀曆第十三個巴克盾（b'ak'tun）於二○一二年十二月結束，等同世界末日；唯一提到該日期的古代銘文是托爾圖格羅六號紀念碑（約公元669年），它預告的是神祇 Bolon Yokte' K'uh 的「降臨」。",
+      "en": "The popular claim held that the end of the 13th b'ak'tun of the Maya Long Count in December 2012 marked the end of the world; the only ancient inscription naming that date, Tortuguero Monument 6 (c. 669 CE), speaks instead of the 'descent' of the god Bolon Yokte' K'uh.",
+      "jp": "俗説では、マヤ長期暦の第13バクトゥンが2012年12月に終わることが世界の終わりを意味するとされたが、その日付に触れる唯一の古代碑文「トルトゥゲロ石碑6」（紀元669年頃）が語っているのは、神ボロン・ヨクテ・クウの「降臨」である。"
+    },
+    "speaker": {
+      "zh": "托爾圖格羅六號紀念碑銘文 · 馬雅古典期石碑（無具名預言者）",
+      "en": "Tortuguero Monument 6 inscription · Classic Maya stela (no named prophet)",
+      "jp": "トルトゥゲロ石碑6の銘文 · マヤ古典期の石碑（名のある予言者はいない）"
+    },
+    "outcome": {
+      "zh": "二○一二年十二月二十一日如常度過，曆法只是翻到下一個週期。",
+      "en": "21 December 2012 passed uneventfully; the calendar simply rolled into the next cycle.",
+      "jp": "2012年12月21日は何事もなく過ぎ、暦は単に次の周期に移っただけだった。"
+    },
+    "source_title": "David Stuart, \"More on Tortuguero's Monument 6 and the Prophecy that Wasn't\" (Maya Decipherment)",
+    "source_url": "https://mayadecipherment.com/2011/10/04/more-on-tortugueros-monument-6-and-the-prophecy-that-wasnt/",
+    "quote": "The Thirteenth 'Bak'tun' will be finished (on) Four Ajaw, the Third of Uniiw (K'ank'in). ? will occur. (It will be) the descent(??) of the Nine Support? God(s) to the ?.",
+    "caveat": {
+      "zh": "核心更正：沒有任何馬雅文獻預言二○一二年世界毀滅。托爾圖格羅六號碑的主題是公元669年統治者 B'ahlam Ajaw 的獻殿儀式，提及十三巴克盾之終只是馬雅銘文慣用修辭。巴克盾之終是曆法週期翻轉，非末日。末日框架出自現代作者（Michael D. Coe 一九六六年的推想及新紀元作家的擴寫）。said_year 取銘文刻立年代，嚴格說此條並無預言者。",
+      "en": "The core correction: no Maya text prophesies the world ending in 2012. Tortuguero Monument 6's actual subject is a 669 CE dedication ceremony under ruler B'ahlam Ajaw; naming the b'ak'tun's end is standard Maya rhetorical convention, not a doomsday marker. The end of a b'ak'tun is a calendar rollover, not an apocalypse. The doomsday framing was added by modern authors. said_year is the inscription's carving date; strictly, no prophet exists for this entry.",
+      "jp": "核心的な訂正：2012年に世界が滅びると予言したマヤの文献は存在しない。トルトゥゲロ石碑6の本来の主題は紀元669年の統治者バフラム・アハウの奉献儀式であり、13バクトゥンの終わりへの言及はマヤ碑文によくある修辞にすぎない。バクトゥンの終わりは暦の周期の切り替わりであって終末ではない。終末論的な枠組みは現代の著述家が後付けしたものである。said_yearは碑文が刻まれた年代であり、厳密に言えばこの項目には預言者が存在しない。"
+    }
+  },
+  {
+    "id": "millerites-great-disappointment-1844",
+    "said_year": 1843,
+    "target_year": 1844,
+    "target_label": {
+      "zh": "1843–1844",
+      "en": "1843–1844",
+      "jp": "1843–1844"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "浸信會傳道人威廉·米勒依但以理書推算，基督必於一八四三年三月二十一日至一八四四年三月二十一日之間再臨；日期落空後，運動改指一八四四年十月二十二日。",
+      "en": "Baptist preacher William Miller calculated from the Book of Daniel that Christ must return between 21 March 1843 and 21 March 1844; after that window passed, the movement settled on 22 October 1844.",
+      "jp": "バプテスト派の説教者ウィリアム・ミラーはダニエル書から、キリストは1843年3月21日から1844年3月21日の間に再臨すると算出した。その期間が過ぎると、運動は1844年10月22日に日付を改めた。"
+    },
+    "speaker": {
+      "zh": "William Miller · 美國浸信會傳道人、米勒派運動發起者",
+      "en": "William Miller · American Baptist preacher, founder of the Millerite movement",
+      "jp": "ウィリアム・ミラー · アメリカのバプテスト派説教者、ミラー派運動の創始者"
+    },
+    "outcome": {
+      "zh": "十月二十二日基督未臨，史稱「大失望」，數萬信徒離散，殘餘一支日後形成基督復臨安息日會。",
+      "en": "Christ did not return on 22 October; the 'Great Disappointment' scattered tens of thousands of followers, and a remnant later formed the Seventh-day Adventist Church.",
+      "jp": "10月22日にキリストは再臨せず、「大失望」と呼ばれる出来事で数万人の信者が離散した。残った一派が後にセブンスデー・アドベンチスト教会を形成した。"
+    },
+    "source_title": "\"American Adventism: The Great Disappointment\" (Christian History Institute)",
+    "source_url": "https://christianhistoryinstitute.org/magazine/article/american-adventism-the-great-disappointment",
+    "quote": "I see a glory in the seventh month. Thank the Lord, O my soul! . . . I am almost home.",
+    "caveat": {
+      "zh": "「一八四四年十月二十二日」並非米勒本人所定——該日期由 Samuel S. Snow 依「七月派」推出，米勒遲至一八四四年十月才接受。米勒公開的窗口是一八四三年三月至一八四四年三月。",
+      "en": "'22 October 1844' was not Miller's own date — it was derived by Samuel S. Snow's 'seventh-month movement', which Miller accepted only in October 1844. Miller's own public window ran March 1843 to March 1844.",
+      "jp": "「1844年10月22日」はミラー自身が定めた日付ではない——サミュエル・S・スノウの「第七の月運動」が導き出したもので、ミラー自身が受け入れたのは1844年10月になってからだった。ミラーが公に示していた期間は1843年3月から1844年3月までだった。"
+    }
+  },
+  {
+    "id": "watch-tower-1914",
+    "said_year": 1889,
+    "target_year": 1914,
+    "target_label": {
+      "zh": "1914",
+      "en": "1914",
+      "jp": "1914"
+    },
+    "status": "false",
+    "contested": true,
+    "claim": {
+      "zh": "羅素在《時候近了》中推算「外邦人的時期」將於一九一四年秋終結，地上列國政權將被完全推翻、神的國度完全建立，教會亦將在該年十月前被提得榮。",
+      "en": "In The Time Is at Hand, Charles Taze Russell calculated that the 'Times of the Gentiles' would end in the autumn of 1914 with the complete overthrow of earth's rulership and the full establishment of God's Kingdom, the Church being gathered to glory before that October.",
+      "jp": "ラッセルは『近づく時』の中で、「異邦人の時」は1914年秋に終わり、地上の諸政権は完全に覆され、神の王国が完全に樹立され、教会もその年の10月までに栄光へと引き上げられると算出した。"
+    },
+    "speaker": {
+      "zh": "Charles Taze Russell · 守望台聖經書社創辦人（聖經研究者運動）",
+      "en": "Charles Taze Russell · Founder, Watch Tower Bible and Tract Society",
+      "jp": "チャールズ・テイズ・ラッセル · ものみの塔聖書冊子協会創設者"
+    },
+    "outcome": {
+      "zh": "一九一四年爆發的是第一次世界大戰而非神國降臨；羅素在一九一六年序言中承認「我們得出了錯誤的結論」。",
+      "en": "1914 brought the First World War, not the Kingdom; in his 1916 Foreword Russell conceded 'We drew a false conclusion.'",
+      "jp": "1914年に起きたのは神の王国の降臨ではなく第一次世界大戦だった。ラッセルは1916年の序文で「私たちは誤った結論を導き出した」と認めた。"
+    },
+    "source_title": "C. T. Russell, The Time Is at Hand — Foreword (dated 1 October 1916)",
+    "source_url": "https://biblestudents.com/htdbv5/htdb0084.htm",
+    "quote": "We drew a false conclusion, however, not authorized by the Word of the Lord.",
+    "caveat": {
+      "zh": "status 有爭議：耶和華見證人今日不視一九一四年為失準預言，而視之為基督「不可見」登基之年，並以一戰為其記號——落空的是羅素原本可見、字面的版本。「耶和華見證人」之名一九三一年才啟用，當時稱聖經研究者。",
+      "en": "Status is contested: Jehovah's Witnesses today do not treat 1914 as a failed prediction but as the year of Christ's 'invisible' enthronement, with WWI as its sign — what failed was Russell's original literal, visible version. The name 'Jehovah's Witnesses' was not adopted until 1931.",
+      "jp": "status には異論がある。エホバの証人は今日、1914年を外れた予言とは見なさず、キリストの「目に見えない」即位の年とし、第一次世界大戦をその印と解釈している——外れたのはラッセルの元々の、目に見える文字通りの解釈である。「エホバの証人」という名称は1931年になってから採用された。"
+    }
+  },
+  {
+    "id": "watch-tower-1975",
+    "said_year": 1968,
+    "target_year": 1975,
+    "target_label": {
+      "zh": "1975",
+      "en": "1975",
+      "jp": "1975"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "《守望台》一九六八年八月十五日刊〈你為什麼期待一九七五年？〉指出，一九七五年秋將是亞當受造以來人類存在的六千年之終，並宣稱人類六千年「就在這一代之內」即將屆滿。",
+      "en": "The Watchtower of 15 August 1968, 'Why Are You Looking Forward to 1975?', stated that autumn 1975 would mark 6,000 years of human existence since Adam's creation, and that those six thousand years would be up 'within this generation'.",
+      "jp": "1968年8月15日号の『ものみの塔』誌「あなたはなぜ1975年を待ち望んでいるのか」は、1975年秋がアダムの創造以来人類が存在してきた6000年の終わりにあたり、その6000年が「この世代のうちに」まもなく満了すると述べた。"
+    },
+    "speaker": {
+      "zh": "守望台聖經書社（Watch Tower Society）· 耶和華見證人管理機構",
+      "en": "Watch Tower Society · governing body of Jehovah's Witnesses",
+      "jp": "ものみの塔聖書冊子協会 · エホバの証人の統治体"
+    },
+    "outcome": {
+      "zh": "一九七五年秋如常度過；守望台其後放棄該期待，並轉而告誡信徒不可定日期。",
+      "en": "Autumn 1975 passed with nothing; the Society afterwards dropped the expectation and cautioned against date-setting.",
+      "jp": "1975年秋は何事もなく過ぎ、協会は後にその期待を取り下げ、日付を定めることを戒めるようになった。"
+    },
+    "source_title": "\"Why Are You Looking Forward to 1975?\", The Watchtower, 15 August 1968, pp. 494–501",
+    "source_url": "https://wol.jw.org/en/wol/d/r1/lp-e/1968602",
+    "quote": "Bible chronology reinforced with fulfilled Bible prophecy shows that six thousand years of man's existence will soon be up, yes, within this generation!",
+    "caveat": {
+      "zh": "該文從未直言「一九七五年世界毀滅」——行文帶有保留：「Our chronology, however, which is reasonably accurate (but admittedly not infallible), at the best only points to the autumn of 1975…」流行版本把「六千年之終」直接等同「末日」，超出原文所載。",
+      "en": "The article never states 'the world will end in 1975' outright — it hedges: 'Our chronology, however, which is reasonably accurate (but admittedly not infallible), at the best only points to the autumn of 1975…' The popular version equates 'the end of 6,000 years' with 'the end of the world', which the text does not say.",
+      "jp": "この記事は「1975年に世界が滅びる」とは一言も言っていない——文面には留保がある。「とはいえ、私たちの年代計算は、かなり正確ではあるものの（絶対に誤りがないとは言えないが）、せいぜい1975年秋を地上における人類存在6000年の終わりとして指し示すにすぎない」。俗説は「6000年の終わり」を「世界の終わり」とそのまま同一視しており、原文にはない飛躍である。"
+    }
+  },
+  {
+    "id": "heavens-gate-1997",
+    "said_year": 1997,
+    "target_year": 1997,
+    "target_label": {
+      "zh": "1997",
+      "en": "1997",
+      "jp": "1997"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "「天堂之門」領袖阿普懷特宣稱海爾–波普彗星是等待已久的「記號」，一艘來自「人類之上層級」的太空船隨行而至，要接他們回家；地球即將被「重整」。",
+      "en": "Heaven's Gate leader Marshall Applewhite proclaimed that Comet Hale-Bopp was the long-awaited 'marker' for a spacecraft from the Level Above Human coming to take them home, and that Earth was about to be recycled.",
+      "jp": "「ヘブンズ・ゲート」の指導者アップルホワイトは、ヘール・ボップ彗星こそ待ち望んでいた「しるし」であり、「人間を超えたレベル」からの宇宙船が彼らを迎えに来ると宣言した。地球はまもなく「作り直される」とも語った。"
+    },
+    "speaker": {
+      "zh": "Marshall Applewhite · 「天堂之門」共同創辦人兼領袖",
+      "en": "Marshall Applewhite · co-founder and leader of Heaven's Gate",
+      "jp": "マーシャル・アップルホワイト · 「ヘブンズ・ゲート」共同創設者兼指導者"
+    },
+    "outcome": {
+      "zh": "一九九七年三月二十二至二十六日間，含阿普懷特在內的三十九名成員在加州聖地牙哥郡集體自殺；並無太空船。",
+      "en": "Between 22 and 26 March 1997, 39 members including Applewhite died by coordinated suicide in San Diego County; no spacecraft appeared.",
+      "jp": "1997年3月22日から26日にかけて、アップルホワイトを含む39人のメンバーがカリフォルニア州サンディエゴ郡で集団自殺した。宇宙船は現れなかった。"
+    },
+    "source_title": "Heaven's Gate official website (heavensgate.com, preserved as left in March 1997)",
+    "source_url": "https://www.heavensgate.com/",
+    "quote": "Hale-Bopp's approach is the 'marker' we've been waiting for -- the time for the arrival of the spacecraft from the Level Above Human to take us home",
+    "caveat": {
+      "zh": "嚴格說這不是一般意義的「世界末日預言」：該團體預告的是自己「畢業」離開地球，地球被「重整」是附帶而非核心。所謂「彗星後方有伴隨物體」的說法源自業餘觀測者的誤判，經天文學界否定。",
+      "en": "Strictly this is not a conventional 'end of the world' prophecy — the group foretold their own 'graduation' from Earth; Earth being 'recycled' was incidental, not central. The claim of a companion object trailing the comet originated from an amateur observer's misidentification, later refuted by astronomers.",
+      "jp": "厳密には一般的な「世界終末予言」ではない——この集団が予告したのは自分たちが地球を「卒業」して離れることであり、地球が「作り直される」という話は付随的なものにすぎない。彗星に伴う物体があるという説はアマチュア観測者の誤認に由来し、天文学界によって否定されている。"
+    }
+  },
+  {
+    "id": "pat-robertson-1982",
+    "said_year": 1980,
+    "target_year": 1982,
+    "target_label": {
+      "zh": "1982",
+      "en": "1982",
+      "jp": "1982"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "電視佈道家派特·羅伯遜在一九八○年《700 俱樂部》節目中宣稱，他「保證」一九八二年底以前世界必遭審判，並稱此說來自神的指示。",
+      "en": "Televangelist Pat Robertson declared on a 1980 broadcast of The 700 Club that he 'guaranteed' a judgment would come upon the world by the end of 1982, saying the forecast came from God.",
+      "jp": "テレビ伝道師パット・ロバートソンは1980年の『700クラブ』の放送で、1982年末までに世界に裁きが下ると「保証する」と宣言し、それは神からの啓示だと語った。"
+    },
+    "speaker": {
+      "zh": "Pat Robertson · 美國電視佈道家、《700 俱樂部》主持人",
+      "en": "Pat Robertson · American televangelist, host of The 700 Club",
+      "jp": "パット・ロバートソン · アメリカのテレビ伝道師、『700クラブ』司会者"
+    },
+    "outcome": {
+      "zh": "一九八二年過去，並無審判；羅伯遜承認自己「有時會失準」，日後仍繼續作類似預告。",
+      "en": "1982 came and went with no judgment; Robertson conceded 'Sometimes I miss' and continued making similar forecasts.",
+      "jp": "1982年は何の裁きもなく過ぎ、ロバートソンは「時々外れることもある」と認めながらも、その後も同様の予告を続けた。"
+    },
+    "source_title": "\"Judgment Day? Five failed end-of-the-world predictions\" (The Christian Science Monitor, 18 May 2011)",
+    "source_url": "https://www.csmonitor.com/Science/2011/0518/Judgment-Day-Five-failed-end-of-the-world-predictions/October-or-November-1982",
+    "quote": "I guarantee you by the end of 1982 there is going to be a judgment on the world.",
+    "caveat": {
+      "zh": "羅伯遜說的是「a judgment on the world」，並非字面的「世界末日」——通俗轉述常把兩者等同。引語出自二手報導轉引一九八○年播出內容，未取得該集節目原始錄影核實。",
+      "en": "Robertson said 'a judgment on the world', not literally 'the end of the world' — popular retellings conflate the two. The quote is via a secondary 2011 report citing the 1980 broadcast; the original footage was not independently verified in this research.",
+      "jp": "ロバートソンが語ったのは「世界への裁き」であり、文字通りの「世界の終わり」ではない——通俗的な言い換えでは両者が同一視されがちである。この引用は2011年の二次報道が1980年の放送内容を引用したものであり、当該放送の一次映像そのものでは検証できていない。"
+    }
+  },
+  {
+    "id": "harold-camping-may-21-2011",
+    "said_year": 2011,
+    "target_year": 2011,
+    "target_label": {
+      "zh": "2011",
+      "en": "2011",
+      "jp": "2011"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "家庭電台創辦人坎平以聖經年代學推算，宣告二○一一年五月二十一日為審判日、被提之時，並在全美豎立廣告看板；世界本身則將於同年十月二十一日毀滅。",
+      "en": "Family Radio founder Harold Camping calculated from biblical chronology that 21 May 2011 would be Judgment Day and the Rapture, advertising it on billboards nationwide, with the world itself to be destroyed on 21 October 2011.",
+      "jp": "ファミリー・ラジオ創設者ハロルド・キャンピングは聖書年代学から、2011年5月21日が審判の日・携挙の時であると算出し、全米に看板を掲げて宣伝した。世界そのものは同年10月21日に滅びるとも語った。"
+    },
+    "speaker": {
+      "zh": "Harold Camping · 家庭電台創辦人",
+      "en": "Harold Camping · founder of Family Radio",
+      "jp": "ハロルド・キャンピング · ファミリー・ラジオ創設者"
+    },
+    "outcome": {
+      "zh": "兩個日期都平靜度過；坎平先改口說那是「屬靈的」審判，二○一二年三月家庭電台承認該宣告「錯誤」且「有罪」。",
+      "en": "Both dates passed quietly; Camping first called it a 'spiritual' judgment, and in March 2012 Family Radio admitted the claim had been 'incorrect' and 'sinful'.",
+      "jp": "両方の日付とも静かに過ぎ去った。キャンピングはまず「霊的な」裁きだったと言い直し、2012年3月にファミリー・ラジオはその宣言が「誤りであり」「罪深いものだった」と認めた。"
+    },
+    "source_title": "\"The end is nigh, says Family Radio's Harold Camping\" (Oakland North, 20 May 2011)",
+    "source_url": "https://oaklandnorth.net/2011/05/20/the-end-is-nigh-says-family-radios-harold-camping/",
+    "quote": "Judgment Day May 21, 2011",
+    "caveat": {
+      "zh": "該日期實際自二○○五年前後即在其著作與廣播中推廣，坎平早在一九九四年已有一次失準的末日預告，故 said_year 屬近似值。",
+      "en": "The date was actually promoted from around 2005 onward in his broadcasts and writings, and Camping had already made a failed end-times prediction in 1994, so said_year is approximate.",
+      "jp": "この日付は実際には2005年前後からすでに著作や放送で広められており、キャンピングは1994年にもすでに一度外れた終末予言をしていたため、said_yearは概算である。"
+    }
+  },
+  {
+    "id": "malthus-population-principle-1798",
+    "said_year": 1798,
+    "target_year": 1798,
+    "target_label": {
+      "zh": "無期限（結構性主張，非定期預測）",
+      "en": "Open-ended (a structural claim, not a dated forecast)",
+      "jp": "無期限（構造的主張、期限付き予測ではない）"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "人口若不受抑制，會以幾何級數增長，糧食供給卻只能以算術級數增加。兩者的差距終將由飢荒、疾病與貧困強制拉平。",
+      "en": "Population, when unchecked, grows geometrically while subsistence grows only arithmetically; the gap must ultimately be closed by famine, disease and misery.",
+      "jp": "抑制されない人口は幾何級数的に増加するが、食糧供給は算術級数的にしか増加しない。両者の差は最終的に飢饉・疾病・貧困によって強制的に埋められる。"
+    },
+    "speaker": {
+      "zh": "Thomas Robert Malthus · 英國政治經濟學家、英國國教牧師",
+      "en": "Thomas Robert Malthus · English political economist and Anglican cleric",
+      "jp": "トマス・ロバート・マルサス · イギリスの政治経済学者、英国国教会の聖職者"
+    },
+    "outcome": {
+      "zh": "兩百多年來糧食產量成長遠超過人口，全球人均熱量不減反增，飢荒死亡率大幅下降。",
+      "en": "Over two centuries food output outgrew population; per-capita calories rose and famine mortality collapsed.",
+      "jp": "その後200年余りで食糧生産は人口増加をはるかに上回り、世界の一人当たりカロリーはむしろ増加し、飢饉による死亡率は大きく低下した。"
+    },
+    "source_title": "An Essay on the Principle of Population (1798, first edition) — Project Gutenberg",
+    "source_url": "https://www.gutenberg.org/files/4239/4239-h/4239-h.htm",
+    "quote": "Population, when unchecked, increases in a geometrical ratio. Subsistence increases only in an arithmetical ratio.",
+    "caveat": {
+      "zh": "馬爾薩斯未設任何日期，主張的是一項持續存在的結構性傾向而非有期限的預測——因此 status=false 是對其後兩百年的判斷，而非「錯過了期限」。農業革命與人口轉型推翻了該比例論的兩端。",
+      "en": "Malthus set no date — he described a standing structural tendency, not a dated forecast, so status=false judges the following two centuries rather than a missed deadline. The agricultural revolution and demographic transition overturned both sides of the ratio.",
+      "jp": "マルサスは日付を一切設定していない——彼が主張したのは期限付きの予測ではなく、恒常的な構造的傾向である。したがってstatus=falseは、期限を逃したという意味ではなく、その後200年間についての判定である。農業革命と人口転換がこの比率論の両辺を覆した。"
+    }
+  },
+  {
+    "id": "ehrlich-population-bomb-1968",
+    "said_year": 1968,
+    "target_year": 1970,
+    "target_label": {
+      "zh": "1970–1989",
+      "en": "1970–1989",
+      "jp": "1970–1989"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "餵飽全人類的戰役已經結束。一九七○與八○年代將有數億人餓死，此刻展開任何緊急計畫都來不及。",
+      "en": "The battle to feed all of humanity is over; hundreds of millions of people will starve to death in the 1970s and 1980s in spite of any crash programs embarked upon now.",
+      "jp": "全人類を養う戦いはすでに終わった。1970年代と80年代には、今から緊急計画を始めたとしても数億人が餓死するだろう。"
+    },
+    "speaker": {
+      "zh": "Paul R. Ehrlich · 史丹佛大學生物學家",
+      "en": "Paul R. Ehrlich · Stanford University biologist",
+      "jp": "ポール・R・エーリック · スタンフォード大学の生物学者"
+    },
+    "outcome": {
+      "zh": "綠色革命使糧食產量超前人口，並未出現數億人餓死；其後飢荒死亡數更下降了一個數量級。",
+      "en": "The Green Revolution outpaced population growth; no such famine occurred, and famine deaths fell by roughly an order of magnitude afterwards.",
+      "jp": "緑の革命によって食糧生産は人口増加を上回り、数億人規模の餓死は起こらなかった。その後、飢饉による死者数はむしろ一桁少なくなった。"
+    },
+    "source_title": "Paul R. Ehrlich, The Population Bomb — full text (Ted K Archive)",
+    "source_url": "https://www.thetedkarchive.com/library/paul-r-ehrlich-the-population-bomb",
+    "quote": "The battle to feed all of humanity is over.",
+    "caveat": {
+      "zh": "版本問題：可抓取的全文是修訂版，作「In the 1970s and 1980s hundreds of millions of people will starve to death…」；一九六八年初版只寫「In the 1970's」，日期是後續印次才放寬的。",
+      "en": "A version issue: the fetchable full text is a revised printing reading 'In the 1970s and 1980s hundreds of millions of people will starve to death…'; the 1968 first edition said only 'In the 1970's' — the wider date range was added in later printings.",
+      "jp": "版の違いに注意。入手できた全文は改訂版で「1970年代と80年代には……」とあるが、1968年の初版には「1970年代には」としか書かれておらず、より広い年代幅は後の版で加えられたものである。"
+    }
+  },
+  {
+    "id": "limits-to-growth-1972",
+    "said_year": 1972,
+    "target_year": 2072,
+    "target_label": {
+      "zh": "2072（書中自訂期限）",
+      "en": "2072 (the book's own horizon)",
+      "jp": "2072年（本自身が定めた期限）"
+    },
+    "status": "pending",
+    "contested": true,
+    "claim": {
+      "zh": "若世界人口、工業化、污染、糧食生產與資源消耗維持當時的成長趨勢不變，地球的成長極限將在未來一百年內到達，最可能的結果是人口與工業產能相當突然且失控地下滑。",
+      "en": "If the present growth trends in population, industrialisation, pollution, food production and resource depletion continue unchanged, the limits to growth will be reached within the next hundred years, the most probable result being a sudden and uncontrollable decline in both population and industrial capacity.",
+      "jp": "人口・工業化・汚染・食糧生産・資源消費が当時の成長傾向のまま続けば、成長の限界は今後100年以内に訪れ、最も起こりやすい結果は人口と工業生産力の相当急激で制御不能な減少である。"
+    },
+    "speaker": {
+      "zh": "Donella Meadows、Dennis Meadows、Jørgen Randers、William Behrens III · 麻省理工學院系統動力學團隊（羅馬俱樂部委託）",
+      "en": "Donella Meadows, Dennis Meadows, Jørgen Randers, William Behrens III · MIT systems-dynamics team (commissioned by the Club of Rome)",
+      "jp": "ドネラ・メドウズ、デニス・メドウズ、ヨルゲン・ランダース、ウィリアム・ベアレンズ3世 · マサチューセッツ工科大学システムダイナミクスチーム（ローマクラブの委託）"
+    },
+    "outcome": {
+      "zh": "一百年的期限要到二○七二年才屆滿，尚未到期；而流行版本所說的「二○○○年資源耗盡」並非書中主張。",
+      "en": "The hundred-year horizon runs to 2072 and has not expired; the popular 'resources exhausted by 2000' version is not what the book said.",
+      "jp": "100年という期限は2072年まであり、まだ満了していない。俗説にある「2000年までに資源が枯渇する」という主張は本の中には存在しない。"
+    },
+    "source_title": "The Limits to Growth — Club of Rome publication page",
+    "source_url": "https://www.clubofrome.org/publication/the-limits-to-growth/",
+    "quote": "The earth's interlocking resources – the global system of nature in which we all live – probably cannot support present rates of economic and population growth much beyond the year 2100, if that long, even with advanced technology.",
+    "caveat": {
+      "zh": "最大的更正。書中推演是條件式「情境」，不是預測，作者明言那些推演只在「最有限的意義上」算預測。書中沒有任何「世界何時耗盡資源」的日期；附錄那張靜態儲量年限表被廣泛誤讀為耗竭時間表。status 定為 pending 是因為書中自訂的期限是二○七二年。",
+      "en": "The biggest correction here. The World3 output is conditional 'scenarios', not forecasts — the authors state the projections are predictions 'only in the most limited sense of the word'. The book names no date for resource exhaustion; an appendix table of static reserve lifespans was widely misread as an exhaustion timetable. Status is pending because the book's own horizon is 2072.",
+      "jp": "最大の訂正点。World3モデルが出したのは条件付きの「シナリオ」であって予測ではない——著者たち自身が、その推計は「最も限定的な意味においてのみ」予測であると明言している。本の中には資源が枯渇する日付はどこにも書かれておらず、付録の静的な埋蔵量年数の表が、しばしば枯渇の時間割のように誤読されてきた。statusをpendingとしたのは、本自身が定めた期限が2072年だからである。"
+    }
+  },
+  {
+    "id": "hubbert-peak-oil-1956",
+    "said_year": 1956,
+    "target_year": 1965,
+    "target_label": {
+      "zh": "1965–1970",
+      "en": "1965–1970",
+      "jp": "1965–1970"
+    },
+    "status": "partial",
+    "contested": true,
+    "claim": {
+      "zh": "美國本土原油產量將在一九六五年前後攀上頂峰後轉跌；即使最終可採量由一千五百億桶上修到兩千億桶，頂峰也只延後到一九七○年左右。",
+      "en": "US crude oil production would peak around 1965 and then decline; even raising ultimate recoverable reserves from 150 to 200 billion barrels only delays the peak to about 1970.",
+      "jp": "アメリカ本土の原油生産量は1965年前後にピークを迎え、その後減少する。最終的な可採埋蔵量を1500億バレルから2000億バレルに上方修正しても、ピークは1970年頃まで遅れるにすぎない。"
+    },
+    "speaker": {
+      "zh": "M. King Hubbert · 殼牌石油研究實驗室地質學家",
+      "en": "M. King Hubbert · geologist, Shell Oil research laboratory",
+      "jp": "M・キング・ハバート · シェル石油研究所の地質学者"
+    },
+    "outcome": {
+      "zh": "美國原油產量確實於一九七○年見頂並連跌三十餘年，但頁岩油革命使二○一八年產量超越一九七○年舊高點，曲線並非他所畫的單一鐘形。",
+      "en": "US output did peak in 1970 and fell for three decades — then shale reversed it, and US production passed the 1970 high in 2018.",
+      "jp": "アメリカの原油生産量は確かに1970年にピークを迎えその後30年以上減少し続けたが、シェールオイル革命により2018年の生産量は1970年の旧高値を上回った。曲線は彼が描いたような単純な一峰型ではなかった。"
+    },
+    "source_title": "Hubbert's Curve 'Piqued' Interest — AAPG Explorer (quoting Hubbert 1956)",
+    "source_url": "https://www.aapg.org/news-and-media/explorer/hubberts-curve-piqued-interest/",
+    "quote": "the curve must culminate at about 1965 and then must decline at a rate",
+    "caveat": {
+      "zh": "status 確有爭議，「partial」是最誠實的讀法。一九七○年的美國頂峰是史上最準確的資源預測之一；但隨之而來的單峰曲線並不成立——水力壓裂造出了第二個更高的峰。他也從未主張世界「即將沒有石油」，那是後人加油添醋。",
+      "en": "Status is genuinely contested; 'partial' is the honest reading. The 1970 US peak is one of the most accurate resource forecasts on record; but the single-peak curve that followed did not hold — fracking produced a second, higher peak. He also never claimed the world was 'running out of oil' — that embellishment came later.",
+      "jp": "statusには確かに議論の余地があり、「partial」が最も誠実な読み方である。1970年のアメリカのピークは史上最も正確な資源予測の一つだが、続くはずだった単峰曲線は成立しなかった——水圧破砕法がそれよりも高い第二のピークを作り出したのである。彼自身も世界が「まもなく石油を使い果たす」とは一度も主張していない——それは後の脚色である。"
+    }
+  },
+  {
+    "id": "nuclear-winter-ttaps-1983",
+    "said_year": 1983,
+    "target_year": 1983,
+    "target_label": {
+      "zh": "無期限（前提未發生）",
+      "en": "Open-ended (the antecedent never occurred)",
+      "jp": "無期限（前提となる事態が起きていない）"
+    },
+    "status": "pending",
+    "contested": true,
+    "claim": {
+      "zh": "一場數千百萬噸當量級的核子交換所揚起的塵與煙，會在一到兩週內環繞地球，把地表日照壓到正常值的百分之幾，陸地氣溫降到攝氏零下十五至二十五度。",
+      "en": "A nuclear exchange of several thousand megatons would loft dust and smoke that encircles the earth within one to two weeks, cutting surface light to a few percent of ambient and driving land temperatures to -15 to -25 degrees C.",
+      "jp": "数千メガトン規模の核交戦によって巻き上げられた塵と煙は1〜2週間以内に地球を覆い、地表の日照を通常の数パーセントにまで減らし、陸地の気温を摂氏マイナス15度からマイナス25度まで低下させる。"
+    },
+    "speaker": {
+      "zh": "Turco、Toon、Ackerman、Pollack、Sagan（TTAPS）· 大氣科學與行星科學研究團隊",
+      "en": "Turco, Toon, Ackerman, Pollack & Sagan (TTAPS) · atmospheric and planetary science researchers",
+      "jp": "トゥルコ、トゥーン、アッカーマン、ポラック、セーガン（TTAPS）· 大気科学・惑星科学の研究チーム"
+    },
+    "outcome": {
+      "zh": "全面核戰未曾發生，這項推論從未受現實檢驗；一九八○年代後的模式曾下修降溫幅度，但近年模擬仍支持嚴重寒化。",
+      "en": "No full-scale nuclear war has occurred, so the claim has never been tested; later models moderated the magnitude, though modern simulations still find severe cooling.",
+      "jp": "全面核戦争は一度も起きておらず、この推論は現実によって検証されたことがない。1980年代以降のモデルでは気温低下の幅は下方修正されたが、近年のシミュレーションでも深刻な寒冷化が支持されている。"
+    },
+    "source_title": "Turco, Toon, Ackerman, Pollack & Sagan, 'Nuclear winter: global consequences of multiple nuclear explosions', Science 222(4630), 1983 — PubMed record",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/17773320/",
+    "quote": "average light levels can be reduced to a few percent of ambient and land temperatures can reach -15 degrees to -25 degrees C",
+    "caveat": {
+      "zh": "這是一個「因僥倖而無法證偽」的條目：前提（數千百萬噸級的核交換）從未發生，故標 pending 而非 true/false。科學主張本身也曾被挑戰與修正——同一團隊一九九○年的後續論文下修了嚴重程度。",
+      "en": "This is an entry that has escaped falsification only by luck: the antecedent (a multi-thousand-megaton exchange) never occurred, hence pending rather than true/false. The scientific claim itself was also later revised — the same team's 1990 follow-up paper moderated the severity.",
+      "jp": "これは「幸運によって反証を免れている」条項である——前提となる数千メガトン規模の核交戦がそもそも起きていないため、trueでもfalseでもなくpendingとした。科学的な主張自体もその後修正されており、同じチームによる1990年の続報論文は深刻度を下方修正している。"
+    }
+  },
+  {
+    "id": "global-2000-report-1980",
+    "said_year": 1980,
+    "target_year": 2000,
+    "target_label": {
+      "zh": "2000",
+      "en": "2000",
+      "jp": "2000"
+    },
+    "status": "partial",
+    "contested": true,
+    "claim": {
+      "zh": "若當時趨勢持續，公元二○○○年的世界將比現在更擁擠、更污染、生態更不穩定，也更容易受到衝擊。",
+      "en": "If present trends continue, the world in 2000 will be more crowded, more polluted, less stable ecologically, and more vulnerable to disruption than the world we live in now.",
+      "jp": "当時の傾向が続けば、2000年の世界は現在よりも人口が密集し、汚染が進み、生態学的により不安定で、混乱に対してより脆弱になっているだろう。"
+    },
+    "speaker": {
+      "zh": "Gerald O. Barney 主持 · 美國環境品質委員會與國務院（卡特總統下令進行）",
+      "en": "Gerald O. Barney, study director · US Council on Environmental Quality and State Department (commissioned by President Carter)",
+      "jp": "ジェラルド・O・バーニー主導 · アメリカ環境諮問委員会および国務省（カーター大統領の指示による）"
+    },
+    "outcome": {
+      "zh": "人口確實更多、溫室氣體與生物多樣性壓力也確實更重，但人均糧食、壽命與所得均顯著改善，報告最悲觀的匱乏與物價推估落空。",
+      "en": "The world was indeed more crowded and under greater climate and biodiversity stress, but per-capita food, life expectancy and income all improved; the report's bleakest scarcity and price projections failed.",
+      "jp": "人口はより密集し、温室効果ガスや生物多様性への圧力も確かに増大したが、一人当たりの食糧、平均寿命、所得はいずれも大きく改善し、報告書の最も悲観的な欠乏・価格予測は外れた。"
+    },
+    "source_title": "Marion Clawson, 'Entering the Twenty-First Century — the Global 2000 Report to the President', Resources for the Future",
+    "source_url": "https://www.resources.org/archives/entering-the-twenty-first-centurythe-global-2000-report-to-the-president/",
+    "quote": "The world in 2000 will be more crowded, more polluted, less stable ecologically, and more vulnerable to disruption than the world we live in now.",
+    "caveat": {
+      "zh": "「partial」是刻意的：那四個形容詞並未全數落空，「更擁擠」與「生態不穩定」站得住；落空的是言外之意——人類福祉的惡化。技術卷實際推估的是人均糧食供給改善與壽命延長，與摘要的悲觀語調相牴觸，這個矛盾在當時就寫在報告裡。",
+      "en": "'Partial' is deliberate: not all four adjectives failed — 'more crowded' and 'ecologically less stable' held up; what failed was the implied deterioration in human welfare. The technical volumes actually projected improved per-capita food supply and longer lifespans, contradicting the summary's pessimistic tone — a contradiction built into the report itself, not hindsight.",
+      "jp": "「partial」は意図的な判定である。あの4つの形容詞のすべてが外れたわけではない——「より密集」も「生態学的に不安定」も成立している。外れたのはその言外に含まれた含意、すなわち人類の福祉が悪化するという部分である。専門部会が実際に見積もっていたのは一人当たり食糧供給の改善と寿命の延長であり、要約の悲観的な論調とは矛盾していた——この矛盾は後知恵ではなく、報告書自体に当初から書き込まれていたものである。"
+    }
+  },
+  {
+    "id": "y2k-millennium-bug-1998",
+    "said_year": 1998,
+    "target_year": 2000,
+    "target_label": {
+      "zh": "2000",
+      "en": "2000",
+      "jp": "2000"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "兩位數年份欄位在二○○○年一月一日翻轉時，將使關鍵資訊系統大規模失效，衝擊政府運作、金融、電力與交通。",
+      "en": "The rollover of two-digit year fields on 1 January 2000 would cause widespread failure of critical information systems, disrupting government, finance, power and transport.",
+      "jp": "2000年1月1日に2桁の年フィールドが繰り上がることで、重要な情報システムが広範囲に機能停止し、政府運営・金融・電力・交通に影響が及ぶ。"
+    },
+    "speaker": {
+      "zh": "美國審計總署（GAO）· 聯邦政府問責稽核機關",
+      "en": "US General Accounting Office (GAO) · federal government accountability auditor",
+      "jp": "アメリカ会計検査院（GAO）· 連邦政府の会計監査機関"
+    },
+    "outcome": {
+      "zh": "跨年當晚只出現零星小故障，未見系統性崩潰；但全球已先投入約三千億美元修補，故「災難本不存在」與「災難被擋下」至今仍有爭論。",
+      "en": "Only scattered minor faults occurred; no systemic collapse — though roughly $300bn had already been spent on remediation, leaving the counterfactual contested.",
+      "jp": "年越しの夜には散発的な小さな不具合しか起きず、システム全体の崩壊は見られなかった。ただし世界全体ですでに約3000億ドルが対策に投じられていたため、「そもそも危機は存在しなかった」のか「危機は食い止められた」のかは今なお論争がある。"
+    },
+    "source_title": "GAO/AIMD-98-85, Year 2000 Computing Crisis: Potential for Widespread Disruption Calls for Strong Leadership and Partnerships (30 April 1998)",
+    "source_url": "https://www.gao.gov/products/aimd-98-85",
+    "quote": "",
+    "caveat": {
+      "zh": "quote 刻意留空：報告的正文無法從公開頁面抽取可引用逐字內容。典型的「預防悖論」——結果之溫和，同時被拿來證明威脅被誇大、以及修補奏效。",
+      "en": "quote deliberately left empty — the report's body text could not be extracted verbatim from the public page. A textbook prevention paradox: the mildness of the outcome is used both to argue the threat was overstated and that the remediation worked.",
+      "jp": "quoteはあえて空欄にしてある——GAOの報告書の本文を、引用できる形で公開ページから抽出することができなかったため。典型的な「予防のパラドックス」であり、結果が穏やかだったことが、脅威が誇張されていた証拠としても、対策が功を奏した証拠としても使われている。"
+    }
+  },
+  {
+    "id": "ehrlich-simon-wager-1980",
+    "said_year": 1980,
+    "target_year": 1990,
+    "target_label": {
+      "zh": "1990",
+      "en": "1990",
+      "jp": "1990"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "埃爾利希押注鉻、銅、鎳、錫、鎢五種金屬經通膨調整後的價格，會在一九九○年九月高於一九八○年九月，藉此證明資源正走向稀缺。",
+      "en": "Ehrlich bet that the inflation-adjusted prices of chromium, copper, nickel, tin and tungsten would be higher in September 1990 than in September 1980, as proof that resources were growing scarcer.",
+      "jp": "エーリックは、クロム・銅・ニッケル・スズ・タングステンの5種類の金属についてインフレ調整後の価格が、1990年9月には1980年9月より高くなるほうに賭け、資源が希少化に向かっていることの証明としようとした。"
+    },
+    "speaker": {
+      "zh": "Paul R. Ehrlich · 史丹佛大學生物學家（對賭方為經濟學家 Julian Simon）",
+      "en": "Paul R. Ehrlich · Stanford biologist (against economist Julian Simon)",
+      "jp": "ポール・R・エーリック · スタンフォード大学の生物学者（対戦相手は経済学者ジュリアン・サイモン）"
+    },
+    "outcome": {
+      "zh": "十年後五種金屬全數變便宜，埃爾利希輸掉賭局並寄出支票給賽門。",
+      "en": "All five metals were cheaper a decade later; Ehrlich lost and mailed Simon a cheque.",
+      "jp": "10年後、5種類の金属はすべて値下がりしており、エーリックは賭けに負けてサイモンに小切手を送った。"
+    },
+    "source_title": "Who would have won the Simon-Ehrlich bet over different decades? — Our World in Data",
+    "source_url": "https://ourworldindata.org/simon-ehrlich-bet",
+    "quote": "",
+    "caveat": {
+      "zh": "quote 留空，找不到埃爾利希本人的逐字措辭可供引用。該來源本身的論點是：結果取決於所選十年區間，換成別的窗口埃爾利希會贏好幾次——這場賭局對長期稀缺性的證明力，比兩人各自宣稱的都弱。",
+      "en": "quote left empty — no verifiable verbatim wording from Ehrlich himself was found. The source's own point is that the outcome depends on the chosen decade — a different window would have Ehrlich winning several times — so the wager proves less about long-run scarcity than either side claimed.",
+      "jp": "quoteは空欄——検証可能なエーリック本人の逐語的な発言が見つからなかったため。この出典自体の論点は、結果が選んだ10年間次第で変わるというものであり、別の10年間を選べばエーリックが何度も勝っていたはずだという点である——つまりこの賭けが長期的な希少性について証明する力は、両者が主張したよりも弱い。"
+    }
+  },
+  {
+    "id": "dartmouth-1955-two-month-ten-man-study",
+    "said_year": 1955,
+    "target_year": 1956,
+    "target_label": {
+      "zh": "1956",
+      "en": "1956",
+      "jp": "1956"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "麥卡錫等四人提議，只要一組精選的科學家在一九五六年夏天於達特茅斯學院共同工作兩個月，就能在語言使用、抽象化、自我改進等機器智慧問題上取得重大進展。",
+      "en": "McCarthy and three co-authors proposed that a two-month, ten-man summer study at Dartmouth College in 1956 could make a significant advance on machine problems such as language use, abstraction and self-improvement.",
+      "jp": "マッカーシーら4名は、厳選された科学者グループが1956年の夏にダートマス大学で2か月間共同で取り組めば、言語の使用・抽象化・自己改良といった機械知能の問題に大きな進展をもたらせると提案した。"
+    },
+    "speaker": {
+      "zh": "John McCarthy、Marvin Minsky、Nathaniel Rochester、Claude Shannon · 達特茅斯學院、哈佛大學、IBM、貝爾電話實驗室研究者",
+      "en": "John McCarthy, Marvin Minsky, Nathaniel Rochester, Claude Shannon · researchers at Dartmouth, Harvard, IBM and Bell Labs",
+      "jp": "ジョン・マッカーシー、マービン・ミンスキー、ナサニエル・ロチェスター、クロード・シャノン · ダートマス大学、ハーバード大学、IBM、ベル電話研究所の研究者"
+    },
+    "outcome": {
+      "zh": "研討會如期舉辦並確立了「人工智慧」之名，但沒有任何一項列舉的問題在那個夏天被解決，多數至今仍未完全解決。",
+      "en": "The workshop happened and named the field, but none of the listed problems was solved that summer, and most remain open seventy years later.",
+      "jp": "会議は予定通り開催され「人工知能」という名称が確立されたが、挙げられていた問題のいずれもその夏に解決されることはなく、その多くは70年経った今もなお未解決のままである。"
+    },
+    "source_title": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence, August 31, 1955",
+    "source_url": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+    "quote": "We propose that a 2 month, 10 man study of artificial intelligence be carried out during the summer of 1956 at Dartmouth College in Hanover, New Hampshire.",
+    "caveat": {
+      "zh": "提案本身的措辭是條件句（「if a carefully selected group of scientists work on it together for a summer」），是預期而非承諾，把它讀成一句失敗的預測稍嫌苛刻，但它確實是 AI 史上第一份公開的時程樂觀宣言。",
+      "en": "The proposal itself is conditional ('if a carefully selected group of scientists work on it together for a summer'), an expectation rather than a promise — reading it as a failed prediction is a bit harsh, but it is the first publicly dated optimism in AI history.",
+      "jp": "提案自体の文言は条件文である（「もし選ばれた科学者グループが夏の間共同で取り組めば」）——約束ではなく期待であり、これを外れた予測として読むのはやや酷かもしれないが、確かにAI史上最初に公にされた楽観的なスケジュール表明である。"
+    }
+  },
+  {
+    "id": "simon-1965-any-work-a-man-can-do",
+    "said_year": 1960,
+    "target_year": 1980,
+    "target_label": {
+      "zh": "1980–1985",
+      "en": "1980–1985",
+      "jp": "1980–1985"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "賽門寫道：就技術而言，機器將在二十年內有能力做任何人能做的工作。",
+      "en": "Simon wrote that, technologically, machines would within twenty years be capable of doing any work that a man can do.",
+      "jp": "サイモンは、技術的には20年以内に機械が人間にできるどんな仕事でもできるようになると書いた。"
+    },
+    "speaker": {
+      "zh": "Herbert A. Simon · 卡內基理工學院（今卡內基美隆大學）經濟學與決策科學家、後諾貝爾經濟學獎得主",
+      "en": "Herbert A. Simon · Carnegie Institute of Technology economist and decision scientist, later Nobel laureate",
+      "jp": "ハーバート・A・サイモン · カーネギー工科大学（現カーネギーメロン大学）の経済学者・意思決定科学者、後のノーベル経済学賞受賞者"
+    },
+    "outcome": {
+      "zh": "一九八五年（乃至二○二六年）機器都無法勝任人類的任何工作，全面自動化從未到來。",
+      "en": "By 1985 — and still in 2026 — machines could not do any work a person can do; full labour automation never arrived.",
+      "jp": "1985年になっても——そして2026年の今も——機械は人間にできるどんな仕事もできるようにはなっておらず、全面的な労働の自動化は実現していない。"
+    },
+    "source_title": "Quote Origin: Machines Will Be Capable, Within Twenty Years, of Doing Any Work That a Man Can Do (Quote Investigator)",
+    "source_url": "https://quoteinvestigator.com/2020/11/11/ai-can-do/",
+    "quote": "Technologically, as I have argued earlier, machines will be capable, within twenty years, of doing any work that a man can do.",
+    "caveat": {
+      "zh": "流行版本有三處失真。原句有「that」常被刪去；年份錯置——此句首見於一九六○年《The New Science of Management Decision》第三章第38頁，一九六五年的書只是重刊，本資料集的 said_year 已改為 1960；賽門緊接著加了經濟學上的限定（人類在彈性體力工作、非程式化問題解決上仍保有優勢），這段幾乎從不被一併引用。",
+      "en": "The popular version distorts three things. The word 'that' is often dropped; the date is misattributed — the line first appeared in the 1960 book, ch. 3 p. 38, and the 1965 book only reprinted it, so this dataset's said_year is corrected to 1960; and Simon immediately added an economic qualifier (humans retain an edge in flexible manual work and non-programmed problem-solving) that is almost never quoted alongside it.",
+      "jp": "俗説には3つのゆがみがある。原文にある「that」がしばしば省略される。年代の取り違え——この一文が初めて登場したのは1960年の著作の第3章であり、1965年の本は単なる再録である。本データセットではsaid_yearを1960年に修正した。さらにサイモンはすぐ後で経済学的な留保を付け加えており（人間は柔軟な肉体労働や非定型的な問題解決で優位を保つ）、この部分はほとんど一緒には引用されない。"
+    }
+  },
+  {
+    "id": "minsky-1970-three-to-eight-years",
+    "said_year": 1970,
+    "target_year": 1973,
+    "target_label": {
+      "zh": "1973–1978",
+      "en": "1973–1978",
+      "jp": "1973–1978"
+    },
+    "status": "false",
+    "contested": true,
+    "claim": {
+      "zh": "《Life》雜誌一九七○年十一月二十日報導引述明斯基：三到八年內我們就會有一台具備一般人平均智力的機器——能讀莎士比亞、替車上油、玩辦公室政治、講笑話、吵架。",
+      "en": "Life magazine of 20 November 1970 quoted Minsky saying that in from three to eight years there would be a machine with the general intelligence of an average human being.",
+      "jp": "1970年11月20日号の『ライフ』誌はミンスキーの発言として、3年から8年のうちに平均的な人間並みの一般知能を持つ機械が登場すると引用した——シェイクスピアを読み、車に給油し、社内政治を行い、冗談を言い、喧嘩さえできる機械だという。"
+    },
+    "speaker": {
+      "zh": "Marvin Minsky · 麻省理工學院人工智慧實驗室共同創辦人（引述經其本人爭議）",
+      "en": "Marvin Minsky · co-founder, MIT AI Lab (the attribution is itself disputed)",
+      "jp": "マービン・ミンスキー · マサチューセッツ工科大学AI研究所共同創設者（この引用の帰属自体に異論がある）"
+    },
+    "outcome": {
+      "zh": "一九七八年沒有出現任何具一般人類智力的機器；相反地，一九七三年的萊特希爾報告觸發了第一次 AI 寒冬。",
+      "en": "No machine with general human intelligence existed by 1978; instead the 1973 Lighthill report helped trigger the first AI winter.",
+      "jp": "1978年になっても一般的な人間並みの知能を持つ機械は存在せず、むしろ1973年のライトヒル報告書が最初のAIの冬の引き金の一つとなった。"
+    },
+    "source_title": "Quote Origin: If We're Lucky, Robots Might Decide To Keep Us as Pets (Quote Investigator) — on Brad Darrach, Life, Nov 20 1970",
+    "source_url": "https://quoteinvestigator.com/2017/06/21/robot-pet/",
+    "quote": "In from three to eight years we will have a machine with the general intelligence of an average human being. I mean a machine that will be able to read Shakespeare, grease a car, play office politics, tell a joke, have a fight.",
+    "caveat": {
+      "zh": "重要保留，因此標為 contested：這句話出自記者 Brad Darrach 的文章而非明斯基自己的著作，明斯基事後否認過同篇報導裡歸給他的另一句話。史料上無法確認這是逐字引語還是 Darrach 的改寫。",
+      "en": "An important reservation, hence contested: the line comes from journalist Brad Darrach's article, not Minsky's own writing, and Minsky later disclaimed a neighbouring attribution in the same piece. It cannot be confirmed whether this is verbatim or Darrach's paraphrase.",
+      "jp": "重要な留保があるためcontestedとした。この発言は記者ブラッド・ダラックの記事によるものであり、ミンスキー自身の著作ではない。ミンスキーは後に、同じ記事内で自分に帰属された別の発言を否定している。これが逐語的な引用なのかダラックの言い換えなのか、史料上確認することはできない。"
+    }
+  },
+  {
+    "id": "moore-1965-cramming-more-components",
+    "said_year": 1965,
+    "target_year": 1975,
+    "target_label": {
+      "zh": "1975",
+      "en": "1975",
+      "jp": "1975"
+    },
+    "status": "true",
+    "contested": true,
+    "claim": {
+      "zh": "摩爾在《Electronics》雜誌撰文預測，積體電路上的元件數每年約翻一倍，到一九七五年單一矽晶片上塞進六萬五千個元件在經濟上將是划算的。",
+      "en": "Moore predicted in Electronics that the number of components per integrated circuit was doubling roughly every year, and that by 1975 economics might dictate squeezing as many as 65,000 components onto a single silicon chip.",
+      "jp": "ムーアは『エレクトロニクス』誌への寄稿で、集積回路上の部品数はおよそ毎年倍増しており、1975年までには1枚のシリコンチップに最大6万5000個の部品を詰め込むことが経済的に見合うようになるだろうと予測した。"
+    },
+    "speaker": {
+      "zh": "Gordon Moore · 快捷半導體（Fairchild）研發總監、後英特爾共同創辦人",
+      "en": "Gordon Moore · R&D director, Fairchild Semiconductor, later Intel co-founder",
+      "jp": "ゴードン・ムーア · フェアチャイルドセミコンダクター研究開発部長、後のインテル共同創設者"
+    },
+    "outcome": {
+      "zh": "十年期的外推大致應驗，並成為半導體業自我實現的路線圖，支撐了將近半個世紀的指數成長。",
+      "en": "The ten-year extrapolation broadly held and became the industry's self-fulfilling roadmap, sustaining exponential scaling for close to half a century.",
+      "jp": "10年間の外挿はおおむね的中し、半導体業界にとって自己実現的なロードマップとなり、ほぼ半世紀にわたる指数関数的な成長を支えた。"
+    },
+    "source_title": "Cramming more components onto integrated circuits — Computer History Museum catalog 102770822",
+    "source_url": "https://www.computerhistory.org/collections/catalog/102770822",
+    "quote": "by 1975 economics may dictate squeezing as many as 65,000 components on a single silicon chip",
+    "caveat": {
+      "zh": "可爭議之處在於「哪一個版本」。一九六五年的十年期外推應驗了；一九七五年他自己把速率下修為約每兩年翻倍。今天所謂「摩爾定律」是後人加上的開放式版本，其存亡仍有爭論（黃仁勳二○二二年宣稱已死，Gelsinger 隨即反駁）。本條目的 status=true 僅針對一九六五年那個以一九七五年為標的的外推。",
+      "en": "The contested part is 'which version'. The 1965 ten-year extrapolation held; in 1975 Moore himself revised the rate to roughly every two years. Today's open-ended 'Moore's Law' is a later addition whose survival is disputed (Huang declared it dead in 2022; Gelsinger disagreed). This entry's status=true applies only to the 1965 extrapolation targeting 1975.",
+      "jp": "議論の余地があるのは「どちらの版か」という点である。1965年の10年間の外挿は的中したが、1975年には彼自身が速度をおよそ2年で倍増するペースに下方修正している。今日「ムーアの法則」と呼ばれる無期限バージョンは後から付け加えられたものであり、その存続については今も議論が続く（2022年にファン・ジェンスンが「ムーアの法則は終わった」と述べ、ゲルシンガーがすぐに反論した）。本項目のstatus=trueは、1975年を目標とした1965年の外挿にのみ当てはまる。"
+    }
+  },
+  {
+    "id": "kurzweil-1990-chess-champion-by-2000",
+    "said_year": 1990,
+    "target_year": 2000,
+    "target_label": {
+      "zh": "2000",
+      "en": "2000",
+      "jp": "2000"
+    },
+    "status": "true",
+    "contested": false,
+    "claim": {
+      "zh": "庫茲威爾在《The Age of Intelligent Machines》中預測，電腦將在西元二○○○年前擊敗人類西洋棋世界冠軍。",
+      "en": "In The Age of Intelligent Machines, Kurzweil predicted that a computer would become world chess champion by the year 2000.",
+      "jp": "カーツワイルは『The Age of Intelligent Machines』の中で、2000年までにコンピュータが人間のチェス世界チャンピオンを打ち負かすと予測した。"
+    },
+    "speaker": {
+      "zh": "Ray Kurzweil · 發明家、未來學家",
+      "en": "Ray Kurzweil · inventor, futurist",
+      "jp": "レイ・カーツワイル · 発明家、未来学者"
+    },
+    "outcome": {
+      "zh": "一九九七年五月，IBM 的深藍在六局賽中擊敗世界冠軍卡斯帕洛夫，比預測期限早了三年。",
+      "en": "In May 1997 IBM's Deep Blue beat world champion Garry Kasparov in a six-game match, three years ahead of the deadline.",
+      "jp": "1997年5月、IBMのディープブルーが6局のマッチで世界チャンピオンのガルリ・カスパロフを破り、期限より3年早く実現した。"
+    },
+    "source_title": "The Age of Intelligent Machines (Wikipedia)",
+    "source_url": "https://en.wikipedia.org/wiki/The_Age_of_Intelligent_Machines",
+    "quote": "we will see a [computer] world champion by the year 2000",
+    "caveat": {
+      "zh": "此條退而使用維基百科（本資料集中唯一以維基為主來源的條目），因為一九九○年原書無可自由取得且可驗證的全文掃描。深藍擊敗的是在位世界冠軍卡斯帕洛夫，但「電腦成為世界冠軍」在正式棋賽制度上從未發生——電腦並未持有頭銜，只是贏了一場表演賽。",
+      "en": "This entry falls back to Wikipedia (the dataset's only Wikipedia-primary entry) because no freely accessible, verifiable full scan of the 1990 book was found. Deep Blue beat the reigning champion Kasparov, but a computer 'becoming world champion' never happened under the formal chess title system — it won an exhibition match, not the title.",
+      "jp": "この項目は本データセットで唯一ウィキペディアを主な出典としている——1990年の原著の全文を自由に閲覧・検証できる形で入手できなかったためである。ディープブルーが破ったのは現役の世界チャンピオンであるカスパロフだが、正式なチェスのタイトル制度の下で「コンピュータが世界チャンピオンになる」ことは一度も起きていない——あれは公式戦ではなくエキシビションマッチでの勝利である。"
+    }
+  },
+  {
+    "id": "kurzweil-kapor-long-bet-turing-2029",
+    "said_year": 2002,
+    "target_year": 2029,
+    "target_label": {
+      "zh": "2029",
+      "en": "2029",
+      "jp": "2029"
+    },
+    "status": "pending",
+    "contested": false,
+    "claim": {
+      "zh": "庫茲威爾與 Mitch Kapor 立下兩萬美元賭注：Kapor 主張到二○二九年不會有任何電腦通過圖靈測試，庫茲威爾則賭會通過。",
+      "en": "Kurzweil and Mitch Kapor staked a $20,000 Long Bet: Kapor holds that by 2029 no computer will have passed the Turing Test; Kurzweil bets one will.",
+      "jp": "カーツワイルとミッチ・ケイパーは2万ドルを賭けた。ケイパーは2029年までにいかなるコンピュータもチューリングテストに合格しないと主張し、カーツワイルは合格すると賭けた。"
+    },
+    "speaker": {
+      "zh": "Ray Kurzweil（挑戰方）與 Mitch Kapor（預測方）· 未來學家／發明家 與 Lotus 創辦人、EFF 共同創辦人",
+      "en": "Ray Kurzweil (challenger) and Mitch Kapor (predictor) · futurist/inventor and Lotus founder, EFF co-founder",
+      "jp": "レイ・カーツワイル（挑戦側）とミッチ・ケイパー（予測側）· 未来学者・発明家、およびLotus創業者・EFF共同創設者"
+    },
+    "outcome": {
+      "zh": "截至二○二六年九月仍未裁決，期限為二○二九年底。",
+      "en": "Still unadjudicated as of September 2026; the bet resolves at the end of 2029.",
+      "jp": "2026年9月現在まだ決着はついておらず、期限は2029年末である。"
+    },
+    "source_title": "Long Bet #1: By 2029 no computer — or \"machine intelligence\" — will have passed the Turing Test",
+    "source_url": "https://longbets.org/1/",
+    "quote": "By 2029 no computer - or \"machine intelligence\" - will have passed the Turing Test.",
+    "caveat": {
+      "zh": "「圖靈測試是否已被通過」本身有爭議：Jones 與 Bergen 二○二五年論文宣稱 GPT-4.5 在五分鐘三方測試中有 73% 被判為人類，但此賭局自訂的規則遠嚴於此（需在結構化長時間訪談中騙過評審且排名不低於人類陪襯者），因此該論文不構成裁決依據，賭局仍為 pending。",
+      "en": "Whether 'the Turing Test has been passed' is itself contested: a 2025 paper by Jones & Bergen claims GPT-4.5 was judged human 73% of the time in a five-minute three-party test, but this bet's own rules are far stricter (a structured long interview, ranking no lower than human foils), so that paper does not settle the bet, which remains pending.",
+      "jp": "「チューリングテストはすでに合格されたのか」という点自体に議論がある。ジョーンズとバーゲンによる2025年の論文は、5分間の三者間テストにおいてGPT-4.5が73%の割合で人間だと判定されたと主張しているが、この賭けが定めるルールはそれよりもはるかに厳格であり（構造化された長時間の面談で、少なくとも2人の審査員のうち2人を欺き、少なくとも2人の人間の対照群の中央値を下回らない順位でなければならない）、したがってこの論文は決着の根拠とはならず、賭けは依然としてpendingである。"
+    }
+  },
+  {
+    "id": "hinton-2016-stop-training-radiologists",
+    "said_year": 2016,
+    "target_year": 2021,
+    "target_label": {
+      "zh": "2021（本人另加「或十年」但書，即 2026）",
+      "en": "2021 (he hedged with “might be 10 years”, i.e. 2026)",
+      "jp": "2021年（本人が「10年かかるかも」と留保、つまり2026年）"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "辛頓二○一六年表示，現在就該停止培訓放射科醫師，因為深度學習在五年內做得比放射科醫師好是完全顯而易見的事。",
+      "en": "In 2016 Hinton said people should stop training radiologists now, because it was completely obvious that within five years deep learning would do better than radiologists.",
+      "jp": "ヒントンは2016年、放射線科医の育成は今すぐやめるべきだと述べた。深層学習が5年以内に放射線科医より優れた成果を出すのはまったく明白なことだからだという。"
+    },
+    "speaker": {
+      "zh": "Geoffrey Hinton · 多倫多大學深度學習研究者、後圖靈獎與諾貝爾物理學獎得主",
+      "en": "Geoffrey Hinton · University of Toronto deep-learning researcher, later Turing Award and Nobel Physics laureate",
+      "jp": "ジェフリー・ヒントン · トロント大学の深層学習研究者、後のチューリング賞・ノーベル物理学賞受賞者"
+    },
+    "outcome": {
+      "zh": "十年過去，放射科不但沒有消失，反而處於史上最嚴重的人力短缺，AI 工具成為輔助而非取代。",
+      "en": "A decade on, radiology has not shrunk but sits in the largest radiologist shortage on record, with AI tools augmenting rather than replacing the workforce.",
+      "jp": "10年が経った今も放射線科は縮小するどころか、史上最悪の人手不足に陥っており、AIツールは置き換えではなく補助として使われている。"
+    },
+    "source_title": "The \"Godfather of AI\" Predicted I Wouldn't Have a Job. He Was Wrong. (The New Republic, October 25, 2024)",
+    "source_url": "https://newrepublic.com/article/187203/ai-radiology-geoffrey-hinton-nobel-prediction",
+    "quote": "It's just completely obvious that within five years deep learning is going to do better than radiologists.… It might be 10 years, but we've got plenty of radiologists already.",
+    "caveat": {
+      "zh": "辛頓自帶了「It might be 10 years」的但書，若以十年（2026）計，判定仍為 false——二○二六年放射科人力缺口創新高。更常見的完整版還有「像已經衝出懸崖邊卻還沒往下看的土狼」這個比喻，未能在一手逐字稿中核實，僅見於二手轉述。",
+      "en": "Hinton himself hedged with 'It might be 10 years' — even judged against 2026, the claim is still false, since the radiologist shortage hit a record in 2026. The more commonly quoted 'coyote that's already over the edge of the cliff' simile could not be verified in a primary transcript and appears only in secondary retellings.",
+      "jp": "ヒント本人が「10年かかるかもしれない」という留保をあらかじめ付けていた。その10年（2026年）の時点で判定しても、やはりfalseである——2026年、放射線科の人手不足は過去最悪を記録している。より広く引用される完全版には「すでに崖の縁を越えているのにまだ下を見ていないコヨーテのようだ」という比喩も含まれるが、これは一次資料の逐語記録では確認できず、二次的な転記にのみ見られる。"
+    }
+  },
+  {
+    "id": "musk-2019-million-robotaxis",
+    "said_year": 2019,
+    "target_year": 2020,
+    "target_label": {
+      "zh": "2020",
+      "en": "2020",
+      "jp": "2020"
+    },
+    "status": "false",
+    "contested": false,
+    "claim": {
+      "zh": "二○一九年四月二十二日特斯拉自動駕駛日上，馬斯克宣稱隔年路上就會有超過一百萬輛特斯拉無人計程車（robotaxi），車內無人。",
+      "en": "At Tesla's Autonomy Day on 22 April 2019, Musk claimed that over a million Tesla robotaxis would be on the road the following year, with no one in them.",
+      "jp": "2019年4月22日のテスラ・オートノミー・デーで、マスクは翌年には100万台を超えるテスラのロボタクシーが路上を走り、車内には誰も乗っていないだろうと宣言した。"
+    },
+    "speaker": {
+      "zh": "Elon Musk · 特斯拉執行長",
+      "en": "Elon Musk · CEO, Tesla",
+      "jp": "イーロン・マスク · テスラCEO"
+    },
+    "outcome": {
+      "zh": "二○二○年一輛也沒有；直到二○二五年六月才在奧斯汀限量試營運，二○二六年六月奧斯汀的無安全員車隊仍只有約二十輛。",
+      "en": "None existed in 2020; a limited Austin pilot began only in June 2025, and by June 2026 the unsupervised Austin fleet stood at roughly 20 vehicles.",
+      "jp": "2020年には1台も存在せず、2025年6月になってようやくオースティンで限定的な試験運用が始まり、2026年6月時点でも監視員なしのオースティンの車両数は約20台にとどまっている。"
+    },
+    "source_title": "Musk claims Tesla will have 1 million robotaxis on roads next year (NBC News, April 23, 2019)",
+    "source_url": "https://www.nbcnews.com/business/autos/musk-claims-tesla-will-have-1-million-robotaxis-roads-next-n997416",
+    "quote": "I feel very confident predicting autonomous robotaxis for Tesla next year",
+    "caveat": {
+      "zh": "廣為流傳的「一百萬輛」那句完整話無法在可成功抓取的來源中逐字核實，引用該數字時應標為「據報導」而非逐字引語。結果數據來自 Electrek 二○二六年六月的報導。",
+      "en": "The widely quoted full 'a million robotaxis' sentence could not be verified verbatim in any successfully fetched source — cite the figure 'as reported', not as a direct quote. The outcome figure comes from an Electrek report dated June 2026.",
+      "jp": "広く流布している「100万台」という一節の全文は、正常に取得できたどの情報源でも逐語的に検証することができなかった——この数字を引用する際は逐語引用ではなく「報道によれば」として扱うべきである。結果のデータは2026年6月付のElectrekの報道による。"
+    }
+  },
+  {
+    "id": "ai-2027-kokotajlo-scenario",
+    "said_year": 2025,
+    "target_year": 2027,
+    "target_label": {
+      "zh": "2027",
+      "en": "2027",
+      "jp": "2027"
+    },
+    "status": "pending",
+    "contested": true,
+    "claim": {
+      "zh": "Kokotajlo 等人於二○二五年四月發表《AI 2027》情境，推演二○二七年三月出現超人類程式設計師、同年九月出現超越人類的 AI 研究者、年底走向超級智慧，並主張未來十年超人類 AI 的衝擊將超過工業革命。",
+      "en": "Kokotajlo and colleagues published the AI 2027 scenario in April 2025, depicting a superhuman coder by March 2027, a superhuman AI researcher by September 2027, and artificial superintelligence by year-end, and arguing the impact of superhuman AI this decade will exceed the Industrial Revolution.",
+      "jp": "ココタイロらは2025年4月に『AI 2027』シナリオを発表し、2027年3月には超人的なプログラマーが、同年9月には人間を超えるAI研究者が登場し、年末には超知能へと向かうと推計した。また今後10年間の超人的AIの影響は産業革命を上回ると主張した。"
+    },
+    "speaker": {
+      "zh": "Daniel Kokotajlo、Scott Alexander、Thomas Larsen、Eli Lifland、Romeo Dean · AI Futures Project 研究者（Kokotajlo 為前 OpenAI 治理研究員）",
+      "en": "Daniel Kokotajlo, Scott Alexander, Thomas Larsen, Eli Lifland, Romeo Dean · AI Futures Project researchers (Kokotajlo a former OpenAI governance researcher)",
+      "jp": "ダニエル・ココタイロ、スコット・アレクサンダー、トーマス・ラーセン、イーライ・リフランド、ロメオ・ディーン · AI Futures Projectの研究者（ココタイロは元OpenAIガバナンス研究員）"
+    },
+    "outcome": {
+      "zh": "二○二七年尚未到來，但作者群自己已把時程往後推：二○二五年十二月三十一日的新模型將完全程式自動化的中位數推遲約三至五年至二○三一年十二月。",
+      "en": "2027 has not yet arrived, but the authors have themselves pushed the timeline back: their 31 December 2025 model moves the median for full coding automation some 3–5 years later, to December 2031.",
+      "jp": "2027年はまだ訪れていないが、著者たち自身がすでに時期を後ろ倒ししている——2025年12月31日の新モデルでは、完全なコード自動化の中央値が3〜5年遅れの2031年12月へと修正された。"
+    },
+    "source_title": "AI 2027 (AI Futures Project, April 3, 2025)",
+    "source_url": "https://ai-2027.com/",
+    "quote": "We predict that the impact of superhuman AI over the next decade will be enormous, exceeding that of the Industrial Revolution.",
+    "caveat": {
+      "zh": "status 須小心：名目目標年（2027）尚未到，故技術上為 pending；但作者已數度自行修正，十二月三十一日的新模型把超人類程式設計師由二○二七年一月推至二○三一年十二月。若時間軸只呈現一個標籤，標為 pending 並在旁註明「作者已自行下修」，比標成 false 更誠實。",
+      "en": "Status needs care: the nominal target year (2027) has not arrived, so technically pending; but the authors have revised themselves multiple times, and the 31 December model pushes the superhuman coder milestone from January 2027 to December 2031. If the timeline shows only one label, pending with a note that 'the authors themselves revised downward' is more honest than false.",
+      "jp": "statusの扱いには注意が必要である。名目上の目標年（2027年）はまだ来ていないため技術的にはpendingだが、著者たちはすでに何度も自ら修正を加えており、12月31日の新モデルでは超人的プログラマーの到来を2027年1月から2031年12月へと先送りしている。時間軸に単一のラベルしか表示できないなら、「著者自身がすでに下方修正している」と注記した上でpendingとするほうが、falseとするより誠実である。"
+    }
+  }
+]

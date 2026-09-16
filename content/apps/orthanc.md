@@ -83,7 +83,7 @@ Orthanc 是一款 Windows 與 macOS 的桌面應用程式，於同一扇窗中�
 .orthanc-page figure { margin: 0 0 1rem; }
 .orthanc-page figure.orthanc-icon img { border-radius: 24px; }
 .orthanc-page .orthanc-screenshot { margin: 1.5rem 0; }
-.orthanc-page .orthanc-screenshot img { width: auto; height: auto; max-width: 100%; border-radius: 8px; border: none; object-fit: initial; }
+.orthanc-page .orthanc-screenshot img { width: auto; height: auto; max-width: 100%; border-radius: 8px; border: 1px solid var(--border); object-fit: initial; }
 .orthanc-page h1 { margin-top: 0.5rem; }
 .orthanc-page h2 { text-align: left; }
 .orthanc-page ul { text-align: left; list-style: none; padding-left: 0; }
