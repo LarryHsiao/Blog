@@ -7,7 +7,7 @@ template = "about.html"
 Last Revised: 2026/09/22
 
 This privacy policy applies to Snotra, a customer-relationship-management
-application for sales professionals ("Snotra", "the Service", "we", "us").
+application ("Snotra", "the Service", "we", "us").
 It applies to information we collect when you use or access the Service.
 We may change this privacy policy from time to time; changes take effect
 7 days after we post the revised policy (indicated by revising the date
