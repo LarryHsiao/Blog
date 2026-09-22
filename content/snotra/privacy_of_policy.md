@@ -28,13 +28,12 @@ personal information, and they are not the same thing:
   information you choose to record about the people you manage
   relationships with.
 
-For contact data, **you are the data controller and we act as a data
-processor on your behalf.** You are responsible for having a lawful
-basis to collect and store this information about your contacts (for
-example, their consent, or a legitimate business relationship), and for
-complying with applicable data protection law in your jurisdiction. We
-process this data only to provide the Service to you, not for our own
-independent purposes.
+For contact data, **Snotra is a tool you use to record and organize
+information about your own contacts — we do not review, verify, advise
+on, or take responsibility for how you obtain or use that information.**
+We store and process it only as you instruct, to provide the Service to
+you. **You are solely responsible for complying with applicable data
+protection law in your jurisdiction with respect to this data.**
 
 ## Collection of Information
 
@@ -114,10 +113,15 @@ about your customers, to third parties.
 
 ## Data Retention and Your Controls
 
-You can export or delete your account and its associated data at any
-time from within the app's account settings. Deleting your account also
-deletes the contact data you have entered. We retain information only
-as long as needed to provide the Service to you, or as required by law.
+We retain your account information for as long as your account remains
+active, or as required by law. You can export or delete your account
+at any time from within the app's account settings.
+
+This retention commitment is about your account, not the contact data
+you enter about your own customers. Deleting your account deletes that
+contact data along with it, as a consequence of deleting your account
+— but we make no separate retention commitment regarding the contact
+data itself; its lifecycle is yours to manage.
 
 ## Security
 
