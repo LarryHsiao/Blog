@@ -323,16 +323,6 @@ body > footer {
   color: var(--text-muted);
 }
 
-body > footer a {
-  color: var(--text-muted);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-body > footer a:hover {
-  color: var(--links);
-}
-
 /* ── About page ── */
 .about-page {
   text-align: center;
