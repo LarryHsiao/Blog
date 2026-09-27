@@ -152,11 +152,7 @@
       <section>
         {% if lang == "en" %} {% set author = config.extra.author_en %} {% else
         %} {% set author = config.extra.author %} {% endif %} © {{ author }} {{
-        now() | date(format="%Y") }}<br />
-        Powered by <a target="_blank" href="https://getzola.org/">Zola</a> ·
-        <a target="_blank" href="https://hakanalpay.com/bahunya/index.html"
-          >Bahunya</a
-        >
+        now() | date(format="%Y") }}
       </section>
       <section>{% block footer %}{% endblock footer %}</section>
     </footer>
