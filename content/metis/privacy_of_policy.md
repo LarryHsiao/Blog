@@ -4,7 +4,7 @@ path = "metis/privacy_policy"
 template = "about.html"
 +++
 
-Last Revised: 2026/08/26
+Last Revised: 2026/10/16
 
 Our privacy policy applies to information we collect when you use or access our website, application, or just interact with us. We may change this privacy policy from time to time. Whenever we make changes to this privacy policy, the changes are effective 7 days after we post the revised privacy policy (as indicated by revising the date at the top of our privacy policy). We encourage you to review our privacy policy whenever you access our services to stay informed about our information practices and the ways you can help protect your privacy.
 
@@ -20,9 +20,7 @@ When you access or use our services, we automatically collect information about 
 
 * **Log Information**: We log information about your use of our services, including the type of browser you use, access times, pages viewed, your IP address and the page you visited before navigating to our services.
 * **Device Information**: We collect information about the computer you use to access our services, including the hardware model, and operating system and version.
-* **Location Information**: We may collect information about the location of your device each time you access or use one of our mobile applications or otherwise consent to the collection of this information.
-
-For more details about your choices regarding location information, please see "Your Information Choices" below.
+* **Location Information**: When you write a journal entry, and only if you allow it, we may collect your device's precise location, and the location stored in your photos (EXIF), to tag the entry with a place. See "Location Information" under "Your Information Choices" below for details.
 
 ### Information We Collect From Other Sources
 
@@ -52,7 +50,7 @@ When you use our tag-suggestion feature, the text of the journal entry you are w
 We may share personal information about you as follows:
 
 * With a third-party AI service provider, solely to generate tag suggestions for journal entries you choose to run through that feature (see "AI-Assisted Tagging" above);
-* With third party vendors and other service providers who need access to your information to carry out work on our behalf;
+* With third party vendors and other service providers who need access to your information to carry out work on our behalf. This does not include your location, which we do not share with third parties except for the map and place-name lookups described under "Location Information" in "Your Information Choices";
 * If we believe disclosure is reasonably necessary to comply with any applicable law, regulation, legal process or governmental request;
 * To enforce applicable user agreements or policies, including our [Terms of Service](https://larryhsiao.com/metis/terms_of_service); and to protect us, our users or the public from harm or illegal activities;
 * In connection with any merger, sale of Larry Hsiao assets, financing or acquisition of all or a portion of our business to another company; and
@@ -72,7 +70,17 @@ We take reasonable measures to help protect personal information from loss, thef
 
 ### Location Information
 
-When you first launch any of our mobile applications that collect location information, you will be asked to consent to the application's collection of this information.   If you initially consent to our collection of location information, you can subsequently stop the collection of this information at any time by changing the preferences on your mobile device.  **[If you do so, our mobile applications, or certain features thereof, will no longer function.]**  You may also stop our collection of location information by following the standard uninstall process to remove all of our mobile applications from your device.
+When you write a journal entry, the app can use your device's precise location, and the location stored in your photos, to tag the entry with a place. The location is saved with the entry and uploaded to our servers with your account. We do not use it for anything else.
+
+Location is optional. The first time a journal entry wants your location, the app asks before it requests it, and you can choose Not now. You can also turn location off in your device settings at any time. The app keeps working without it, and you can still pick a place by hand.
+
+We use map and place-name services (Google) to show maps and look up place names, and those requests carry coordinates.
+
+On iOS only, if you turn on Revisit Reminders, the app also uses background location to notice when you are near a place you have journaled before, and sends that position to our servers to find your past entries. The Android app does not use background location.
+
+### Deleting Your Data
+
+You can delete your account and the data associated with it at any time using "Delete my account" in the app. Uninstalling the app alone does not delete data stored on our servers.
 
 ### Promotional Communications
 
