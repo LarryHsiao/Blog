@@ -1,135 +1,82 @@
 +++
-title = "Snotra PRIVACY POLICY"
+title = "Snotra 隱私權政策"
 path = "snotra/privacy_policy"
 template = "about.html"
 +++
 
-Last Revised: 2026/09/22
+最後更新：2026/10/27
 
-This privacy policy applies to Snotra, a customer-relationship-management
-application ("Snotra", "the Service", "we", "us").
-It applies to information we collect when you use or access the Service.
-We may change this privacy policy from time to time; changes take effect
-7 days after we post the revised policy (indicated by revising the date
-above). Please review this policy periodically.
+Snotra 是一款客戶關係管理 app。你可以**不建立帳號**直接使用，資料只存放在你的手機；
+需要在多台裝置間同步時，再建立帳號。本政策說明兩種情況下，資料放在哪裡、誰能看到、如何刪除。
 
-## Two kinds of data this policy covers
+## 1. 我們處理哪些資料
 
-Snotra is a business tool: the person who signs up ("you", "the account
-holder") uses it to manage relationships with their own customers or
-contacts. This means the Service processes two distinct categories of
-personal information, and they are not the same thing:
+你在 app 裡輸入的內容：
 
-* **Your account information** — the data that identifies you as the
-  account holder (name, email, login credentials, device and usage
-  data).
-* **Contact data you enter about your own customers** — names, phone
-  numbers, meeting notes, gift records, group assignments, and similar
-  information you choose to record about the people you manage
-  relationships with.
+- 聯絡人：姓名、電話、備註、所屬群組
+- 群組（名稱、跟追間隔天數）、速選標籤、禮物目錄
+- 面談與送禮紀錄（日期、標籤、備註、送出的禮物）
+- 重要日期（名稱、日期、是否每年重複、提前幾天提醒）
+- 提醒時段設定
 
-For contact data, **Snotra is a tool you use to record and organize
-information about your own contacts — we do not review, verify, advise
-on, or take responsibility for how you obtain or use that information.**
-We store and process it only as you instruct, to provide the Service to
-you. **You are solely responsible for complying with applicable data
-protection law in your jurisdiction with respect to this data.**
+這些聯絡人資料是**你的客戶或朋友的個人資料**。你是這些資料的管理者，請確保你有權蒐集與使用它們。
 
-## Collection of Information
+僅在你建立帳號時：
 
-### Information You Provide to Us
+- 電子郵件與密碼（密碼只以 bcrypt 雜湊保存，伺服器不保存密碼原文）
+- 推播通知用的裝置代號（push token）與你設定的提醒時段與時區
 
-We collect the account information you provide when you register and
-use the Service (name, email address, and similar identifying
-information), and the contact data described above that you choose to
-enter about your own customers — including names, phone numbers,
-meeting-log entries, gift records, and group/tag assignments.
+app 不含廣告、不含分析或當機回報工具，也不追蹤你。
 
-### Information We Collect Automatically When You Use the Services
+## 2. 資料放在哪裡
 
-When you access or use the Service, we automatically collect:
+**不登入時：** app 不需要帳號就能開啟使用（首次開啟即進入，並提醒你登入可保留資料、跨裝置同步）。所有資料只存在你的手機上，放在手機的 app 資料夾內，在多數手機上由手機系統的儲存加密保護
+（需要設定螢幕鎖定）；app 本身不另外加密資料庫。
+資料不會離開你的手機；app 也不會連線到 Google 的推播服務，直到你登入。提醒由手機本機排程，通知內容為通用文字，不含聯絡人姓名。
 
-* **Log Information**: your use of the Service, including access times
-  and the pages or screens viewed.
-* **Device Information**: information about the device you use to
-  access the Service, including hardware model and operating system
-  and version.
-* **Push Notification Tokens**: a device identifier used to deliver
-  reminder notifications you have configured (see "Reminders and Push
-  Notifications" below).
+**登入後：** 手機上的資料會與你的帳號同步，並保存在我們的伺服器
+（larryhsiao.com，以 Docker 執行於自行管理的 VPS，資料存放在 PostgreSQL 資料庫；伺服器與資料庫都位於日本），以 HTTPS 傳輸。你的資料因此會儲存在日本境內。
+手機上仍保有本機副本。同步時，伺服器會保留已刪除項目的識別碼（不含內容）90 天，
+讓離線的其他裝置回來時也能同步刪除；推播用的裝置代號超過 90 天沒有更新就會被清除。
 
-### Information We Collect From Other Sources
+**推播通知：** 登入後，伺服器透過 Google Firebase Cloud Messaging 傳送提醒（iOS 另經
+Apple Push Notification service），這些服務會收到你的裝置代號與通知內容。
+通知文字為通用文字，不含聯絡人姓名。
 
-If you sign in through a third-party identity provider (for example,
-Firebase Authentication's supported sign-in methods), we receive the
-identifying information that provider shares with us to authenticate
-you.
+**網頁版：** 目前沒有提供網頁版。
 
-## Use of Information
+**備份：** app 內的「備份與還原」會用你設定的密碼加密資料，產生一段文字由你自行保存。
+我們不保存備份，也無法在你忘記密碼時還原。
+手機上的資料庫也不會進入系統備份，避免你的客戶資料經由系統備份送到 Apple 或 Google 的伺服器：
+Android 的自動備份已關閉，iOS 的 iCloud 與電腦備份已排除這份資料庫。
+換手機時，請用 app 內的備份與還原，或登入帳號同步。
 
-We use information about you and the contact data you enter for
-purposes that include:
+## 3. 我們如何使用資料
 
-* Providing, maintaining, and improving the Service;
-* Calculating your configured follow-up reminders and delivering the
-  push notifications you have set up;
-* Detecting duplicate gift entries for the same contact, so you can
-  avoid giving the same gift twice;
-* Sending you technical notices, updates, security alerts, and
-  administrative messages about your account;
-* Responding to your questions and providing customer support;
-* Monitoring and analyzing trends and usage to improve the Service.
+只用於提供 app 的功能：顯示與管理你的資料、同步、計算逾期名單與傳送提醒。
+我們不販售資料，不用於廣告，不與第三方共享（上述推播服務除外）。
 
-By accessing and using the Service, you consent to the processing of
-your information as described in this policy.
+## 4. 保存與刪除
 
-## Reminders and Push Notifications
+- **刪除此裝置上的資料：** 設定 → 帳號設定 → 刪除此裝置上的資料（登入中會同時登出，伺服器上的資料不受影響）。
+- **刪除帳號：** 設定 → 帳號設定 → 刪除帳號，會永久刪除伺服器上你的帳號與所有資料，
+  並同時刪除這支手機上的資料（建議先建立加密備份）。伺服器資料庫備份中的副本不會立即消失，
+  會隨之後的新備份取代舊備份而消失（見下方「資料庫備份」）。
+  若伺服器上的帳號已刪除、但這支手機上的資料因故無法刪除，app 會登出並告訴你，請到帳號設定自行刪除。
+- **匯出：** 登入後可在帳號設定匯出你在伺服器上的所有資料。
+- 解除安裝 app 會移除手機上的資料庫；伺服器上的資料則在你刪除帳號前持續保存。
+- **伺服器日誌：** 伺服器與其前端的反向代理會記錄每個請求的時間、來源 IP 位址、路徑與狀態碼，用於除錯與維運；不記錄你輸入的資料內容。日誌保存 90 天。
+- **資料庫備份：** 伺服器的資料庫會定期備份（約每數日一次），只保留最近的備份，較舊的備份會被新的取代；沒有固定的保存天數。因此刪除帳號後，你的資料可能仍留在最近的備份中，直到被更新的備份取代為止。
 
-Snotra calculates when a contact is due for follow-up based on the
-group follow-up interval and the last recorded contact date you enter,
-and sends you a push notification when a reminder is due. This
-calculation and the resulting notification use only data you have
-already entered into the Service.
+## 5. 你的權利
 
-## Sharing of Information
+你可以隨時存取、更正（在 app 內編輯）、匯出與刪除你的資料。
+如需協助，請寄信至 larryhsiao@larryhsiao.com。
 
-We may share personal information as follows:
+## 6. 兒童
 
-* With third-party service providers who need access to carry out work
-  on our behalf (for example, our cloud hosting provider and Firebase,
-  used for authentication, crash reporting, analytics, and push
-  notification delivery);
-* If we believe disclosure is reasonably necessary to comply with
-  applicable law, regulation, legal process, or governmental request;
-* To enforce our applicable user agreements or policies, and to protect
-  us, our users, or the public from harm or illegal activity;
-* In connection with a merger, sale of assets, financing, or
-  acquisition of all or part of our business;
-* If we notify you (or state in this policy) that information you
-  provide will be shared in a particular manner and you provide it.
+Snotra 不是為 13 歲以下兒童設計，我們不會刻意蒐集兒童的個人資料。
 
-We do not sell your personal information, or the contact data you enter
-about your customers, to third parties.
+## 7. 政策變更
 
-## Data Retention and Your Controls
-
-We retain your account information for as long as your account remains
-active, or as required by law. You can export or delete your account
-at any time from within the app's account settings.
-
-This retention commitment is about your account, not the contact data
-you enter about your own customers. Deleting your account deletes that
-contact data along with it, as a consequence of deleting your account
-— but we make no separate retention commitment regarding the contact
-data itself; its lifecycle is yours to manage.
-
-## Security
-
-We take reasonable measures to help protect personal information from
-loss, theft, misuse, and unauthorized access, disclosure, alteration,
-and destruction.
-
-## Contact Us
-
-If you have any questions about this privacy policy, please contact us
-at: larryhsiao@larryhsiao.com.
+政策更新時，我們會更新本頁的「最後更新」日期，重大變更會在 app 內或網站上公告。
