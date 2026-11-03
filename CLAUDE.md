@@ -9,3 +9,7 @@ Post body prose — in every language of the trio (zh/en/jp) — sounds like a r
 - Acknowledge uncertainty where it's genuinely there — don't smooth doubt into false confidence.
 
 This governs body prose only. File naming, front matter shape, the AI-disclosure blockquote, and the trio convention (identical `slug`/`date`/`tags` across `.md`/`.en.md`/`.jp.md`) live in `README.md` — read that first when starting a new post.
+
+# Deployment
+
+The blog is deployed automatically by CI (TeamCity) after every new commit to `master`. A push to `master` therefore goes live — check the build (`zola build`) and the change locally before pushing.
