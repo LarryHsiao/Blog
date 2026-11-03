@@ -31,6 +31,7 @@
     <span class="card-link-body">
       <span class="card-link-text">{{ link.label[lang] | default(value=link.label.zh) }}</span>
       {% if desc %}<span class="card-link-desc">{{ desc }}</span>{% endif %}
+      {% if link.platforms %}<span class="card-link-chips">{% for p in link.platforms %}<span class="card-link-chip">{% if data.platform_icons[p] %}<span class="card-link-chip-icon" style="--icon: url({{ data.platform_icons[p] }})"></span>{% endif %}{{ p }}</span>{% endfor %}</span>{% endif %}
     </span>
     <span class="card-link-go">{% if ext %}↗{% else %}›{% endif %}</span>
   </a>
