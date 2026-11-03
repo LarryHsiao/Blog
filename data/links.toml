@@ -1,0 +1,46 @@
+# Single source for the home card. One entry per tile.
+# Internal tile: `path` (language prefix is added by the template).
+# External tile: `url`. Route external ones through /go/<name> so QR codes stay stable.
+
+[[social]]
+label = { zh = "文章", en = "Posts", jp = "記事" }
+path = "/posts/"
+icon = "/icons/posts.svg"
+
+[[social]]
+name = "GitHub"
+url = "/go/github/"
+icon = "/icons/github.svg"
+
+[[social]]
+name = "LinkedIn"
+url = "/go/linkedin/"
+icon = "/icons/linkedin.svg"
+
+[[social]]
+name = "Instagram"
+url = "/go/instagram/"
+icon = "/icons/instagram.svg"
+
+[[social]]
+name = "Mail"
+url = "mailto:larryhsiao@larryhsiao.com"
+icon = "/icons/mail.svg"
+
+[[groups]]
+title = { zh = "應用程式", en = "Apps", jp = "アプリ" }
+links = [
+  { label = { zh = "Metis", en = "Metis", jp = "Metis" }, path = "/metis/", app = "metis", icon = "/metis.png" },
+  { label = { zh = "Iris", en = "Iris", jp = "Iris" }, path = "/iris/", app = "iris", icon = "/iris-icon.svg" },
+  { label = { zh = "Heimdall", en = "Heimdall", jp = "Heimdall" }, path = "/heimdall/", app = "heimdall", icon = "/heimdall.png" },
+  { label = { zh = "Carpo", en = "Carpo", jp = "Carpo" }, path = "/carpo/", app = "carpo", icon = "/carpo-icon.png" },
+  { label = { zh = "Daeron", en = "Daeron", jp = "Daeron" }, path = "/daeron/", app = "daeron", icon = "/daeron-icon.png" },
+  { label = { zh = "Orthanc", en = "Orthanc", jp = "Orthanc" }, path = "/orthanc/", app = "orthanc", icon = "/orthanc-icon.png" },
+  { label = { zh = "Roäc", en = "Roäc", jp = "Roäc" }, path = "/roac/", app = "roac", icon = "/roac-icon.png" },
+]
+
+[[groups]]
+title = { zh = "工具與其他", en = "Tools & elsewhere", jp = "ツールなど" }
+links = [
+  { label = { zh = "開發工具", en = "Dev tools", jp = "開発ツール" }, path = "/tools/" },
+]

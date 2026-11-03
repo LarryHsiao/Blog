@@ -1,7 +1,6 @@
 +++
 title = "Posts"
 sort_by = "date"
-template = "index.html"
+template = "card.html"
 page_template = "blog-page.html"
-paginate_by = 5
 +++

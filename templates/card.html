@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{{ config.title }}{% endblock title %}
+{% block profile_header %}{% endblock profile_header %}
+{% block content %}
+{% set data = load_data(path="data/links.toml") %}
+{% if lang == "en" %}{% set prefix = "/en" %}{% set author = config.extra.author_en %}{% set tagline = config.extra.tagline_en %}{% set slogan = config.extra.slogan_en %}
+{% elif lang == "jp" %}{% set prefix = "/jp" %}{% set author = config.extra.author %}{% set tagline = config.extra.tagline_jp %}{% set slogan = config.extra.slogan_jp %}
+{% else %}{% set prefix = "" %}{% set author = config.extra.author %}{% set tagline = config.extra.tagline %}{% set slogan = config.extra.slogan %}{% endif %}
+<main class="card">
+  <a class="card-avatar-link" href="{{ prefix }}/about/" aria-label="{{ author }}"><img class="card-avatar" src="{{ config.extra.avatar_url }}" alt="{{ author }}" /></a>
+  <h1 class="card-name"><a href="{{ prefix }}/about/">{{ author }}</a></h1>
+  <p class="card-tagline">{{ tagline }}</p>
+  <p class="card-slogan">{{ slogan }} {{ config.extra.slogan_emoji }}</p>
+  <div class="card-social">
+    {% for s in data.social %}
+    {% if s.path %}{% set s_href = prefix ~ s.path %}{% set s_name = s.label[lang] | default(value=s.label.zh) %}
+    {% else %}{% set s_href = s.url %}{% set s_name = s.name %}{% endif %}
+    <a href="{{ s_href }}" title="{{ s_name }}" aria-label="{{ s_name }}"><span class="card-social-icon" style="--icon: url({{ s.icon }})"></span></a>
+    {% endfor %}
+  </div>
+  {% for group in data.groups %}
+  {% if group.links | length > 0 %}
+  <h2 class="card-group">{{ group.title[lang] | default(value=group.title.zh) }}</h2>
+  {% for link in group.links %}
+  {% if link.path %}{% set href = prefix ~ link.path %}{% set ext = false %}
+  {% else %}{% set href = link.url %}{% set ext = true %}{% endif %}
+  {% set desc = "" %}
+  {% if link.app %}{% if lang == "en" %}{% set app_page = get_page(path="apps/" ~ link.app ~ ".en.md") %}{% elif lang == "jp" %}{% set app_page = get_page(path="apps/" ~ link.app ~ ".jp.md") %}{% else %}{% set app_page = get_page(path="apps/" ~ link.app ~ ".md") %}{% endif %}{% set desc = app_page.description | default(value="") %}{% endif %}
+  <a class="card-link{% if link.app %} card-link-app{% endif %}" href="{{ href }}" title="{{ link.label[lang] | default(value=link.label.zh) }}">
+    {% if link.icon %}<img class="card-link-icon" src="{{ link.icon }}" alt="" width="44" height="44" />{% endif %}
+    <span class="card-link-body">
+      <span class="card-link-text">{{ link.label[lang] | default(value=link.label.zh) }}</span>
+      {% if desc %}<span class="card-link-desc">{{ desc }}</span>{% endif %}
+    </span>
+    <span class="card-link-go">{% if ext %}↗{% else %}›{% endif %}</span>
+  </a>
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+  <p class="card-langs">
+    <a href="/" onclick="localStorage.setItem('preferred-lang','zh')">中文</a> ·
+    <a href="/en/" onclick="localStorage.setItem('preferred-lang','en')">EN</a> ·
+    <a href="/jp/" onclick="localStorage.setItem('preferred-lang','jp')">日本語</a>
+  </p>
+</main>
+{% endblock content %}

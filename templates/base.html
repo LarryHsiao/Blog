@@ -108,9 +108,9 @@
     <nav class="about-header-nav">
       {% if lang == "en" %}{% set home_url = config.base_url ~ "/en/" %}{% elif
       lang == "jp" %}{% set home_url = config.base_url ~ "/jp/" %}{% else %}{%
-      set home_url = config.base_url ~ "/" %}{% endif %} {% set home_active =
-      current_url == home_url %}
-      <a href="{{ home_url }}" class="{% if home_active %}active{% endif %}"
+      set home_url = config.base_url ~ "/" %}{% endif %} {% set posts_url =
+      home_url ~ "posts/" %} {% set home_active = current_url == posts_url %}
+      <a href="{{ posts_url }}" class="{% if home_active %}active{% endif %}"
         >Blog</a
       >
       {% for menu in menus %} {% set link_url = menu.url |

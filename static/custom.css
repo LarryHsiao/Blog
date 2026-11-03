@@ -219,43 +219,6 @@ body > section p a[href*="/tags/"]:hover,
   text-decoration: none;
 }
 
-/* ── Pagination ── */
-nav.pagination {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 2rem 0;
-  padding: 0;
-  position: static;
-  background: none;
-  width: auto;
-  border: none;
-}
-
-nav.pagination::before {
-  display: none;
-}
-
-nav.pagination a {
-  display: inline-block;
-  background: var(--background);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 0.5rem 1.25rem;
-  color: var(--links);
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition:
-    border-color 0.2s ease,
-    background 0.2s ease;
-}
-
-nav.pagination a:hover {
-  border-color: var(--links);
-  background: rgba(var(--accent-wash) / 0.08);
-  text-decoration: none;
-}
-
 /* ── Blog post page ── */
 .blog-post h1 {
   font-size: 2.2rem;
@@ -1046,10 +1009,6 @@ html.has-prophecy-timeline {
     font-size: 1.75rem;
   }
 
-  nav.pagination {
-    gap: 0.75rem;
-  }
-
   .about-page {
     margin: 1rem auto;
   }
@@ -1397,3 +1356,30 @@ input[type="range"]::-ms-fill-upper {
     flex-direction: column-reverse;
   }
 }
+
+/* Home card (templates/card.html) */
+body:has(.card) .tool-top-bar { display: none; }
+.card { max-width: 480px; margin: 2rem auto; padding: 0 1rem; }
+.card-avatar { display: block; width: 120px; height: 120px; border-radius: 50%; border: 2px solid var(--border-bright); object-fit: cover; margin: 0 auto 0.5rem; transition: border-color 0.3s ease; }
+.card-name { text-align: center; font-size: 1.3rem; margin: 0; }
+.card-tagline { text-align: center; margin: 0.25rem 0 0.75rem; opacity: 0.75; }
+.card-social { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin: 0.5rem 0; }
+.card-social a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: 1px solid currentColor; border-radius: 50%; text-decoration: none; }
+.card-social-icon { width: 20px; height: 20px; background: currentColor; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
+.card-group { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.7; margin: 1.5rem 0 0.25rem; border: 0; }
+.card-link { display: flex; align-items: center; gap: 0.5rem; border: 1px solid currentColor; border-radius: 10px; padding: 0.6rem 0.8rem; margin: 0.4rem 0; text-decoration: none; }
+.card-link-text { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card-link-go { flex: none; }
+.card-langs { text-align: center; margin-top: 1.5rem; font-size: 0.85rem; }
+.card-link-icon { flex: none; width: 44px; height: 44px; border-radius: 10px; object-fit: cover; }
+.card-link-body { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.card-link-body .card-link-text { font-weight: 600; }
+.card-link-desc { font-size: 0.8rem; opacity: 0.8; line-height: 1.3; margin-top: 0.1rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card-link-app { gap: 0.7rem; padding: 0.55rem 0.7rem; border-radius: 12px; }
+.card-slogan { text-align: center; font-style: italic; margin: 0 0 0.75rem; }
+.card-avatar-link { display: block; width: 120px; margin: 0 auto 0.5rem; }
+.card-avatar-link:hover .card-avatar { border-color: var(--links); }
+.card-avatar-link .card-avatar { margin: 0; }
+/* bahunya prefixes mailto links with an emoji; the card's mail pill already has an icon */
+.card .card-social a::before { content: none; }
+.card-name a { color: inherit; text-decoration: none; }
