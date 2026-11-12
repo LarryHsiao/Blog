@@ -1,0 +1,8 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Redirect</title>
+{# Own redirect page: Zola's built-in redirect_to prefixes base_url on older versions. #}
+<meta http-equiv="refresh" content="0; url={{ section.extra.target }}">
+<link rel="canonical" href="{{ section.extra.target }}">
+<script>window.location.replace("{{ section.extra.target | safe }}" + (window.location.hash || ""));</script>
+<p><a href="{{ section.extra.target }}">Click here</a> to be redirected.</p>

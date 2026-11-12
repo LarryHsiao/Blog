@@ -1,4 +1,7 @@
 +++
 title = "GitHub"
-redirect_to = "https://github.com/larryhsiao"
+template = "redirect.html"
+
+[extra]
+target = "https://github.com/larryhsiao"
 +++
