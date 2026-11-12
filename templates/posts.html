@@ -2,14 +2,60 @@
 {% extends "base.html" %}
 {% block title %}{{ section.title }} · {{ config.title }}{% endblock title %}
 {% block content %}
-{% if lang == "en" %}{% set root = get_section(path="_index.en.md") %}
-{% elif lang == "jp" %}{% set root = get_section(path="_index.jp.md") %}
-{% else %}{% set root = get_section(path="_index.md") %}{% endif %}
+{% if lang == "en" %}{% set root = get_section(path="_index.en.md") %}{% set prev_label = "‹ Previous" %}{% set next_label = "Next ›" %}
+{% elif lang == "jp" %}{% set root = get_section(path="_index.jp.md") %}{% set prev_label = "‹ 前へ" %}{% set next_label = "次へ ›" %}
+{% else %}{% set root = get_section(path="_index.md") %}{% set prev_label = "‹ 上一頁" %}{% set next_label = "下一頁 ›" %}{% endif %}
 <h1>{{ section.title }}</h1>
-{% for year, posts in root.pages | group_by(attribute="year") %}
-<h2>{{ year }}</h2>
-{% for post in posts %}
+{# Every post is in the HTML; the script below shows five at a time. With JavaScript off, the full list stands.
+   The cards stay direct children of <body>: the card styles in custom.css are scoped `body > section`. #}
+{% for post in root.pages %}
 {{ macros::page_item(page=post) }}
 {% endfor %}
-{% endfor %}
+<nav class="pagination" data-page-size="5" hidden>
+  <a class="previous">{{ prev_label }}</a>
+  <span class="position"></span>
+  <a class="next">{{ next_label }}</a>
+</nav>
+<script>
+(function () {
+  var nav = document.querySelector(".pagination");
+  var size = parseInt(nav.dataset.pageSize, 10);
+  var items = [].slice.call(document.querySelectorAll("body > section"));
+  var pages = Math.ceil(items.length / size);
+  if (pages < 2) return;
+  var prev = nav.querySelector(".previous");
+  var next = nav.querySelector(".next");
+  var position = nav.querySelector(".position");
+  var top = document.querySelector("h1");
+
+  function current() {
+    var n = parseInt(new URLSearchParams(location.search).get("page"), 10);
+    return n >= 1 && n <= pages ? n : 1;
+  }
+  function link(a, n) {
+    var live = n >= 1 && n <= pages;
+    if (live) a.href = "?page=" + n; else a.removeAttribute("href");
+    a.classList.toggle("off", !live);
+    a.setAttribute("aria-disabled", String(!live));
+  }
+  function show(n) {
+    items.forEach(function (e, i) { e.hidden = Math.floor(i / size) + 1 !== n; });
+    position.textContent = n + " / " + pages;
+    link(prev, n - 1);
+    link(next, n + 1);
+    nav.hidden = false;
+  }
+  nav.addEventListener("click", function (ev) {
+    var a = ev.target.closest("a[href]");
+    if (!a || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button) return;
+    ev.preventDefault();
+    var n = parseInt(new URLSearchParams(a.search).get("page"), 10);
+    history.pushState(null, "", "?page=" + n);
+    show(n);
+    top.scrollIntoView();
+  });
+  window.addEventListener("popstate", function () { show(current()); });
+  show(current());
+})();
+</script>
 {% endblock content %}

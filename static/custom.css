@@ -261,6 +261,36 @@ body > section p a[href*="/tags/"]:hover,
   white-space: nowrap;
 }
 
+/* Posts list paging: previous / position / next. Shown by the script in posts.html. */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.pagination[hidden] {
+  display: none;
+}
+
+.pagination .position {
+  color: var(--text-muted);
+}
+
+.pagination a {
+  color: var(--links);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* The unavailable side stays drawn, greyed, so the bar does not jump. */
+.pagination a.off {
+  color: var(--border-bright);
+  text-decoration: none;
+  cursor: default;
+}
+
 .blog-post img {
   border-radius: 6px;
   margin: 1rem 0;
