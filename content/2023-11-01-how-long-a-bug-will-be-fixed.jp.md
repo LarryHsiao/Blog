@@ -4,9 +4,9 @@ title = "バグが修正されるまでどのくらいかかるか"
 slug = "how-long-a-bug-will-be-fixed"
 [taxonomies]
 tags=["Software Development"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **注：** 本記事は、私の初期メモと考えをもとに AI（Claude Sonnet 4.6）が仕上げたものです。
 
 答えは：21年かかることもある。
 

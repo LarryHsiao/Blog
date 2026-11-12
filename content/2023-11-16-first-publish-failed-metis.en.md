@@ -4,9 +4,9 @@ title = "Metis first publish attempt failed"
 slug = "first-publish-of-metis-failure"
 [taxonomies]
 tags=["Metis","Google Play"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **Note:** This article was completed by AI (Claude Sonnet 4.6) from my initial notes and thoughts.
 
 Metis got rejected on the very first Play Store submission.
 

@@ -4,9 +4,9 @@ title = "個人の設定を製品として育てる — テストがあるから
 slug = "a-config-is-a-product-when-you-name-how-it-rots"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **補足：** 本記事は AI（Claude）が私の最初のメモと着想をもとに仕上げたものです。
 
 前の二回は、一巡の作業が[どう回るか](/jp/the-only-gate-that-waits/)、そして[規律が守られたかをどう測るか](/jp/the-denominator-is-the-hard-part/)の話だった。そのループを回し、その点数を計算しているものは、実のところ一つの git リポジトリだ。自身の README の数え方で、hook が百二十ほど、スキルが五十三、ルール文書が十九。
 

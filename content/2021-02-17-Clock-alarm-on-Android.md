@@ -3,9 +3,9 @@ date = 2021-02-17
 title = "Android 鬧鐘應用程式實作"
 slug = "clock-alarm-application-on-android"
 category = "Android"
+[extra]
+ai_model = "Claude Opus 4.7"
 +++
-
-> **說明：** 本文由 AI（Claude Opus 4.7）根據我的初始筆記與想法完成。
 
 這年頭要在 Android 上做一個鬧鐘 app，痛點其實不少。電量優化、背景限制、權限要求這幾年一路收緊。這篇文章會走一遍我的實作方式，以及要讓鬧鐘準時響、並且真的在畫面上跳出來的幾個小撇步。
 

@@ -4,9 +4,9 @@ title = "Go 驗證 Google ID Token"
 slug = "google-id-token-verification"
 [taxonomies]
 tags=["golang"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **說明：** 本文由 AI（Claude Sonnet 4.6）根據我的初始筆記與想法完成。
 
 在 Metis 後端用 Go 驗證 Firebase ID Token 時，踩了一個坑：公鑰必須先 parse 過才能使用，否則會拋出 `key is of invalid type`。
 

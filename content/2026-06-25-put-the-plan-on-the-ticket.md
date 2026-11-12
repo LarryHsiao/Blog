@@ -4,9 +4,9 @@ title = "把計畫寫在票上 — 用標記協定串起 Plan / Forge / Review"
 slug = "put-the-plan-on-the-ticket"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **說明：** 本文由 AI（Claude）根據我的初始筆記與想法完成。
 
 最近我在整理自己跑 AI agent 的方式，發現一個一直被我忽略的問題：**agent 的狀態到底存在哪裡？**
 

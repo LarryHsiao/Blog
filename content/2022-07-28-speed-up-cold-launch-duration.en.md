@@ -2,9 +2,9 @@
 date = "2022-07-28"
 title = "How initializers in Application slow down cold launch, and what to do about it"
 slug = "the-influence-of-initialize-method-in-application-on-android"
+[extra]
+ai_model = "Claude Opus 4.7"
 +++
-
-> **Note:** This article was completed by AI (Claude Opus 4.7) from my initial notes and thoughts.
 
 Our app pulls in a lot of components — some we wrote ourselves, others from third-party libraries — and every so often they need to be initialized at startup. On Android, the default habit is to drop those `initialize()` calls into `Application.onCreate()`.
 

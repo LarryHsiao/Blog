@@ -4,9 +4,9 @@ title = "The Prophecy Ledger: What Happened to All Those World-Changing Predicti
 slug = "the-prophecy-ledger"
 [taxonomies]
 tags = ["AI", "History", "Fun"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **Note:** This article was completed by AI (Claude) from my initial notes and thoughts.
 
 It hit me the other day — there have been so many big predictions over the years. End of the world, population collapse, when AGI shows up. Whoever said them sounded so sure. But what actually happened? Nobody ever goes back and checks.
 

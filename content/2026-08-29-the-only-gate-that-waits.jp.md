@@ -4,9 +4,9 @@ title = "待つのは一つだけ — エージェントの一巡を構成する
 slug = "the-only-gate-that-waits"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **補足：** 本記事は AI（Claude）が私の最初のメモと着想をもとに仕上げたものです。
 
 前回の[「計画はチケットに書く」](/jp/put-the-plan-on-the-ticket/)は、エージェントの状態をどこに置くべきかの話だった。行き着いた結論は、issue tracker のコメント欄へ引き上げる、というもの。だがチケットに残るのは段階と段階のあいだの受け渡しだけだ。計画、承認、PR、マージ。一巡の内側がどう回っているか——そこまではチケットの手は届かない。
 

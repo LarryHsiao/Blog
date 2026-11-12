@@ -4,9 +4,9 @@ title = "唯一一道等人的閘 — 一輪 agent 工作的八個階段"
 slug = "the-only-gate-that-waits"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **說明：** 本文由 AI（Claude）根據我的初始筆記與想法完成。
 
 上一篇[〈把計畫寫在票上〉](/put-the-plan-on-the-ticket/)談的是 agent 的狀態該存在哪裡。結論是抬到 issue tracker 的留言串上。但票上記的只是階段之間的交接——計畫、核准、PR、合併。一輪工作內部怎麼跑，票根本管不到。
 

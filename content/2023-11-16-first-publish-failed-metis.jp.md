@@ -4,9 +4,9 @@ title = "Metis の初回リリースは失敗した"
 slug = "first-publish-of-metis-failure"
 [taxonomies]
 tags=["Metis","Google Play"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **注：** 本記事は、私の初期メモと考えをもとに AI（Claude Sonnet 4.6）が仕上げたものです。
 
 Metis は最初の Play Store 申請でリジェクトされた。
 

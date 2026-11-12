@@ -4,9 +4,9 @@ title = "把個人設定當產品養 — 不是因為它有測試，是因為它
 slug = "a-config-is-a-product-when-you-name-how-it-rots"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **說明：** 本文由 AI（Claude）根據我的初始筆記與想法完成。
 
 前兩篇談的是一輪工作[怎麼跑](/the-only-gate-that-waits/)、以及[怎麼量它有沒有守規矩](/the-denominator-is-the-hard-part/)。跑那個迴圈、量那個分數的東西，其實是一個 git repo：依它自己的 README 數，一百二十來個 hook、五十三個技能、十九份規則文件。
 

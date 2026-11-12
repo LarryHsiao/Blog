@@ -4,9 +4,9 @@ title = "Verifying Google ID Tokens in Go"
 slug = "google-id-token-verification"
 [taxonomies]
 tags=["golang"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **Note:** This article was completed by AI (Claude Sonnet 4.6) from my initial notes and thoughts.
 
 When verifying Firebase ID Tokens in Go, there's one gotcha: the public key must be parsed before use, otherwise you'll get `key is of invalid type`.
 

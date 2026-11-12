@@ -4,9 +4,9 @@ title = "分母才是難的那一半 — 怎麼量 agent 有沒有守規矩"
 slug = "the-denominator-is-the-hard-part"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **說明：** 本文由 AI（Claude）根據我的初始筆記與想法完成。
 
 上一篇[〈唯一一道等人的閘〉](/the-only-gate-that-waits/)的結尾留了一句話——我沒辦法證明模型守得住那八段。所以下一步不是再加規則。是去量它到底守了多少。
 

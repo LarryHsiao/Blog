@@ -4,9 +4,9 @@ title = "The Denominator Is the Hard Part — Measuring Whether an Agent Keeps t
 slug = "the-denominator-is-the-hard-part"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **Note:** This article was completed by AI (Claude) from my initial notes and thoughts.
 
 The previous post, [The Only Gate That Waits](/en/the-only-gate-that-waits/), ended on an admission. I can't prove the model holds all eight stages. So the next step isn't more rules. It's measuring how much of this actually gets kept.
 

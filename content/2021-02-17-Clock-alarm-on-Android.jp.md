@@ -3,9 +3,9 @@ date = 2021-02-17
 title = "Android で目覚まし時計アプリを実装する"
 slug = "clock-alarm-application-on-android"
 category = "Android"
+[extra]
+ai_model = "Claude Opus 4.7"
 +++
-
-> **注：** 本記事は、私の初期メモと考えをもとに AI（Claude Opus 4.7）が仕上げたものです。
 
 最近の Android で目覚まし時計アプリを作るのは、なかなか骨が折れる。バッテリー最適化、バックグラウンド制限、権限要件は年々厳しくなっている。この記事では、自分がどう実装したか、そしてアラームを確実に時間通りに鳴らして画面に出すためのコツを一通り紹介する。
 

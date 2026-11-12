@@ -4,9 +4,9 @@ title = "大預言時間軸：那些說要改變世界的話，後來怎麼了"
 slug = "the-prophecy-ledger"
 [taxonomies]
 tags = ["AI", "History", "Fun"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **說明：** 本文由 AI（Claude）根據我的初始筆記與想法完成。
 
 有天突然想到，過去有過好多「大預言」。世界末日、人口爆炸、AGI 何時降臨——講的人都很篤定，但後來呢？沒人回頭算過。
 

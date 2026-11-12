@@ -4,9 +4,9 @@ title = "Put the Plan on the Ticket — Plan / Forge / Review as a Marker Protoc
 slug = "put-the-plan-on-the-ticket"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **Note:** This article was completed by AI (Claude) from my initial notes and thoughts.
 
 Lately I've been tidying up the way I run AI agents, and I noticed a question I'd been quietly ignoring: **where does the agent's state actually live?**
 

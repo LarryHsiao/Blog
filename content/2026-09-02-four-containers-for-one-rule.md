@@ -4,9 +4,9 @@ title = "一條規則該住在哪裡 — 四個容器，一道我們自己搭的
 slug = "four-containers-for-one-rule"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **說明：** 本文由 AI（Claude）根據我的初始筆記與想法完成。
 
 [上一篇](/a-config-is-a-product-when-you-name-how-it-rots/)提到教訓有升遷流程：先落在記憶裡，等它糾正過同樣的錯誤兩次，才升進規則文件。那一段只寫了第一階。
 

@@ -2,9 +2,9 @@
 date = "2022-07-28"
 title = "Initialize() 寫法在 Android app 的影響與優化建議"
 slug = "the-influence-of-initialize-method-in-application-on-android"
+[extra]
+ai_model = "Claude Opus 4.7"
 +++
-
-> **說明：** 本文由 AI（Claude Opus 4.7）根據我的初始筆記與想法完成。
 
 我們的應用使用了許多元件，不管是自己寫的，或者是第三方提供的函式庫，有時不免就需要在應用啟動後做初始化的動作。而在 Android 的世界，很多時候呼叫這個初始化的方法都會放在 `Application` 內的 `onCreate()` 中。
 

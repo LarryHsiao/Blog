@@ -4,9 +4,9 @@ title = "PostgreSQL のデータベースとユーザーを設定する"
 slug = "setup-postgresql-quick-note"
 [taxonomies]
 tags=["postgresql"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **注：** 本記事は、私の初期メモと考えをもとに AI（Claude Sonnet 4.6）が仕上げたものです。
 
 新しいマシンで PostgreSQL をセットアップする手順のメモ。インストール、データベース作成、ユーザー作成、外部接続の開放まで。
 

@@ -4,9 +4,9 @@ title = "How long does it take to fix a bug"
 slug = "how-long-a-bug-will-be-fixed"
 [taxonomies]
 tags=["Software Development"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **Note:** This article was completed by AI (Claude Sonnet 4.6) from my initial notes and thoughts.
 
 Twenty-one years, apparently.
 

@@ -4,9 +4,9 @@ title = "設定 PostgreSQL 資料庫與使用者"
 slug = "setup-postgresql-quick-note"
 [taxonomies]
 tags=["postgresql"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **說明：** 本文由 AI（Claude Sonnet 4.6）根據我的初始筆記與想法完成。
 
 一些快速筆記，記錄怎麼在新機器上把 PostgreSQL 設定起來，建立資料庫、使用者，並開放連線。
 

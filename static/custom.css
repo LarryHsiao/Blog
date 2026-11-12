@@ -245,6 +245,22 @@ body > section p a[href*="/tags/"]:hover,
   margin-bottom: 2rem;
 }
 
+/* Marks a post written with AI help; the model name rides in the title attr. */
+.ai-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid rgba(var(--accent-wash) / 0.55);
+  border-radius: 999px;
+  color: var(--links);
+  background: rgba(var(--accent-wash) / 0.1);
+  cursor: help;
+  white-space: nowrap;
+}
+
 .blog-post img {
   border-radius: 6px;
   margin: 1rem 0;

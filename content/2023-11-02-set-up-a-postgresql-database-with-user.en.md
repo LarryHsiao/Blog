@@ -4,9 +4,9 @@ title = "Setting up a PostgreSQL database with a user"
 slug = "setup-postgresql-quick-note"
 [taxonomies]
 tags=["postgresql"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **Note:** This article was completed by AI (Claude Sonnet 4.6) from my initial notes and thoughts.
 
 Quick notes on getting PostgreSQL running on a fresh machine — install, create a database, a user, and open up remote connections.
 

@@ -4,9 +4,9 @@ title = "一個 Bug 多久會被修正"
 slug = "how-long-a-bug-will-be-fixed"
 [taxonomies]
 tags=["Software Development"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **說明：** 本文由 AI（Claude Sonnet 4.6）根據我的初始筆記與想法完成。
 
 答案是：可能要 21 年。
 

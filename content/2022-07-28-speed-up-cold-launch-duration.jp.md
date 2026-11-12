@@ -2,9 +2,9 @@
 date = "2022-07-28"
 title = "Application の initialize() がコールドローンチに与える影響と最適化"
 slug = "the-influence-of-initialize-method-in-application-on-android"
+[extra]
+ai_model = "Claude Opus 4.7"
 +++
-
-> **注：** 本記事は、私の初期メモと考えをもとに AI（Claude Opus 4.7）が仕上げたものです。
 
 アプリにはたくさんのコンポーネントが入っている——自前で書いたもの、サードパーティのライブラリ——そしてその多くは起動時に初期化が必要になる。Android ではこうした `initialize()` 呼び出しを `Application.onCreate()` に放り込むのが定番だ。
 

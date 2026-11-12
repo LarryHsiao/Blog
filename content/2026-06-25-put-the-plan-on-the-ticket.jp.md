@@ -4,9 +4,9 @@ title = "計画はチケットに書く — Plan / Forge / Review をマーカ�
 slug = "put-the-plan-on-the-ticket"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **補足：** 本記事は AI（Claude）が私の最初のメモと着想をもとに仕上げたものです。
 
 最近、自分の AI エージェントの回し方を整理していて、ずっと見て見ぬふりをしていた問いに気づいた。**エージェントの状態は、いったいどこに置かれているのか？**
 

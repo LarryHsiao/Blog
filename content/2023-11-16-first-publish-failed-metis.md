@@ -4,9 +4,9 @@ title = "Metis 第一次嘗試上架失敗了"
 slug = "first-publish-of-metis-failure"
 [taxonomies]
 tags=["Metis","Google Play"]
+[extra]
+ai_model = "Claude Sonnet 4.6"
 +++
-
-> **說明：** 本文由 AI（Claude Sonnet 4.6）根據我的初始筆記與想法完成。
 
 Metis 第一次送審就被 Google Play 退回了。
 

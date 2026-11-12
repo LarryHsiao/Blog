@@ -4,9 +4,9 @@ title = "難しいのは分母のほう — エージェントが規律を守っ
 slug = "the-denominator-is-the-hard-part"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **補足：** 本記事は AI（Claude）が私の最初のメモと着想をもとに仕上げたものです。
 
 前回の[「待つのは一つだけ」](/jp/the-only-gate-that-waits/)は、一つのことを認めて終わっていた。モデルが八段すべてを守りきる保証は出せない。だから次は、ルールを増やすことじゃない。どれだけ守られているかを測ることだ。
 

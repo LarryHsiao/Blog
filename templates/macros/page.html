@@ -2,6 +2,7 @@
 <section>
 <h2>{{ page.title }}</h2>
 <span>{{ page.date | date(format="%F") }}-({{ page.reading_time }} min read)</span>
+{%- if page.extra.ai_model %} {{ self::ai_badge(page=page) }}{% endif %}
 <div>
   {% if page.summary -%}
   {{ page.summary | safe }}
@@ -18,3 +19,8 @@
 {% endif %}  <a href="{{ page.permalink }}">繼續閱讀...</a>
 </section>
 {% endmacro page_item %}
+
+{# The AI pill. Its hover text names the model and says the post grew from my own notes. #}
+{% macro ai_badge(page) -%}
+<span class="ai-badge" title="{{ page.extra.ai_model }} — {% if page.lang == "en" %}This article was completed by AI from my initial notes and thoughts.{% elif page.lang == "jp" %}本記事は、私の初期メモと考えをもとに AI が仕上げたものです。{% else %}本文由 AI 根據我的初始筆記與想法完成。{% endif %}">AI</span>
+{%- endmacro ai_badge %}

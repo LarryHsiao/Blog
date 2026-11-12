@@ -4,9 +4,9 @@ title = "The Only Gate That Waits — Eight Stages of One Agent Task"
 slug = "the-only-gate-that-waits"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **Note:** This article was completed by AI (Claude) from my initial notes and thoughts.
 
 The previous post, [Put the Plan on the Ticket](/en/put-the-plan-on-the-ticket/), was about where an agent's state should live. Landed on lifting it onto the issue tracker's comment thread. But a ticket only records the handoff between stages — the plan, the approval, the PR, the merge. How one task runs on the inside? The ticket can't reach that.
 

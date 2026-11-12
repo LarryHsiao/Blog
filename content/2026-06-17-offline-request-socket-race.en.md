@@ -4,9 +4,9 @@ title = "Why Did a Failed Offline Request Send Itself After Reconnecting?"
 slug = "offline-request-socket-race"
 [taxonomies]
 tags = ["Flutter", "Network"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **Note:** This article was completed by AI (Claude) from my initial notes and thoughts.
 
 This puzzled me for years: a network request that *should have failed* would sometimes, after I plugged the network back in, send itself anyway.
 

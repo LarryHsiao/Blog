@@ -4,9 +4,9 @@ title = "離線失敗的請求，為什麼重連網路後又自己送出去了�
 slug = "offline-request-socket-race"
 [taxonomies]
 tags = ["Flutter", "Network"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **說明：** 本文由 AI（Claude）根據我的初始筆記與想法完成。
 
 這個問題困擾了我好幾年：一個**理應失敗**的網路請求，為什麼有時候在我把網路接回來之後，竟然自己送出去了？
 

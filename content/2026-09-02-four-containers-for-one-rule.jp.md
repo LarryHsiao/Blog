@@ -4,9 +4,9 @@ title = "ルールはどこに住むべきか — 四つの容れ物と、自分
 slug = "four-containers-for-one-rule"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **補足：** 本記事は AI（Claude）が私の最初のメモと着想をもとに仕上げたものです。
 
 [前回](/jp/a-config-is-a-product-when-you-name-how-it-rots/)、教訓には昇格の手順があると書いた。まず記憶に落とし、同じ誤りを二度正してから、ルール文書へ上げる。あの一段落が書いていたのは、最初の一段だけだった。
 

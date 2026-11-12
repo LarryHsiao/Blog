@@ -4,9 +4,9 @@ title = "オフラインで失敗したリクエストが、再接続後にな�
 slug = "offline-request-socket-race"
 [taxonomies]
 tags = ["Flutter", "Network"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **注：** 本記事は、私の初期メモと考えをもとに AI（Claude）が仕上げたものです。
 
 何年も腑に落ちなかった謎がある。**失敗するはずの**ネットワークリクエストが、ネットワークを繋ぎ直したあとに、なぜか勝手に送信されてしまうことがあるのだ。
 

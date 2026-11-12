@@ -4,9 +4,9 @@ title = "Treat a Personal Config Like a Product — Not Because It Has Tests, bu
 slug = "a-config-is-a-product-when-you-name-how-it-rots"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **Note:** This article was completed by AI (Claude) from my initial notes and thoughts.
 
 The last two posts were about [how one task runs](/en/the-only-gate-that-waits/) and [how to measure whether the rules were kept](/en/the-denominator-is-the-hard-part/). The thing that runs that loop and computes that score is a git repository: by its own README's count, some hundred and twenty hooks, fifty-three skills, nineteen rule documents.
 

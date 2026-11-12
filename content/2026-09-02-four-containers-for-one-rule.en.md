@@ -4,9 +4,9 @@ title = "Where Does a Rule Live? Four Containers, and a Ladder We Built Ourselve
 slug = "four-containers-for-one-rule"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
+[extra]
+ai_model = "Claude"
 +++
-
-> **Note:** This article was completed by AI (Claude) from my initial notes and thoughts.
 
 [The last post](/en/a-config-is-a-product-when-you-name-how-it-rots/) mentioned that a lesson has a promotion path: it lands in memory first, and only graduates into a rule document once it has corrected the same mistake twice. That passage only wrote down the first rung.
 
