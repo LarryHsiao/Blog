@@ -1432,3 +1432,8 @@ body:has(.card) .tool-top-bar { display: none; }
 /* bahunya prefixes mailto links with an emoji; the card's mail pill already has an icon */
 .card .card-social a::before { content: none; }
 .card-name a { color: inherit; text-decoration: none; }
+/* Latest post: a heading row (title left, quiet "all posts" link right) over one app-shaped tile. */
+.card-group-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin: 1.5rem 0 0.25rem; }
+.card-group-row .card-group { margin: 0; }
+.card-all { font-size: 0.75rem; opacity: 0.65; white-space: nowrap; }
+.card-latest-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; margin-top: 0.3rem; font-size: 0.65rem; opacity: 0.85; white-space: nowrap; }

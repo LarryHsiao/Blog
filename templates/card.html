@@ -1,11 +1,12 @@
+{% import "macros/page.html" as macros %}
 {% extends "base.html" %}
 {% block title %}{{ config.title }}{% endblock title %}
 {% block profile_header %}{% endblock profile_header %}
 {% block content %}
 {% set data = load_data(path="data/links.toml") %}
-{% if lang == "en" %}{% set prefix = "/en" %}{% set author = config.extra.author_en %}{% set tagline = config.extra.tagline_en %}{% set slogan = config.extra.slogan_en %}
-{% elif lang == "jp" %}{% set prefix = "/jp" %}{% set author = config.extra.author %}{% set tagline = config.extra.tagline_jp %}{% set slogan = config.extra.slogan_jp %}
-{% else %}{% set prefix = "" %}{% set author = config.extra.author %}{% set tagline = config.extra.tagline %}{% set slogan = config.extra.slogan %}{% endif %}
+{% if lang == "en" %}{% set prefix = "/en" %}{% set author = config.extra.author_en %}{% set tagline = config.extra.tagline_en %}{% set slogan = config.extra.slogan_en %}{% set latest_label = "Latest post" %}{% set all_label = "All posts ›" %}
+{% elif lang == "jp" %}{% set prefix = "/jp" %}{% set author = config.extra.author %}{% set tagline = config.extra.tagline_jp %}{% set slogan = config.extra.slogan_jp %}{% set latest_label = "最新記事" %}{% set all_label = "すべての記事 ›" %}
+{% else %}{% set prefix = "" %}{% set author = config.extra.author %}{% set tagline = config.extra.tagline %}{% set slogan = config.extra.slogan %}{% set latest_label = "最新文章" %}{% set all_label = "全部文章 ›" %}{% endif %}
 <main class="card">
   <a class="card-avatar-link" href="{{ prefix }}/about/" aria-label="{{ author }}"><img class="card-avatar" src="{{ config.extra.avatar_url }}" alt="{{ author }}" /></a>
   <h1 class="card-name"><a href="{{ prefix }}/about/">{{ author }}</a></h1>
@@ -18,6 +19,23 @@
     <a href="{{ s_href }}" title="{{ s_name }}" aria-label="{{ s_name }}"><span class="card-social-icon" style="--icon: url({{ s.icon }})"></span></a>
     {% endfor %}
   </div>
+  {% set_global latest = false %}
+  {% for p in section.pages %}{% if not latest and not p.draft %}{% set_global latest = p %}{% endif %}{% endfor %}
+  {% if latest %}
+  <div class="card-group-row">
+    <h2 class="card-group">{{ latest_label }}</h2>
+    <a class="card-all" href="{{ prefix }}/posts/">{{ all_label }}</a>
+  </div>
+  <a class="card-link card-link-app" href="{{ latest.path }}" title="{{ latest.title }}">
+    <img class="card-link-icon" src="/icons/posts.svg" alt="" width="44" height="44" />
+    <span class="card-link-body">
+      <span class="card-link-text">{{ latest.title }}</span>
+      <span class="card-link-desc">{% if latest.summary %}{{ latest.summary | striptags | truncate(length=120) | safe }}{% else %}{{ latest.content | striptags | truncate(length=120) | safe }}{% endif %}</span>
+      <span class="card-latest-meta">{{ latest.date | date(format="%F") }} · {{ latest.reading_time }} min read{% if latest.extra.ai_model %} {{ macros::ai_badge(page=latest) }}{% endif %}</span>
+    </span>
+    <span class="card-link-go">›</span>
+  </a>
+  {% endif %}
   {% for group in data.groups %}
   {% if group.links | length > 0 %}
   <h2 class="card-group">{{ group.title[lang] | default(value=group.title.zh) }}</h2>
