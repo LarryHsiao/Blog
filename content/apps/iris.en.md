@@ -38,6 +38,7 @@ Iris is a lightweight always-on-top HUD for macOS — live system vitals and syn
 - 💿 **Album artwork** — shows the current track's cover art alongside the lyric line
 - 📊 **Playback progress bar** — a thin bar at the bottom tracks position within the current track
 - 🧠 **System ring gauges** — CPU and memory as compact rings; disk shows free space as text
+- ⌨️ **Typing speed** — an optional ring shows words per minute while you type, then your personal best when you stop; off by default
 - 🪟 **Draggable overlay** — float it anywhere; position is saved across launches
 - 📌 **Menu-bar control** — toggle visibility or quit via the `ʟ` status item
 
