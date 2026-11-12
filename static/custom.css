@@ -261,6 +261,19 @@ body > section p a[href*="/tags/"]:hover,
   white-space: nowrap;
 }
 
+/* Visible to screen readers and search engines only. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Posts list paging: previous / position / next. Shown by the script in posts.html. */
 .pagination {
   display: flex;

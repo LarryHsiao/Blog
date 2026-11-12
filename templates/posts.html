@@ -5,7 +5,7 @@
 {% if lang == "en" %}{% set root = get_section(path="_index.en.md") %}{% set prev_label = "‹ Previous" %}{% set next_label = "Next ›" %}
 {% elif lang == "jp" %}{% set root = get_section(path="_index.jp.md") %}{% set prev_label = "‹ 前へ" %}{% set next_label = "次へ ›" %}
 {% else %}{% set root = get_section(path="_index.md") %}{% set prev_label = "‹ 上一頁" %}{% set next_label = "下一頁 ›" %}{% endif %}
-<h1>{{ section.title }}</h1>
+<h1 class="sr-only">{{ section.title }}</h1>
 {# Every post is in the HTML; the script below shows five at a time. With JavaScript off, the full list stands.
    The cards stay direct children of <body>: the card styles in custom.css are scoped `body > section`. #}
 {% for post in root.pages %}
@@ -26,7 +26,6 @@
   var prev = nav.querySelector(".previous");
   var next = nav.querySelector(".next");
   var position = nav.querySelector(".position");
-  var top = document.querySelector("h1");
 
   function current() {
     var n = parseInt(new URLSearchParams(location.search).get("page"), 10);
@@ -52,7 +51,7 @@
     var n = parseInt(new URLSearchParams(a.search).get("page"), 10);
     history.pushState(null, "", "?page=" + n);
     show(n);
-    top.scrollIntoView();
+    items[(n - 1) * size].scrollIntoView();
   });
   window.addEventListener("popstate", function () { show(current()); });
   show(current());
