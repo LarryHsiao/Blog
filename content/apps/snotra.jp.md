@@ -48,7 +48,7 @@ ai_model = "Claude Sonnet 5.5"
 ## 🔗 リンク
 
 - [利用規約](/snotra/terms_of_service)
-- [プライバシーポリシー](/snotra/privacy_policy)
+- [プライバシーポリシー](/jp/snotra/privacy_policy)
 - [アカウント削除](mailto:larryhsiao@larryhsiao.com)（メールで連絡）
 
 </div>

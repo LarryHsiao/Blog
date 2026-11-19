@@ -11,7 +11,7 @@ ai_model = "Claude"
 
 The previous post, [The Only Gate That Waits](/en/the-only-gate-that-waits/), ended on an admission. I can't prove the model holds all eight stages. So the next step isn't more rules. It's measuring how much of this actually gets kept.
 
-This is what I learned from measuring. Conclusion up front: scoring is easy. Deciding the denominator is hard. I changed the denominator three times. The score climbed from 11% to 24%. And the model's behaviour didn't change. Not once.
+This is what I learned from measuring. Conclusion up front: scoring is easy. Deciding the denominator is hard. I changed the denominator twice. The score climbed from 11% to 24%. And the model's behaviour didn't change. Not once.
 
 ### The method itself is plain
 
@@ -35,7 +35,7 @@ But that reading's exactly backwards. The reviewed task gets penalised. The unre
 
 The fix: the moment a verdict's written, the segment closes. Rate moved from 15% to 24%.
 
-### Three rises in the score, zero changes in behaviour
+### Two rises in the score, zero changes in behaviour
 
 Put the three numbers side by side:
 

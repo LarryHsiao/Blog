@@ -48,7 +48,7 @@ How long since you last called him? What did you give him last time? Snotra keep
 ## 🔗 Links
 
 - [Terms of Service](/snotra/terms_of_service)
-- [Privacy Policy](/snotra/privacy_policy)
+- [Privacy Policy](/en/snotra/privacy_policy)
 - [Delete Account](mailto:larryhsiao@larryhsiao.com) (via email)
 
 </div>
