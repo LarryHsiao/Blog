@@ -1,7 +1,7 @@
 +++
 date = "2026-08-31"
 title = "The Denominator Is the Hard Part — Measuring Whether an Agent Keeps the Rules"
-description = "Measuring whether an agent keeps its rules: the score rose from 11% to 24% as I fixed the denominator three times, not the model."
+description = "Measuring whether an agent keeps its rules: the score rose from 11% to 24% as I fixed the denominator, not the model."
 slug = "the-denominator-is-the-hard-part"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

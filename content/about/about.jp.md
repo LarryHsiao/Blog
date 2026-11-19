@@ -1,5 +1,6 @@
 +++
 title = "蕭富云"
+description = "AndroidとFlutterを専門とするモバイルアプリ開発者、蕭富云。遠隔医療やBluetooth医療機器連携などヘルスケア領域に携わる。"
 path = "jp/about"
 template = "about.html"
 +++

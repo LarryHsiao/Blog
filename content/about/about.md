@@ -1,5 +1,6 @@
 +++
 title = "蕭富云"
+description = "蕭富云，專注 Android 與 Flutter 的行動應用開發者，深耕健康照護科技，包含遠距醫療與藍牙醫療裝置整合。"
 path = "about"
 template = "about.html"
 +++

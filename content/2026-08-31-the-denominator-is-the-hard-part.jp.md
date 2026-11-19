@@ -1,7 +1,7 @@
 +++
 date = "2026-08-31"
 title = "難しいのは分母のほう — エージェントが規律を守っているかをどう測るか"
-description = "エージェントの規律遵守率を測るとき、点数より分母の決め方が難しい理由を、分母を三度直して11%から24%に上がった経験から書いた文章。"
+description = "エージェントの規律遵守率を測るとき、点数より分母の決め方が難しい理由を、分母を直して11%から24%に上がった経験から書いた文章。"
 slug = "the-denominator-is-the-hard-part"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

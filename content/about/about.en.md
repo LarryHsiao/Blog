@@ -1,5 +1,6 @@
 +++
 title = "Larry Hsiao"
+description = "Larry Hsiao is a mobile app developer working in Android and Flutter and in health tech, including telemedicine and Bluetooth medical device integration."
 path = "en/about"
 template = "about.html"
 +++
