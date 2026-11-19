@@ -18,7 +18,10 @@
     {% endif %}
     <title>{% block title %}{% if page is defined and page.title %}{{ page.title }} · {{ config.title }}{% elif section is defined and section.title %}{{ section.title }} · {{ config.title }}{% else %}{{ config.title }}{% endif %}{% endblock title %}</title>
     {% if _description %}<meta name="description" content="{{ _description }}" />{% endif %}
-    {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}" />{% endif %}
+    {# A tag page's own address comes from term.permalink: on the deployed build current_url named the tag list there. #}
+    {% set_global _page_url = current_url %}
+    {% if term is defined %}{% set_global _page_url = term.permalink %}{% endif %}
+    {% if _page_url %}<link rel="canonical" href="{{ _page_url | safe }}" />{% endif %}
     {% set_global _translations = [] %}
     {% if page is defined %}{% set_global _translations = page.translations %}
     {% elif section is defined %}{% set_global _translations = section.translations %}
@@ -27,7 +30,7 @@
     <link rel="alternate" hreflang="{% if t.lang == "jp" %}ja{% else %}{{ t.lang }}{% endif %}" href="{{ t.permalink | safe }}" />
     {% if t.lang == config.default_language %}<link rel="alternate" hreflang="x-default" href="{{ t.permalink | safe }}" />{% endif %}
     {% endfor %}{% endif %}
-    {% if current_url %}
+    {% if _page_url %}
     {% if page is defined and page.title %}{% set_global _og_title = page.title %}{% elif term is defined %}{% set_global _og_title = term.name %}{% elif terms is defined %}{% set_global _og_title = "Tags" %}{% elif section is defined and section.title and section.relative_path is not starting_with("_index") %}{% set_global _og_title = section.title %}{% else %}{% set_global _og_title = config.title %}{% endif %}
     {# Open Graph crawlers reject SVG, so only a local PNG icon is used, and a square icon takes the small card.
        Every other page gets the 1200x630 banner and the large card. #}
@@ -35,7 +38,7 @@
     {% set_global _twitter_card = "summary_large_image" %}
     {% if page is defined and page.extra.icon and page.extra.icon is starting_with("/") and page.extra.icon is ending_with(".png") %}{% set_global _og_image = page.extra.icon %}{% set_global _twitter_card = "summary" %}{% endif %}
     <meta property="og:title" content="{{ _og_title }}" />
-    <meta property="og:url" content="{{ current_url | safe }}" />
+    <meta property="og:url" content="{{ _page_url | safe }}" />
     <meta property="og:site_name" content="{{ config.title }}" />
     <meta property="og:type" content="{% if page is defined and page.date %}article{% else %}website{% endif %}" />
     <meta property="og:locale" content="{% if lang == "en" %}en_US{% elif lang == "jp" %}ja_JP{% else %}zh_TW{% endif %}" />
