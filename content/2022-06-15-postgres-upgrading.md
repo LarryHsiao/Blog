@@ -1,6 +1,7 @@
 +++
 date = "2022-06-15"
 title = "我的升級PostgreSQL的經驗(9.5升級到14)"
+description = "記錄把 PostgreSQL 從 9.5 升級到 14 時，無法自動轉移資料，最後改用官方提供的工具完成升級的過程。"
 slug = "postgresql-upgrading"
 +++
 [![資料庫](https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=630&amp;h=375&amp;dpr=1 "資料庫")](https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1 "資料庫")

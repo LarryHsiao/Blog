@@ -1,6 +1,7 @@
 +++
 date = "2022-07-28"
 title = "Initialize() 寫法在 Android app 的影響與優化建議"
+description = "說明把所有 SDK 初始化都塞進 Application.onCreate() 會拖慢冷啟動，並介紹分類、延後與背景初始化的做法。"
 slug = "the-influence-of-initialize-method-in-application-on-android"
 [extra]
 ai_model = "Claude Opus 4.7"

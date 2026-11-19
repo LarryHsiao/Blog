@@ -1,6 +1,7 @@
 +++
 date = "2026-11-19"
 title = "Snotra — 誰も置き去りにしない"
+description = "顧客との面談や贈り物を記録し、フォローすべき人をリマインダーで知らせてくれる顧客関係管理アプリ Snotra の紹介。"
 slug = "introducing-snotra"
 [taxonomies]
 tags = ["Snotra", "iOS", "Android"]

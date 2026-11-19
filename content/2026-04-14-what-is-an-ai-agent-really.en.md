@@ -1,6 +1,7 @@
 +++
 date = "2026-04-14"
 title = "What is an AI Agent, really?"
+description = "My working definition of an AI agent: an AI call with clear instructions that fires automatically, plus the trigger and integration around it."
 slug = "what-is-an-ai-agent-really"
 [taxonomies]
 tags = ["AI", "Software"]

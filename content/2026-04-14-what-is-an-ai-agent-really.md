@@ -1,6 +1,7 @@
 +++
 date = "2026-04-14"
 title = "AI Agent 到底是什麼？"
+description = "把 PR review 這類 AI Agent 拆成「指令」與「觸發整合」兩部分，聊聊 Agent 到底是什麼，以及寫清楚指令的價值。"
 slug = "what-is-an-ai-agent-really"
 [taxonomies]
 tags = ["AI", "Software"]

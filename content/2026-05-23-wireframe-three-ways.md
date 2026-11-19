@@ -1,6 +1,7 @@
 +++
 date = "2026-05-23"
 title = "Frame0、HTML、ASCII —— 線框的三種畫法"
+description = "為了畫 GPS 接受半徑的示意圖，比較 Frame0、HTML+SVG、ASCII 三種線框畫法的 token 成本，並估算各自划算的情境。"
 slug = "wireframe-three-ways"
 [taxonomies]
 tags = ["AI", "Software", "Tools"]

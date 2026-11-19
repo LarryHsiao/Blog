@@ -1,6 +1,7 @@
 +++
 date = "2026-06-25"
 title = "把計畫寫在票上 — 用標記協定串起 Plan / Forge / Review"
+description = "主張別把 AI agent 的狀態留在聊天視窗，改寫在 issue tracker 的留言串上，讓計畫能跨 session、跨人存活。"
 slug = "put-the-plan-on-the-ticket"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

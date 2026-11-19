@@ -1,6 +1,7 @@
 +++
 date = "2023-04-23"
 title = "Go 驗證 Google ID Token"
+description = "Go 驗證 Firebase ID Token 時，PEM 公鑰要先轉成 rsa.PublicKey，否則會報 key is of invalid type。"
 slug = "google-id-token-verification"
 [taxonomies]
 tags=["golang"]

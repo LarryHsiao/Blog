@@ -1,6 +1,7 @@
 +++
 date = "2026-08-29"
 title = "唯一一道等人的閘 — 一輪 agent 工作的八個階段"
+description = "說明一輪 agent 工作切成八個階段、只在閘門這一段等人核准，以及為什麼頻繁問「你確定嗎」不算有效的閘門。"
 slug = "the-only-gate-that-waits"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

@@ -1,6 +1,7 @@
 +++
 date = "2026-05-23"
 title = "Frame0、HTML、ASCII —— ワイヤフレームの三つの描き方"
+description = "交差点と同心円三つの図を Frame0、HTML+SVG、ASCII の三通りで AI に描かせ、コスト・速度・産出の違いを比べた記録。"
 slug = "wireframe-three-ways"
 [taxonomies]
 tags = ["AI", "Software", "Tools"]

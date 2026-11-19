@@ -1,6 +1,7 @@
 +++
 date = "2025-06-28"
 title = "一個好的軟體專案該有的幾件事(Flutter)"
+description = "以 Flutter 專案為例，列出好的軟體專案該有的工程基礎，像是一致的命名、靜態分析、測試與 CI 自動化腳本。"
 slug = "a-good-sotware-project-should-have-flutter"
 [taxonomies]
 tags = ["Softaware", "Flutter"]

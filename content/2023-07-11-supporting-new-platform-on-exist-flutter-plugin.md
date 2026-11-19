@@ -1,6 +1,7 @@
 +++
 date = "2023-07-11"
 title = "在Flutter專案新增平台支援"
+description = "說明如何讓 Flutter app 與 plugin 新增 Windows 平台支援，使用純 dart package、不寫原生程式碼。"
 slug = "supporting-new-platform-with-flutter-plugin"
 [taxonomies]
 tags=["flutter","federated plugin"]

@@ -1,6 +1,7 @@
 +++
 date = 2021-02-17
 title = "Android で目覚まし時計アプリを実装する"
+description = "Android で目覚まし時計アプリを作る際の、正確なアラームの設定、Android 12 以降の権限、ロック画面への表示方法のまとめ。"
 slug = "clock-alarm-application-on-android"
 category = "Android"
 [extra]

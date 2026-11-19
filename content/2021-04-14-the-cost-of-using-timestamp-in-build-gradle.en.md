@@ -1,5 +1,6 @@
 +++
 title = "The cost of using timestamp in build.gradle and how to reduce it."
+description = "A build timestamp in build.gradle forces needless rebuilds; keep it in the release build type only and a no-change build dropped from 30s to 2s."
 date = 2021-04-14
 slug = "reduce-the-cost-of-using-timestamp-in-build-gradle"
 category = "Android"

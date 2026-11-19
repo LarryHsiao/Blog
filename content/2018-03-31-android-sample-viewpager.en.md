@@ -1,6 +1,7 @@
 +++
 date = 2018-03-31
 title = "Android Sample: ViewPager"
+description = "A Kotlin sample of ViewPager on Android: a Fragment for each colored page, an adapter, and a button that jumps ahead two pages."
 slug = "android-sample-viewpager"
 category = "Android"
 +++

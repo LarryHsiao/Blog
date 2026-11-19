@@ -1,6 +1,7 @@
 +++
 date = "2023-06-07"
 title = "工程設計與選擇 - 以二戰鋼鐵巨獸為對照"
+description = "以二戰德國虎式戰車對照團隊導入 Rx 後又整個拔除的經驗，提醒做技術選擇時別只看強大與潮流。"
 slug = "choice-of-tech-an-experience-sharing-compare-with-ww2-germen-tiger-tank"
 [taxonomies]
 tags=["Philosophy"]

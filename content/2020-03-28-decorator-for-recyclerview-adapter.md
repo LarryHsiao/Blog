@@ -1,6 +1,7 @@
 +++
 date = 2020-03-28
 title = "RecyclerView使用Decorator模式實做無項目提示" 
+description = "用 Decorator 模式把 RecyclerView 的空清單提示包成可重複使用的 Adapter，不必每個清單都重寫一次。"
 category = "Android"
 +++
 

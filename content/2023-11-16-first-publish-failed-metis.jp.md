@@ -1,6 +1,7 @@
 +++
 date = "2023-11-16"
 title = "Metis の初回リリースは失敗した"
+description = "Metis が最初の Play Store 申請で位置情報権限の説明不足により却下された経緯と、権限リクエストの前に rationale ダイアログを出す修正の記録。"
 slug = "first-publish-of-metis-failure"
 [taxonomies]
 tags=["Metis","Google Play"]

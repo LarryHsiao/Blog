@@ -1,6 +1,7 @@
 +++
 date = "2023-05-22"
 title = "Decorator Pattern有符合SOLID原則嗎?"
+description = "用 Dart 範例展示 Decorator 模式如何對應 SOLID 五個原則，並留下整合來源與快取兩個題目給讀者。"
 slug = "is-decroator-pattern-solid"
 [taxonomies]
 tags=["OOP", "Decorator"]

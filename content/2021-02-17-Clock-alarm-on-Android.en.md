@@ -1,6 +1,7 @@
 +++
 date = 2021-02-17
 title = "Clock Alarm application on Android"
+description = "Building a reliable alarm clock app on Android: exact alarms, the exact-alarm permission, a full-screen intent over the lock screen, and easy cancellation."
 slug = "clock-alarm-application-on-android"
 category = "Android"
 [extra]

@@ -1,6 +1,7 @@
 +++
 date = "2026-08-31"
 title = "分母才是難的那一半 — 怎麼量 agent 有沒有守規矩"
+description = "量測 agent 守不守規矩時，打分容易、決定分母才難；三次修正分母後合規率從 11% 升到 24%，模型行為並沒有改變。"
 slug = "the-denominator-is-the-hard-part"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

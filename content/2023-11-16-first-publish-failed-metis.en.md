@@ -1,6 +1,7 @@
 +++
 date = "2023-11-16"
 title = "Metis first publish attempt failed"
+description = "Why Metis was rejected on its first Google Play submission, and the fix: show a rationale dialog before the first location permission request."
 slug = "first-publish-of-metis-failure"
 [taxonomies]
 tags=["Metis","Google Play"]

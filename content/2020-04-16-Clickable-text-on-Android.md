@@ -1,6 +1,7 @@
 +++
 date = 2020-04-16
 title = "在Android TextView上自訂超連結"
+description = "說明如何用 SpannableStringBuilder 與 ClickableSpan，在 Android TextView 做出可自訂點擊與顏色的超連結。"
 category = "Android"
 +++
 

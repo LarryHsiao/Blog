@@ -1,6 +1,7 @@
 +++
 date = "2023-04-23"
 title = "Verifying Google ID Tokens in Go"
+description = "Verifying Firebase ID tokens in Go: parse the PEM public key with ParseRSAPublicKeyFromPEM to fix the 'key is of invalid type' error."
 slug = "google-id-token-verification"
 [taxonomies]
 tags=["golang"]

@@ -1,6 +1,7 @@
 +++
 date = "2023-11-02"
 title = "PostgreSQL のデータベースとユーザーを設定する"
+description = "新しいマシンへの PostgreSQL のインストールから、データベースとユーザーの作成、外部接続を許可する設定までをまとめた手順メモ。"
 slug = "setup-postgresql-quick-note"
 [taxonomies]
 tags=["postgresql"]

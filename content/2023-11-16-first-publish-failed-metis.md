@@ -1,6 +1,7 @@
 +++
 date = "2023-11-16"
 title = "Metis 第一次嘗試上架失敗了"
+description = "Metis 首次上架被 Google Play 退回，原因是請求位置權限前沒有說明，這篇記錄補上說明對話框的做法。"
 slug = "first-publish-of-metis-failure"
 [taxonomies]
 tags=["Metis","Google Play"]

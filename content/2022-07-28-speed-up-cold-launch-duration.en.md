@@ -1,6 +1,7 @@
 +++
 date = "2022-07-28"
 title = "How initializers in Application slow down cold launch, and what to do about it"
+description = "Why initializers in Application.onCreate() slow Android cold launch, and how sorting SDKs into sync, background and deferred work shortens it."
 slug = "the-influence-of-initialize-method-in-application-on-android"
 [extra]
 ai_model = "Claude Opus 4.7"

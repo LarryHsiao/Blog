@@ -1,6 +1,7 @@
 +++
 date = "2023-11-23"
 title = "Metis - 日誌"
+description = "介紹自己做的日記 app Metis，能用照片寫日記，支援 Android 與 iOS、雲端儲存與地圖追蹤，已在 Google Play 上架。"
 slug = "metis-the-journal-app"
 [taxonomies]
 tags=["Metis"]

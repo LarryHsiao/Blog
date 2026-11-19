@@ -1,6 +1,7 @@
 +++
 date = 2018-11-24
 title = "UI testing with CI"
+description = "How we run Android UI tests on a remote CI build agent by tunneling ADB over SSH, so phones plugged into a local PC do the work."
 category = "Android"
 +++
 

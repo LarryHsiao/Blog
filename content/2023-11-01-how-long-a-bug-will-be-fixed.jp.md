@@ -1,6 +1,7 @@
 +++
 date = "2023-11-01"
 title = "バグが修正されるまでどのくらいかかるか"
+description = "2002年に報告された Firefox のツールチップのバグが2023年にようやく直った話と、バグが長く生き残る理由についての短い考察。"
 slug = "how-long-a-bug-will-be-fixed"
 [taxonomies]
 tags=["Software Development"]

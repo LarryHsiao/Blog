@@ -1,6 +1,7 @@
 +++
 date = "2026-06-25"
 title = "Put the Plan on the Ticket — Plan / Forge / Review as a Marker Protocol"
+description = "Keeping an AI agent's state on the issue tracker, not in chat: a plan, forge and review flow driven by markers like PLAN, APPROVE and FORGED."
 slug = "put-the-plan-on-the-ticket"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

@@ -1,6 +1,7 @@
 +++
 date = "2026-04-21"
 title = "Iris — 画面の上の小さな窓"
+description = "Spotify の同期歌詞やアルバムアート、CPU・メモリなどのシステム指標を小さなオーバーレイに同時表示する macOS アプリ、Iris の紹介。"
 slug = "introducing-iris"
 [taxonomies]
 tags = ["Iris", "macOS"]

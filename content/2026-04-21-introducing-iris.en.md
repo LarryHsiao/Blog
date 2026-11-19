@@ -1,6 +1,7 @@
 +++
 date = "2026-04-21"
 title = "Iris — A Small Window on Screen"
+description = "Introducing Iris, a floating always-on-top macOS overlay that shows Spotify's synced lyrics, album art, and CPU, memory and disk at a glance."
 slug = "introducing-iris"
 [taxonomies]
 tags = ["Iris", "macOS"]

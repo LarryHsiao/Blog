@@ -1,6 +1,7 @@
 +++
 date = "2026-09-16"
 title = "大預言時間軸：那些說要改變世界的話，後來怎麼了"
+description = "整理二十五則歷來的大預言，標出誰說的、指向哪一年、後來怎麼了，也列出幾則坊間版本與原始出處不同的更正。"
 slug = "the-prophecy-ledger"
 [taxonomies]
 tags = ["AI", "History", "Fun"]

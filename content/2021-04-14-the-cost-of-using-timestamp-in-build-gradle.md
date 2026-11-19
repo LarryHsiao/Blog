@@ -1,5 +1,6 @@
 +++
 title = "解決在Android開發中使用時間作為版本號碼的成本"
+description = "用時間當版本號會讓 Gradle 每次建置都重做一遍，建議 debug 版改用靜態值，只在 release 才取當下時間。"
 date = 2021-04-14
 slug = "reduce-the-cost-of-using-timestamp-in-build-gradle"
 category = "Android"

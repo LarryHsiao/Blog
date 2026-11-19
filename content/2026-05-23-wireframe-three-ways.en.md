@@ -1,6 +1,7 @@
 +++
 date = "2026-05-23"
 title = "Frame0, HTML, ASCII: Three Ways to Wireframe"
+description = "Comparing Frame0, HTML with SVG, and ASCII for sketching one GPS accept-radius diagram, with character and token costs and when each fits."
 slug = "wireframe-three-ways"
 [taxonomies]
 tags = ["AI", "Software", "Tools"]

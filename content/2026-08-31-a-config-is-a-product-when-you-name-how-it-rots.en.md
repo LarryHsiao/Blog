@@ -1,6 +1,7 @@
 +++
 date = "2026-08-31"
 title = "Treat a Personal Config Like a Product — Not Because It Has Tests, but Because It Rots"
+description = "Checking three claims about my Claude Code config (tests, lint, two runtimes) and why writing down how it rots matters more than the claims."
 slug = "a-config-is-a-product-when-you-name-how-it-rots"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{% if lang %}{{ lang }}{% else %}en{% endif %}">
+<html lang="{% if lang == "jp" %}ja{% elif lang %}{{ lang }}{% else %}en{% endif %}">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,39 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
-    <title>{% block title %} {{config.title}} {% endblock title %}</title>
+    {% set_global _description = "" %}
+    {% if page is defined and page.description %}{% set_global _description = page.description %}
+    {% elif section is defined and section.description %}{% set_global _description = section.description %}
+    {% elif page is defined and page.content %}{% set_global _description = page.content | striptags | trim | truncate(length=160) %}
+    {% endif %}
+    <title>{% block title %}{% if page is defined and page.title %}{{ page.title }} · {{ config.title }}{% elif section is defined and section.title %}{{ section.title }} · {{ config.title }}{% else %}{{ config.title }}{% endif %}{% endblock title %}</title>
+    {% if _description %}<meta name="description" content="{{ _description }}" />{% endif %}
+    {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}" />{% endif %}
+    {% set_global _translations = [] %}
+    {% if page is defined %}{% set_global _translations = page.translations %}
+    {% elif section is defined %}{% set_global _translations = section.translations %}
+    {% endif %}
+    {% if _translations | length > 1 %}{% for t in _translations %}
+    <link rel="alternate" hreflang="{% if t.lang == "jp" %}ja{% else %}{{ t.lang }}{% endif %}" href="{{ t.permalink | safe }}" />
+    {% if t.lang == config.default_language %}<link rel="alternate" hreflang="x-default" href="{{ t.permalink | safe }}" />{% endif %}
+    {% endfor %}{% endif %}
+    {% if current_url %}
+    {% if page is defined and page.title %}{% set_global _og_title = page.title %}{% elif term is defined %}{% set_global _og_title = term.name %}{% elif terms is defined %}{% set_global _og_title = "Tags" %}{% elif section is defined and section.title and section.relative_path is not starting_with("_index") %}{% set_global _og_title = section.title %}{% else %}{% set_global _og_title = config.title %}{% endif %}
+    {# Open Graph crawlers reject SVG, so only a local PNG icon is used, and a square icon takes the small card.
+       Every other page gets the 1200x630 banner and the large card. #}
+    {% set_global _og_image = "/og-banner.png" %}
+    {% set_global _twitter_card = "summary_large_image" %}
+    {% if page is defined and page.extra.icon and page.extra.icon is starting_with("/") and page.extra.icon is ending_with(".png") %}{% set_global _og_image = page.extra.icon %}{% set_global _twitter_card = "summary" %}{% endif %}
+    <meta property="og:title" content="{{ _og_title }}" />
+    <meta property="og:url" content="{{ current_url | safe }}" />
+    <meta property="og:site_name" content="{{ config.title }}" />
+    <meta property="og:type" content="{% if page is defined and page.date %}article{% else %}website{% endif %}" />
+    <meta property="og:locale" content="{% if lang == "en" %}en_US{% elif lang == "jp" %}ja_JP{% else %}zh_TW{% endif %}" />
+    <meta property="og:image" content="{{ config.base_url ~ _og_image }}" />
+    {% if _description %}<meta property="og:description" content="{{ _description }}" />{% endif %}
+    <meta name="twitter:card" content="{{ _twitter_card }}" />
+    {% endif %}
+    {% block head_extra %}{% endblock head_extra %}
     <script>
       (function () {
         var p = window.location.pathname.replace(/\/$/, "");
@@ -31,6 +63,7 @@
         sessionStorage.setItem("lang-redirected", "1");
         var saved = localStorage.getItem("preferred-lang");
         var currentLang = document.documentElement.lang || "zh";
+        if (currentLang === "ja") currentLang = "jp";
         var target = saved;
         if (!target) {
           var bl = (navigator.language || "zh").toLowerCase();

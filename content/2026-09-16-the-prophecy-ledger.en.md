@@ -1,6 +1,7 @@
 +++
 date = "2026-09-16"
 title = "The Prophecy Ledger: What Happened to All Those World-Changing Predictions"
+description = "An interactive timeline of 25 big predictions, from doomsday dates to AGI forecasts, with who said them, what happened and corrections."
 slug = "the-prophecy-ledger"
 [taxonomies]
 tags = ["AI", "History", "Fun"]

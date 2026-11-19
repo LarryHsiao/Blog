@@ -1,6 +1,7 @@
 +++
 date = 2021-02-17
 title = "Android 鬧鐘應用程式實作"
+description = "整理 Android 鬧鐘 app 的做法：用 setExactAndAllowWhileIdle 排程，以 full-screen intent 在鎖屏跳出。"
 slug = "clock-alarm-application-on-android"
 category = "Android"
 [extra]

@@ -1,6 +1,7 @@
 +++
 date = "2024-02-05"
 title = "快速上手 Linode Object Storage"
+description = "示範用 Linode Object Storage 的 HTTP API 取得 pre-signed url 來上傳與下載檔案，相容 S3 且費用較低。"
 slug = "qucikstart-of-linode-object-storage-using-http-api"
 [taxonomies]
 tags=["Linode", "Object Storage", "S3", "Quickstart"]

@@ -1,6 +1,7 @@
 +++
 date = "2026-08-31"
 title = "把個人設定當產品養 — 不是因為它有測試，是因為它會壞"
+description = "驗證「hooks 有測試、規則有 lint」這類說法其實只對一半，並說明個人 Claude Code 設定要當產品養，是因為會壞。"
 slug = "a-config-is-a-product-when-you-name-how-it-rots"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

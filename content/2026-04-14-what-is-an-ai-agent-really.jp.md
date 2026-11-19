@@ -1,6 +1,7 @@
 +++
 date = "2026-04-14"
 title = "AI Agent って結局何なの？"
+description = "「Agent」とは何かを PR レビューの例で分解し、明確な指示を持って自動で起動する AI 呼び出しだ、と今の理解を整理した文章。"
 slug = "what-is-an-ai-agent-really"
 [taxonomies]
 tags = ["AI", "Software"]

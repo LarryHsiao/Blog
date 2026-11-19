@@ -1,6 +1,7 @@
 +++
 date = 2019-06-30
 title = "Custom options for intent chosoer"
+description = "How to add custom options to the system intent chooser on Android with EXTRA_INITIAL_INTENTS, and a small wrapper from my Aura library."
 tag = "Android"
 +++
 

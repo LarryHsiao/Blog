@@ -1,6 +1,7 @@
 +++
 date = "2022-07-28"
 title = "Application の initialize() がコールドローンチに与える影響と最適化"
+description = "Application.onCreate() での initialize() がコールドローンチを遅くする理由と、初期化を遅延・バックグラウンド化する方法。"
 slug = "the-influence-of-initialize-method-in-application-on-android"
 [extra]
 ai_model = "Claude Opus 4.7"

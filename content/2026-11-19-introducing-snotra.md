@@ -1,6 +1,7 @@
 +++
 date = "2026-11-19"
 title = "Snotra — 不讓任何人被落下"
+description = "介紹自己做的客戶關係管理 app Snotra，記錄面談與送禮，超過跟進間隔就提醒，資料預設只存在手機。"
 slug = "introducing-snotra"
 [taxonomies]
 tags = ["Snotra", "iOS", "Android"]

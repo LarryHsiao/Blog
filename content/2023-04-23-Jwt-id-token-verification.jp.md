@@ -1,6 +1,7 @@
 +++
 date = "2023-04-23"
 title = "Go で Google ID Token を検証する"
+description = "Go で Firebase の ID Token を検証する際、公開鍵を parse せず渡すと出る「key is of invalid type」の原因と直し方。"
 slug = "google-id-token-verification"
 [taxonomies]
 tags=["golang"]

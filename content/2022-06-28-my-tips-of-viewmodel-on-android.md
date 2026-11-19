@@ -1,6 +1,7 @@
 +++
 date = "2022-06-28"
 title = "我的Android ViewModel實作建議"
+description = "分享實作 Android ViewModel 的幾個習慣，例如方法名稱要說明用戶意圖，用 refresh() 而不是 setListId(id)。"
 slug = "my-tips-for-mvvm-on-android"
 +++
 

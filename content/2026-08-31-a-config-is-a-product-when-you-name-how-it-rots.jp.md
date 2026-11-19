@@ -1,6 +1,7 @@
 +++
 date = "2026-08-31"
 title = "個人の設定を製品として育てる — テストがあるからではない、壊れるからだ"
+description = "hook・スキル・ルール文書からなる自分の Claude Code 設定について、三つのよくある言い分を調査で確かめ、壊れ方を先に書いておく運用を説明する。"
 slug = "a-config-is-a-product-when-you-name-how-it-rots"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

@@ -1,6 +1,7 @@
 +++
 date = "2023-11-01"
 title = "How long does it take to fix a bug"
+description = "A Firefox tooltip bug on macOS, filed in 2002 and fixed in 2023, and a thought on why small bugs can survive for decades."
 slug = "how-long-a-bug-will-be-fixed"
 [taxonomies]
 tags=["Software Development"]

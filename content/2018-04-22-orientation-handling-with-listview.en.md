@@ -1,6 +1,7 @@
 +++
 date = 2018-04-22
 title = "Handling orientation for scrolling position"
+description = "Why a ListView keeps its scrolling position after an Android orientation change without any save/restore code, and what the framework does for you."
 category = "Android"
 +++
 

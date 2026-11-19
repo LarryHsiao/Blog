@@ -1,6 +1,7 @@
 +++
 date = "2023-11-02"
 title = "Setting up a PostgreSQL database with a user"
+description = "Quick notes on setting up PostgreSQL: install, create a database and a user, fix the LOGIN privilege, and allow remote connections."
 slug = "setup-postgresql-quick-note"
 [taxonomies]
 tags=["postgresql"]

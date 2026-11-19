@@ -1,6 +1,7 @@
 +++
 date = "2026-09-16"
 title = "大予言タイムライン：世界を変えると言われたあの言葉たちのその後"
+description = "世界の終末や AGI などの大予言25件を、誰がいつ何を言い実際どうなったかの時間軸にまとめたページの紹介と、俗説と原典のズレの話。"
 slug = "the-prophecy-ledger"
 [taxonomies]
 tags = ["AI", "History", "Fun"]

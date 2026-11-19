@@ -1,6 +1,7 @@
 +++
 date = "2023-01-31"
 title = "一次查驗沒辦法連線WebSocket的經驗"
+description = "記錄 OkHttp 連 WebSocket 遇到 protocol_version 錯誤，並用 openssl s_client 查伺服器 TLS 版本。"
 
 +++
 

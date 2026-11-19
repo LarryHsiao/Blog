@@ -1,6 +1,7 @@
 +++
 date = "2025-01-07"
 title = "使用App Distribution發布iOS版本測試遇到的問題與解決"
+description = "iOS 版傳到 App Distribution 無法下載，改用 Xcode Archive 的 Release Testing 輸出 ipa 解決。"
 slug = "small-tips-when-publishing-testing-for-ios-apps"
 [taxonomies]
 tags=["Flutter", "iOS", "App Distribution"]

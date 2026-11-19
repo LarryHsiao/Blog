@@ -1,6 +1,7 @@
 +++
 date = "2026-06-17"
 title = "オフラインで失敗したリクエストが、再接続後になぜ勝手に送られたのか？"
+description = "オフラインで失敗したはずの Flutter アプリのリクエストが再接続後に送られた原因を、TCP 接続タイムアウトとのレースとして突き止めた調査。"
 slug = "offline-request-socket-race"
 [taxonomies]
 tags = ["Flutter", "Network"]

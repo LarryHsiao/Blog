@@ -1,6 +1,7 @@
 +++
 date = "2023-11-01"
 title = "一個 Bug 多久會被修正"
+description = "一個 2002 年回報的 Firefox macOS tooltip bug 到 2023 年才修好，聊聊為什麼有些 bug 能活這麼久。"
 slug = "how-long-a-bug-will-be-fixed"
 [taxonomies]
 tags=["Software Development"]

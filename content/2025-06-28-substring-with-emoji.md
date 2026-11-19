@@ -1,6 +1,7 @@
 +++
 date = "2025-06-28"
 title = "Flutter substring with emoji"
+description = "Dart 用 substring 切含 emoji 的字串會出現亂碼，說明 UTF-16 的原因，並介紹 runes 與 characters 兩種解法。"
 slug = "substring-a-string-with-emoji"
 [taxonomies]
 tags=["Flutter", "Emoji"]

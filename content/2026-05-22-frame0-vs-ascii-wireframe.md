@@ -1,6 +1,7 @@
 +++
 date = "2026-05-22"
 title = "Frame0 對上 ASCII 線框圖:同一張畫面的成本實測"
+description = "用 Heimdall 主畫面實測 Frame0 MCP 與 ASCII 畫線框圖的成本，Frame0 約 50k 到 70k token，ASCII 近乎零。"
 slug = "frame0-vs-ascii-wireframe"
 [taxonomies]
 tags = ["Frame0", "MCP", "Tooling"]

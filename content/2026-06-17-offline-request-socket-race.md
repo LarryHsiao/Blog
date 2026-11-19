@@ -1,6 +1,7 @@
 +++
 date = "2026-06-17"
 title = "離線失敗的請求，為什麼重連網路後又自己送出去了？"
+description = "追查離線失敗的 Flutter 網路請求為何在重連後自己送出，原因是請求卡在 TCP 連線逾時的競態，不是自動同步。"
 slug = "offline-request-socket-race"
 [taxonomies]
 tags = ["Flutter", "Network"]

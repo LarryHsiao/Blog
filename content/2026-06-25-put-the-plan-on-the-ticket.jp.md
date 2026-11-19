@@ -1,6 +1,7 @@
 +++
 date = "2026-06-25"
 title = "計画はチケットに書く — Plan / Forge / Review をマーカー・プロトコルでつなぐ"
+description = "AI エージェントの状態をチャットではなく issue tracker に置き、マーカー・プロトコルで Plan / Forge / Review をつなぐ進め方の紹介。"
 slug = "put-the-plan-on-the-ticket"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

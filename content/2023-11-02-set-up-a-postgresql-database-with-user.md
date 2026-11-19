@@ -1,6 +1,7 @@
 +++
 date = "2023-11-02"
 title = "設定 PostgreSQL 資料庫與使用者"
+description = "快速筆記，記錄在新機器上安裝 PostgreSQL、建立資料庫與使用者，並修改設定開放外部連線的步驟。"
 slug = "setup-postgresql-quick-note"
 [taxonomies]
 tags=["postgresql"]

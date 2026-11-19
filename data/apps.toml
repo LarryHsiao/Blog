@@ -1,0 +1,37 @@
+# Facts behind the SoftwareApplication JSON-LD on each app page (templates/tool.html).
+# One entry per app slug, shared by the zh/en/jp pages.
+# `os`: platforms of the app. Most are stated on the app page; Snotra's come from its store badges,
+#   Heimdall's from its Keychain / Credential Manager line, Carpo's from the author. Leave it out when none is known.
+# `category`: a schema.org applicationCategory value.
+
+[snotra]
+os = ["Android", "iOS"]
+category = "BusinessApplication"
+
+[metis]
+os = ["Android", "iOS"]
+category = "LifestyleApplication"
+
+[iris]
+os = ["macOS"]
+category = "UtilitiesApplication"
+
+[daeron]
+os = ["Windows"]
+category = "MultimediaApplication"
+
+[orthanc]
+os = ["Windows", "macOS"]
+category = "DeveloperApplication"
+
+[roac]
+os = ["macOS", "Windows"]
+category = "UtilitiesApplication"
+
+[heimdall]
+os = ["macOS", "Windows"]
+category = "DeveloperApplication"
+
+[carpo]
+os = ["macOS", "Windows"]
+category = "MultimediaApplication"

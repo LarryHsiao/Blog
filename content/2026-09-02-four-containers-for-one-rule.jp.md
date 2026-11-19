@@ -1,6 +1,7 @@
 +++
 date = "2026-09-02"
 title = "ルールはどこに住むべきか — 四つの容れ物と、自分たちで組んだ梯子"
+description = "ルールを置く場所を記憶、参照文書、スキル、hook の四段に分け、どの段に置きいつ上の段へ移すかという梯子の考え方を説明する。"
 slug = "four-containers-for-one-rule"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

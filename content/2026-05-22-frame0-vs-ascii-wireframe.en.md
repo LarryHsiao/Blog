@@ -1,6 +1,7 @@
 +++
 date = "2026-05-22"
 title = "Frame0 vs. ASCII Wireframes: Measuring the Cost of One Screen"
+description = "I drew one Heimdall screen as an ASCII wireframe and as a Frame0 MCP vector, and measured the token cost: roughly 50k-70k for Frame0."
 slug = "frame0-vs-ascii-wireframe"
 [taxonomies]
 tags = ["Frame0", "MCP", "Tooling"]

@@ -1,6 +1,7 @@
 +++
 date = "2026-09-02"
 title = "Where Does a Rule Live? Four Containers, and a Ladder We Built Ourselves"
+description = "Where an agent rule should live, among memory, reference docs, skills and hooks, and the questions that decide when to move one up."
 slug = "four-containers-for-one-rule"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

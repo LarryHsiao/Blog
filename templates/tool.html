@@ -10,7 +10,16 @@ get_section(path=page.ancestors | last) %} {% for sibling in parent.pages %}
     alt=""
   />{% endif %}{{ sibling.title }}</a
 >
-{% endfor %} {% endblock top_bar_pills %} {% block content %}
+{% endfor %} {% endblock top_bar_pills %} {% block head_extra %}
+{% set _apps = load_data(path="data/apps.toml") %}
+{% if page.slug in _apps %}
+{% set _app = _apps[page.slug] %}
+{% set _image = config.base_url ~ _og_image %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":{{ page.title | json_encode | replace(from="<", to="\u003c") | safe }},"description":{{ _description | json_encode | replace(from="<", to="\u003c") | safe }},"url":{{ current_url | json_encode | safe }},"image":{{ _image | json_encode | safe }}{% if _app.os %},"operatingSystem":{{ _app.os | join(sep=", ") | json_encode | safe }}{% endif %},"applicationCategory":{{ _app.category | json_encode | safe }}}
+</script>
+{% endif %}
+{% endblock head_extra %} {% block content %}
 <article class="tool-page">
   <div class="tool-body">{{ page.content | safe }}</div>
 </article>

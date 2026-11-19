@@ -1,6 +1,7 @@
 +++
 date = "2026-06-17"
 title = "Why Did a Failed Offline Request Send Itself After Reconnecting?"
+description = "Why a failed offline request in a Flutter app sent itself after reconnecting: it was waiting on the TCP connect timeout, not retrying."
 slug = "offline-request-socket-race"
 [taxonomies]
 tags = ["Flutter", "Network"]

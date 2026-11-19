@@ -1,6 +1,7 @@
 +++
 date = "2026-04-21"
 title = "Iris — 螢幕上的小窗"
+description = "介紹自己做的 macOS 懸浮視窗 Iris，永遠置頂，能顯示 Spotify 同步歌詞、專輯封面與 CPU、記憶體等系統指標。"
 slug = "introducing-iris"
 [taxonomies]
 tags = ["Iris", "macOS"]

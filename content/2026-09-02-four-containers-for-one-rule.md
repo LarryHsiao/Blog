@@ -1,6 +1,7 @@
 +++
 date = "2026-09-02"
 title = "一條規則該住在哪裡 — 四個容器，一道我們自己搭的梯子"
+description = "說明一條規則該放在記憶、參考文件、技能或 hook 哪個容器，以及依觸發方式與代價把規則往上搬的四階梯子。"
 slug = "four-containers-for-one-rule"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

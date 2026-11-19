@@ -1,6 +1,7 @@
 +++
 date = "2024-02-09"
 title = "如何使用Nginx將多個Web app架設到子path上"
+description = "用 Nginx 的 rewrite 與 proxy_pass，把多個互不相關的 Web app 架在同一網域的不同子路徑，不需要新的 subdomain。"
 slug = "how-to-host-multiple-site-on-path"
 [taxonomies]
 tags=["Nginx", "Quickstart"]

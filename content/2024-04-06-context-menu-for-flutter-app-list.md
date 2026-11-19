@@ -1,6 +1,7 @@
 +++
 date = "2024-04-06"
 title = "Flutter清單內實做懸浮視窗"
+description = "用 LayerLink 與 OverlayEntry 讓 Flutter 清單項目長按後，在原位置跳出 context menu。"
 slug = "implement-context-menu-in-a-flutter-app-list"
 [taxonomies]
 tags=["Flutter"]

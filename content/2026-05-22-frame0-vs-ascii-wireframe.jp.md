@@ -1,6 +1,7 @@
 +++
 date = "2026-05-22"
 title = "Frame0 と ASCII ワイヤフレーム — 同じ画面のコストを実測"
+description = "同じ Heimdall のメイン画面を ASCII と Frame0（MCP）で描き、トークンコストや所要時間、精度の違いを実測して比べた記録。"
 slug = "frame0-vs-ascii-wireframe"
 [taxonomies]
 tags = ["Frame0", "MCP", "Tooling"]

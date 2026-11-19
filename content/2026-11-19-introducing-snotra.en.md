@@ -1,6 +1,7 @@
 +++
 date = "2026-11-19"
 title = "Snotra — Leaving No One Behind"
+description = "Introducing Snotra, a client relationship app for iOS and Android that records meetings and gifts and reminds you who is due a follow-up."
 slug = "introducing-snotra"
 [taxonomies]
 tags = ["Snotra", "iOS", "Android"]

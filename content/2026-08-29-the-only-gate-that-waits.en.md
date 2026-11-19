@@ -1,6 +1,7 @@
 +++
 date = "2026-08-29"
 title = "The Only Gate That Waits — Eight Stages of One Agent Task"
+description = "How I split one agent task into eight stages where only one waits for a human, and why rules are re-injected on every turn."
 slug = "the-only-gate-that-waits"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]

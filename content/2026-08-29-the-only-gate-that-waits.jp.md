@@ -1,6 +1,7 @@
 +++
 date = "2026-08-29"
 title = "待つのは一つだけ — エージェントの一巡を構成する八つの段階"
+description = "エージェントの一巡を八つの段階に分け、人を待つゲートを一か所だけにした理由と、残りを支える規律が減衰する問題についての文章。"
 slug = "the-only-gate-that-waits"
 [taxonomies]
 tags = ["Claude Code", "Agent", "Workflow"]
