@@ -109,13 +109,23 @@
       </button>
     </div>
     <div class="drawer-backdrop"></div>
-    {% block profile_header %} {% if current_url %} {% set _base =
-    config.base_url %} {% set _zh_url = current_url | replace(from=_base ~
+    {% block profile_header %} {% if _page_url %} {% set _base =
+    config.base_url %} {% set _zh_url = _page_url | replace(from=_base ~
     "/en", to=_base) | replace(from=_base ~ "/jp", to=_base) %} {% set _en_url =
     _zh_url | replace(from=_base ~ "/", to=_base ~ "/en/") %} {% set _jp_url =
     _zh_url | replace(from=_base ~ "/", to=_base ~ "/jp/") %} {% else %} {% set
     _zh_url = config.base_url ~ "/" %} {% set _en_url = config.base_url ~ "/en/"
     %} {% set _jp_url = config.base_url ~ "/jp/" %} {% endif %}
+    {# A tag exists in another language only if one of its posts has a translation there; otherwise link that language's tag list.
+       The page's own language is always counted, so its own link never falls back. #}
+    {% if term is defined %}
+    {% set_global _tag_langs = [] %}
+    {% set_global _tag_langs = _tag_langs | concat(with=lang) %}
+    {% for p in term.pages %}{% for t in p.translations %}{% set_global _tag_langs = _tag_langs | concat(with=t.lang) %}{% endfor %}{% endfor %}
+    {% if "zh" in _tag_langs %}{% else %}{% set _zh_url = _base ~ "/tags/" %}{% endif %}
+    {% if "en" in _tag_langs %}{% else %}{% set _en_url = _base ~ "/en/tags/" %}{% endif %}
+    {% if "jp" in _tag_langs %}{% else %}{% set _jp_url = _base ~ "/jp/tags/" %}{% endif %}
+    {% endif %}
     <div class="about-header">
       {% if lang == "en" %} {% set about_url = config.extra.about_url_en |
       replace(from="$BASE_URL", to=config.base_url) %} {% set author =
