@@ -1,5 +1,6 @@
 +++
 title = "Metis PRIVACY POLICY"
+description = "What Metis collects and how it uses it: optional location for journal entries, AI tag suggestions, analytics, and how to delete your account."
 path = "metis/privacy_policy"
 template = "about.html"
 +++

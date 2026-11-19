@@ -1,5 +1,6 @@
 +++
 title = "Snotra TERMS OF SERVICE"
+description = "The terms for using Snotra: your responsibility for the contact data you enter, accounts, your content and conduct, third-party services, and termination."
 path = "snotra/terms_of_service"
 template = "about.html"
 +++

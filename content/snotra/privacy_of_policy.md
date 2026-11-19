@@ -1,5 +1,6 @@
 +++
 title = "Snotra 隱私權政策"
+description = "說明 Snotra 處理哪些資料：未登入時只存在手機，登入同步後存放在日本的伺服器，以及如何刪除資料與帳號。"
 path = "snotra/privacy_policy"
 template = "about.html"
 +++

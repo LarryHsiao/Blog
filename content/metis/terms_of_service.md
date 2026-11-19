@@ -1,5 +1,6 @@
 +++
 title = "Metis TERMS OF SERVICE"
+description = "The terms for using Metis: accepting the terms, accounts, your content and conduct, third-party services, termination, and how to contact us."
 path = "metis/terms_of_service"
 template = "about.html"
 +++
