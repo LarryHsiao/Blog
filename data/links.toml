@@ -31,6 +31,7 @@ icon = "/icons/mail.svg"
 title = { zh = "應用程式", en = "Apps", jp = "アプリ" }
 links = [
   { label = { zh = "Metis", en = "Metis", jp = "Metis" }, path = "/metis/", app = "metis", icon = "/metis.png", platforms = ["iOS", "Android"] },
+  { label = { zh = "Snotra", en = "Snotra", jp = "Snotra" }, path = "/snotra/", app = "snotra", icon = "/snotra-icon.png", badge = { zh = "新", en = "NEW", jp = "NEW" }, platforms = ["iOS", "Android"] },
   { label = { zh = "Iris", en = "Iris", jp = "Iris" }, path = "/iris/", app = "iris", icon = "/iris-icon.svg", platforms = ["macOS"] },
   { label = { zh = "Heimdall", en = "Heimdall", jp = "Heimdall" }, path = "/heimdall/", app = "heimdall", icon = "/heimdall.png", platforms = ["macOS", "Windows"] },
   { label = { zh = "Carpo", en = "Carpo", jp = "Carpo" }, path = "/carpo/", app = "carpo", icon = "/carpo-icon.png", platforms = ["macOS", "Windows"] },

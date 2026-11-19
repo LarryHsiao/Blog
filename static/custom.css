@@ -1438,6 +1438,7 @@ body:has(.card) .tool-top-bar { display: none; }
 .card-link-chip { display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.65rem; line-height: 1; padding: 0.2rem 0.45rem; border: 1px solid currentColor; border-radius: 999px; opacity: 0.85; white-space: nowrap; }
 .card-link-chip-icon { width: 0.7rem; height: 0.7rem; background: currentColor; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
 .card-link-app { gap: 0.7rem; padding: 0.55rem 0.7rem; border-radius: 12px; }
+.card-link-badge { display: inline-block; vertical-align: middle; margin-left: 0.3rem; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.04em; line-height: 1; padding: 0.2rem 0.4rem; border: 1px solid rgba(var(--accent-wash) / 0.55); border-radius: 999px; color: var(--links); background: rgba(var(--accent-wash) / 0.1); white-space: nowrap; }
 .card-slogan { text-align: center; font-style: italic; margin: 0 0 0.75rem; }
 .card-avatar-link { display: block; width: 120px; margin: 0 auto 0.5rem; }
 .card-avatar-link:hover .card-avatar { border-color: var(--links); }
