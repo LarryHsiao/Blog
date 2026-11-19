@@ -126,6 +126,16 @@
     {% if "en" in _tag_langs %}{% else %}{% set _en_url = _base ~ "/en/tags/" %}{% endif %}
     {% if "jp" in _tag_langs %}{% else %}{% set _jp_url = _base ~ "/jp/tags/" %}{% endif %}
     {% endif %}
+    {# A page links each language to that language's own translation. A language with none links its Posts list (for a dated post) or its home.
+       The current language keeps the link built above. #}
+    {% if page is defined and _page_url %}
+    {% set_global _t_zh = "" %}{% set_global _t_en = "" %}{% set_global _t_jp = "" %}
+    {% for t in page.translations %}{% if t.lang == "zh" %}{% set_global _t_zh = t.permalink %}{% elif t.lang == "en" %}{% set_global _t_en = t.permalink %}{% elif t.lang == "jp" %}{% set_global _t_jp = t.permalink %}{% endif %}{% endfor %}
+    {% if page.date %}{% set _missing = "posts/" %}{% else %}{% set _missing = "" %}{% endif %}
+    {% if lang != "zh" %}{% if _t_zh %}{% set _zh_url = _t_zh %}{% else %}{% set _zh_url = _base ~ "/" ~ _missing %}{% endif %}{% endif %}
+    {% if lang != "en" %}{% if _t_en %}{% set _en_url = _t_en %}{% else %}{% set _en_url = _base ~ "/en/" ~ _missing %}{% endif %}{% endif %}
+    {% if lang != "jp" %}{% if _t_jp %}{% set _jp_url = _t_jp %}{% else %}{% set _jp_url = _base ~ "/jp/" ~ _missing %}{% endif %}{% endif %}
+    {% endif %}
     <div class="about-header">
       {% if lang == "en" %} {% set about_url = config.extra.about_url_en |
       replace(from="$BASE_URL", to=config.base_url) %} {% set author =
